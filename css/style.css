@@ -62,7 +62,7 @@ body {
 /* Banner Section */
 .banner {
     height: 100vh;
-    background: url('../assets/Index-Background.jpeg') no-repeat center center/cover; /* Updated background image path */
+    background: url('../assets/Background.jpg') no-repeat center center/cover; /* Updated background image path */
     position: relative;
 }
 
