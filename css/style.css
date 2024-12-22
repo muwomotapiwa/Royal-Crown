@@ -1,6 +1,8 @@
+/* General Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Top Notification Bar */
@@ -10,6 +12,8 @@ body {
     padding: 5px 20px;
     font-size: 14px;
     text-align: center;
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box; /* Prevent overflow due to padding */
 }
 
 /* Navigation Bar */
@@ -19,24 +23,27 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 100px; /* Increased height */
+    height: 100px;
     background: linear-gradient(to right, #e6a644, #e6a644 33%, #5f0e4c 66%, #5f0e4c);
+    width: 100%; /* Ensure it spans the full width */
+    box-sizing: border-box;
+    padding: 0 10px; /* Prevent any overflow due to padding */
 }
 
 .navbar .left-section {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .navbar .left-section img {
-    height: 80px; /* Logo size */
+    height: 80px;
     width: 80px;
     margin-right: 10px;
 }
 
 .navbar .left-section h1 {
-    font-size: 24px; /* Adjusted font size for title */
+    font-size: 24px;
     margin: 0;
     color: #5f0e4c;
 }
@@ -46,6 +53,7 @@ body {
     display: flex;
     justify-content: center; /* Center align navigation links */
     gap: 20px;
+    flex-wrap: wrap; /* Prevent overflow on smaller screens */
 }
 
 .navbar .nav-links a {
@@ -101,8 +109,9 @@ body {
 /* Banner Section */
 .banner {
     height: 100vh;
-    background: url('../assets/Background.jpeg') no-repeat center center/cover; /* Updated background image path */
+    background: url('../assets/Background.jpeg') no-repeat center center/cover;
     position: relative;
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .banner .overlay {
@@ -121,6 +130,8 @@ body {
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+    max-width: 100%; /* Prevent overflowing content */
+    box-sizing: border-box;
 }
 
 .banner-content h1 {
@@ -135,12 +146,12 @@ body {
     margin: 20px auto;
 }
 
-/* Buttons */
 .buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap; /* Prevent buttons from overflowing */
 }
 
 .buttons a {
@@ -161,6 +172,8 @@ body {
     padding: 50px 20px;
     background-color: #fff9e3;
     color: #5f0e4c;
+    width: 100%; /* Ensure content spans full width */
+    box-sizing: border-box;
 }
 
 .content h2 {
@@ -181,6 +194,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    width: 100%; /* Ensure footer spans full width */
+    box-sizing: border-box;
 }
 
 footer p {
