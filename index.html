@@ -3,65 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Crown Ministries International</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->
+    <title>Responsive Navbar and Image</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="top-bar">
-        Join us for in-person & online services every Sunday at 9AM!
-    </div>
-
-    <div class="navbar">
-        <div class="left-section">
-            <img src="assets/logo.png" alt="Logo"> <!-- Updated logo path -->
-            <h1>Royal Crown Ministries</h1>
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">Royal Crown Ministries</div>
         </div>
-        <div class="nav-links">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#sermons">Sermons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+        <div class="mobile-nav" id="mobileNav">
             <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Ministries</a>
-            <a href="#">Events</a>
-            <a href="#">Sermons</a>
-            <a href="#">Contact</a>
+            <a href="#about-us">About Us</a>
+            <a href="#events">Events</a>
+            <a href="#sermons">Sermons</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
-    </div>
+    </header>
 
-    <div id="mobile-menu" class="mobile-menu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Ministries</a>
-        <a href="#">Events</a>
-        <a href="#">Sermons</a>
-        <a href="#">Contact</a>
-    </div>
+    <div class="gap-section"></div>
 
-    <div class="banner">
-        <div class="overlay"></div>
-        <div class="banner-content">
-            <h1>"But you are a chosen generation"</h1>
-            <p>"A royal priesthood, a holy nation, His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light." - 1 Peter 2:9</p>
-            <div class="buttons">
-                <a href="#">Connect Card</a>
-                <a href="#">Events</a>
-                <a href="#">Prayer Request</a>
-            </div>
-        </div>
-    </div>
+    <section class="image-section">
+        <img src="https://af6815798a.imgdist.com/pub/bfra/knkjywkm/cw4/e44/hpa/BackgroundTablet.jpeg" alt="Banner Image">
+    </section>
 
-    <section class="content">
-        <h2>Welcome to Royal Crown Ministries</h2>
-        <p>Our church is dedicated to restoring lives and demonstrating the glory of God through transformative Bible teachings. Join us as we grow together in faith and impact the world for Christ.</p>
-        <p>Explore our ministries, connect with our community, and become a part of our mission to bring the light of Christ to all nations.</p>
+    <section class="hero-section">
+        <h1>Welcome to Royal Crown Ministries</h1>
+        <p>Join us as we grow in faith, build a loving community, and proclaim the good news of Christ to the world. Together, we make a difference.</p>
+        <a href="#about-us">Learn More</a>
+        <a href="#connect">Get Connected</a>
+    </section>
+
+    <section class="scripture-section">
+        <p>"But you are a chosen generation"</p>
+        <p>"A royal priesthood, a holy nation, His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light."</p>
+        <p><span>- 1 Peter 2:9</span></p>
     </section>
 
     <footer>
+        <div class="logo">
+            <img src="https://af6815798a.imgdist.com/pub/bfra/knkjywkm/f43/4j0/7kg/logo-removebg-preview.png" alt="Logo">
+        </div>
         <p>Royal Crown Ministries International</p>
         <p>Address: Placeholder Street, City, Country</p>
-        <p>Email: <a href="mailto:info@royalcrownministries.com">info@royalcrownministries.com</a></p>
-        <p>Contact: +123 456 7890</p>
+        <p>Email: <a href="mailto:info@royalcrownministries.com">info@royalcrownministries.com</a> | Contact: +123 456 7890</p>
     </footer>
 
-    <script src="js/main.js"></script> <!-- Link to external JS -->
+    <script src="script.js"></script>
 </body>
 </html>
