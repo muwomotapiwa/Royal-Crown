@@ -9,7 +9,21 @@
 </head>
 <body>
     <!-- Navbar will be loaded dynamically -->
-    <div id="navbar"></div>
+    <header>
+        <div class="logo">Royal Crown Ministries</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="events.html">Events</a>
+            <a href="#ministries">Ministries</a>
+            <a href="#sermons">Sermons</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <section class="hero-banner">
@@ -42,7 +56,10 @@
     </section>
 
     <!-- Footer will be loaded dynamically -->
-    <div id="footer"></div>
+    <footer>
+        <p>&copy; 2024 Royal Crown Ministries. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>Address: Placeholder Street, City, Country | Email: info@royalcrownministries.com | Contact: +123 456 7890</p>
+    </footer>
 
     <script src="js/loadShared.js"></script>
     <script src="js/events.js"></script>
