@@ -1,3 +1,10 @@
+/* General Styles */
+body {
+    background-color: #fff9e3; /* Cream background for consistency */
+    color: #5e0c4a; /* Purple text color */
+    font-family: Arial, sans-serif;
+}
+
 /* Hero Banner */
 .hero-banner {
     background: url('assets/sermons_banner.jpg') center/cover no-repeat;
@@ -46,7 +53,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #5e0c4a;
+    color: #5e0c4a; /* Purple */
 }
 .sermons-grid,
 .series-grid,
@@ -79,14 +86,14 @@ section h2 {
 .series-card h3,
 .featured-card h3,
 .explore-card h3 {
-    color: #5e0c4a;
+    color: #5e0c4a; /* Purple */
     margin: 10px 0;
 }
 .btn {
     display: inline-block;
     margin-top: 10px;
-    background-color: #f1bb65;
-    color: #5e0c4a;
+    background-color: #f1bb65; /* Gold */
+    color: #5e0c4a; /* Purple */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -95,10 +102,37 @@ section h2 {
     background-color: #e0a84e; /* Darker Gold */
 }
 
+/* Video Player */
+.video-player-container {
+    text-align: center;
+    margin-top: 20px;
+}
+#videoPlayer {
+    border: 2px solid #5e0c4a; /* Purple border */
+    border-radius: 8px;
+    background-color: black;
+}
+.video-controls {
+    margin-top: 10px;
+}
+.video-controls button {
+    background-color: #f1bb65;
+    color: #5e0c4a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.video-controls button:hover {
+    background-color: #e0a84e;
+}
+
 /* Join Us Live Section */
 .join-live {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Light grey for contrast */
 }
 .join-live h2 {
     color: #5e0c4a;
