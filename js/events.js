@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Example events data
     const events = [
         {
             id: 1,
             name: "Sunday Service",
             date: "2024-01-07",
             time: "9:00 AM",
-            location: "Main Hall, Royal Crown Ministries",
+            location: "Main Hall",
             description: "A time of worship and fellowship every Sunday.",
         },
         {
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Christmas Celebration",
             date: "2024-12-25",
             time: "5:00 PM",
-            location: "Main Hall, Royal Crown Ministries",
+            location: "Main Hall",
             description: "Join us as we celebrate the birth of Christ.",
         },
     ];
@@ -45,32 +44,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const eventCard = `
             <div class="event-card">
                 <h3>${event.name}</h3>
-                <p><strong>Date:</strong> ${new Date(event.date).toLocaleDateString()}</p>
+                <p><strong>Date:</strong> ${eventDate.toLocaleDateString()}</p>
                 <p><strong>Time:</strong> ${event.time}</p>
                 <p><strong>Location:</strong> ${event.location}</p>
                 <p>${event.description}</p>
             </div>
         `;
 
-        // Add to Upcoming or Past Events
         if (eventDate >= today) {
             upcomingEventsContainer.insertAdjacentHTML("beforeend", eventCard);
         } else {
             pastEventsContainer.insertAdjacentHTML("beforeend", eventCard);
         }
 
-        // Add to Yearly Calendar
         const calendarItem = `
             <div class="calendar-item">
                 <h4>${event.name}</h4>
-                <p><strong>Date:</strong> ${new Date(event.date).toLocaleDateString()}</p>
+                <p><strong>Date:</strong> ${eventDate.toLocaleDateString()}</p>
                 <p><strong>Location:</strong> ${event.location}</p>
             </div>
         `;
         eventCalendarContainer.insertAdjacentHTML("beforeend", calendarItem);
     });
 
-    // If no events, display a message
     if (!upcomingEventsContainer.innerHTML.trim()) {
         upcomingEventsContainer.innerHTML = "<p>No upcoming events at the moment.</p>";
     }
