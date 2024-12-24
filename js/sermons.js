@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Example data for Recent Sermons
     const recentSermons = [
         {
             title: "Walking by Faith",
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     ];
 
+    // Example data for Sermon Series
     const sermonSeries = [
         {
             title: "The Beatitudes",
@@ -27,9 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     ];
 
+    // Example data for Featured Videos
+    const featuredVideos = [
+        "assets/sermon1.mp4",
+        "assets/sermon2.mp4",
+        "assets/sermon3.mp4",
+    ];
+
+    // Select containers for dynamic content
     const recentSermonsGrid = document.querySelector(".sermons-grid");
     const seriesGrid = document.querySelector(".series-grid");
 
+    // Populate Recent Sermons Section
     recentSermons.forEach((sermon) => {
         recentSermonsGrid.innerHTML += `
             <div class="sermon-card">
@@ -41,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     });
 
+    // Populate Sermon Series Section
     sermonSeries.forEach((series) => {
         seriesGrid.innerHTML += `
             <div class="series-card">
@@ -51,4 +63,45 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
     });
+
+    // Featured Videos Player Functionality
+    let currentVideoIndex = 0; // Track the current video index
+    const videoPlayer = document.getElementById("videoPlayer");
+    const playPauseButton = document.getElementById("playPauseVideo");
+    const prevButton = document.getElementById("prevVideo");
+    const nextButton = document.getElementById("nextVideo");
+
+    // Function to update the video source
+    function updateVideo(index) {
+        videoPlayer.src = featuredVideos[index];
+        videoPlayer.play(); // Auto-play the video when it changes
+        playPauseButton.textContent = "Pause"; // Update button text to Pause
+    }
+
+    // Event listener for Play/Pause button
+    playPauseButton.addEventListener("click", () => {
+        if (videoPlayer.paused) {
+            videoPlayer.play();
+            playPauseButton.textContent = "Pause";
+        } else {
+            videoPlayer.pause();
+            playPauseButton.textContent = "Play";
+        }
+    });
+
+    // Event listener for Next button
+    nextButton.addEventListener("click", () => {
+        currentVideoIndex = (currentVideoIndex + 1) % featuredVideos.length; // Cycle to next video
+        updateVideo(currentVideoIndex);
+    });
+
+    // Event listener for Previous button
+    prevButton.addEventListener("click", () => {
+        currentVideoIndex =
+            (currentVideoIndex - 1 + featuredVideos.length) % featuredVideos.length; // Cycle to previous video
+        updateVideo(currentVideoIndex);
+    });
+
+    // Initialize the first video
+    updateVideo(currentVideoIndex);
 });

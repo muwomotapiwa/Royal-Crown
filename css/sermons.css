@@ -105,9 +105,11 @@ section h2 {
 /* Video Player */
 .video-player-container {
     text-align: center;
-    margin-top: 20px;
+    margin: 40px 0; /* Add spacing above and below the player */
 }
 #videoPlayer {
+    width: 600px;
+    height: 600px;
     border: 2px solid #5e0c4a; /* Purple border */
     border-radius: 8px;
     background-color: black;
@@ -126,7 +128,7 @@ section h2 {
     margin: 0 5px;
 }
 .video-controls button:hover {
-    background-color: #e0a84e;
+    background-color: #e0a84e; /* Darker Gold */
 }
 
 /* Join Us Live Section */
