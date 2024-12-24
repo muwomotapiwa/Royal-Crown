@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Royal Crown Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Royal Crown Ministries</div>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="events.html">Events</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Get in touch with us today!</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <h2>Our Location</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>Placeholder Street, City, Country</p>
+            </div>
+            <div class="info-card">
+                <h3>Phone</h3>
+                <p>+123 456 7890</p>
+            </div>
+            <div class="info-card">
+                <h3>Email</h3>
+                <p>info@royalcrownministries.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <!-- Google Map Section -->
+<section class="google-map">
+    <h2>Find Us on Google Maps</h2>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.476372083265!2d27.995821675463998!3d-26.018241978497076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b92320af9%3A0x7406d70a06c1353c!2sEagles%20Nest%20Lodge%2C%20112%20Leslie%20Ave%2C%20Fourways%2C%20Johannesburg%2C%202191!5e0!3m2!1sen!2sza!4v1700011122334" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Royal Crown Ministries. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>Address: Placeholder Street, City, Country | Email: info@royalcrownministries.com | Contact: +123 456 7890</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
