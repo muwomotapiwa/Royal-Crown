@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermons - Royal Crown Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sermons.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Royal Crown Ministries</div>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="events.html">Events</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Sermons</h1>
+            <p>Be inspired by the Word of God through our sermons.</p>
+        </div>
+    </section>
+
+    <!-- Recent Sermons Section -->
+    <section class="recent-sermons">
+        <h2>Recent Sermons</h2>
+        <div class="sermons-grid">
+            <!-- Sermons will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Sermon Series Section -->
+    <section class="sermon-series">
+        <h2>Sermon Series</h2>
+        <div class="series-grid">
+            <!-- Series will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Featured Sermons Section -->
+    <section class="featured-sermons">
+        <h2>Featured Sermons</h2>
+        <div class="featured-grid">
+            <!-- Featured content will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Explore More Section -->
+    <section class="explore-more">
+        <h2>Explore More Sermons</h2>
+        <div class="explore-grid">
+            <!-- Older sermons will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Join Us Live Section -->
+    <section class="join-live">
+        <h2>Join Us Live</h2>
+        <p>Don't miss our live-streamed sermons every Sunday at 9:00 AM.</p>
+        <a href="live.html" class="btn">Watch Live</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Royal Crown Ministries. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>Address: Placeholder Street, City, Country | Email: info@royalcrownministries.com | Contact: +123 456 7890</p>
+    </footer>
+
+    <script>
+        // Toggle Menu Functionality
+        function toggleMenu() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("show");
+        }
+    </script>
+    <script src="js/sermons.js"></script>
+</body>
+</html>
