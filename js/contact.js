@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Contact form submission
     const form = document.getElementById("contactForm");
-
     form.addEventListener("submit", (e) => {
         e.preventDefault(); // Prevent form submission
 
@@ -14,5 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Reset the form
         form.reset();
+    });
+
+    // Hamburger menu functionality
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector("nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show");
     });
 });

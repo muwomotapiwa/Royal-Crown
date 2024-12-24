@@ -5,6 +5,68 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header */
+header {
+    background-color: #5e0c4a; /* Purple */
+    color: #fff9e3; /* Cream */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header nav {
+    display: flex;
+    gap: 15px;
+}
+header nav a {
+    color: #fff9e3; /* Cream */
+    text-decoration: none;
+    font-size: 16px;
+}
+header nav a:hover {
+    color: #f1bb65; /* Gold */
+}
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #fff9e3; /* Cream */
+    margin: 4px 0;
+}
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        background-color: #5e0c4a; /* Purple */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header nav.show {
+        display: flex;
+    }
+    header .hamburger {
+        display: flex;
+    }
+    header nav a {
+        padding: 10px 0;
+    }
+}
+
 /* Hero Section */
 .hero-banner {
     background: url('assets/contact_banner.jpg') center/cover no-repeat;
@@ -26,27 +88,25 @@ body {
     position: relative;
     z-index: 2;
     padding: 100px 20px;
-    text-align: center; /* Center align text */
+    text-align: center;
 }
 .hero-content h1 {
     font-size: 48px;
     color: #f1bb65; /* Gold */
     margin-bottom: 10px;
-    text-align: center; /* Center align the heading */
 }
 .hero-content p {
     font-size: 20px;
     color: #fff9e3; /* Cream */
-    text-align: center; /* Center align the subheading */
 }
 @media (min-width: 769px) {
     .hero-banner {
-        height: 500px; /* Updated height for larger screens */
+        height: 500px;
     }
 }
 @media (max-width: 768px) {
     .hero-banner {
-        height: 250px; /* Updated height for smaller screens */
+        height: 250px;
     }
 }
 
