@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+}
+
 function openModal(videoSrc) {
     const modal = document.getElementById('videoModal');
     const video = document.getElementById('sermonVideo');
@@ -12,9 +17,4 @@ function closeModal(event) {
     video.pause();
     video.src = "";
     modal.style.display = 'none';
-}
-
-function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('show');
 }
