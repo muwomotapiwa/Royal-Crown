@@ -30,12 +30,6 @@
     color: #fff9e3; /* Cream */
 }
 
-/* Background Color */
-body {
-    background-color: #fff9e3; /* Cream background */
-    color: #5e0c4a; /* Purple text color */
-}
-
 /* Event List */
 .events-list {
     padding: 40px 20px;
@@ -67,8 +61,8 @@ body {
 .event-card .btn {
     display: inline-block;
     margin-top: 10px;
-    background-color: #f1bb65; /* Gold */
-    color: #5e0c4a; /* Purple */
+    background-color: #f1bb65;
+    color: #5e0c4a;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
