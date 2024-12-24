@@ -1,280 +1,280 @@
-/* General Reset */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff9e3; /* Cream background */
+    color: #5e0c4a; /* Purple text color */
 }
-
-/* Navbar Styling */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    color: #fff;
+    background-color: #5e0c4a; /* Purple */
+    color: #f1bb65; /* Gold */
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
-
-/* Desktop Gradient */
-@media (min-width: 1024px) {
-    header {
-        background: linear-gradient(to right, #e6a644 33%, #5f0e4c 66%);
-    }
-}
-
-/* Tablet and Mobile Solid Background */
-@media (max-width: 1023px) {
-    header {
-        background: #5f0e4c;
-    }
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-text {
-    font-size: 1.5rem;
+header .logo {
+    font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    display: block;
 }
-
 nav {
     display: flex;
-    align-items: center;
+    gap: 15px;
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
+    color: #f1bb65; /* Gold */
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 16px;
 }
-
-nav ul li a:hover {
-    color: #e6a644;
-}
-
-/* Mobile Menu */
-.menu-icon {
+.hamburger {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
-
-.mobile-nav {
-    display: none;
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #f1bb65; /* Gold */
+    margin: 4px 0;
 }
-
-/* Responsive Design for Tablet and Mobile (Max: 1024px) */
-@media (max-width: 1023px) {
-    .logo-container {
-        justify-content: flex-start;
+.banner {
+    position: relative;
+    background: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/0d82a4829e40c026a2e64c48c7077904_screen.jpg?ts=1734914336') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+.banner div {
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 769px) {
+    .banner {
+        height: 650px;
     }
-
-    .logo-text {
-        display: block;
+}
+@media (max-width: 768px) {
+    .banner {
+        height: 350px;
     }
-
-    nav ul {
+}
+.banner h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #f1bb65; /* Gold */
+}
+.banner p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: #fff9e3; /* Cream */
+}
+footer {
+    background: #5e0c4a; /* Purple */
+    color: #fff9e3; /* Cream */
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    nav {
         display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        font-size: 2rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .mobile-nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        background: #5f0e4c;
         flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
+        gap: 10px;
+        background: #5e0c4a; /* Purple */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
     }
-
-    .mobile-nav.active {
+    nav.show {
         display: flex;
     }
-
-    .mobile-nav a {
-        color: #fff;
-        padding: 0.5rem 0;
-        font-size: 1.2rem;
-        text-decoration: none;
+    .hamburger {
+        display: flex;
     }
 }
-
-/* Gap Section for Small Devices */
-@media (max-width: 767px) {
-    .gap-section {
-        height: 60px;
-        background-color: #5f0e4c;
-    }
+.sectionBody {
+    font-family: Arial, sans-serif;
+    background-color: #fff9e3; /* Cream */
+    color: #5e0c4a; /* Purple */
+    margin: 0;
+    padding: 20px;
 }
-
-/* Responsive Image Section */
-.image-section {
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+    color: #5e0c4a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cta .btn {
+    display: inline-block;
+    background-color: #f1bb65; /* Gold */
+    color: #5e0c4a; /* Purple */
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cta .btn:hover {
+    background-color: #e0a84e; /* Darker Gold */
+}
+/* About Section */
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-text {
+    flex: 1;
+    text-align: left;
+    background: #fff9e3; /* Cream background */
+    padding: 20px;
+    border-radius: 8px;
+}
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 500px;
+    height: auto;
+}
+/* Events Section */
+.events-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0;
-    margin: 0;
-    flex: 1; /* Allow the section to grow and push the footer down */
+    gap: 20px;
 }
-
-.image-section img {
+.event-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.event-card h3 {
+    color: #5e0c4a;
+    margin-bottom: 10px;
+}
+/* Ministries Section */
+.ministries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.ministry-item img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+.ministry-item {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Sermons Section */
+.sermons-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sermon-item {
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+}
+.sermon-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+.sermon-thumbnail img {
     width: 100%;
-    height: auto;
-    max-width: 1900px;
-    max-height: 850px;
-    margin: 0 auto; /* Center the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 8px;
 }
-
-/* Hero Section Styling */
-.hero-section {
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: #5e0c4a;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(to bottom right, #f4f4f9, #ececec);
-    color: #333;
-    border-bottom: 2px solid #e6a644;
-    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
 }
-
-.hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: #5f0e4c;
-    font-weight: 700;
+.modal-content video {
+    width: 100%;
+    max-width: 559px;
 }
-
-.hero-section p {
-    font-size: 1.4rem;
-    margin-bottom: 2.5rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
-    font-weight: 400;
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #f1bb65;
+    color: #5e0c4a;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.hero-section a {
-    display: inline-block;
-    margin: 0.8rem;
-    padding: 1rem 2rem;
-    background-color: #e6a644;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.hero-section a:hover {
-    background-color: #d39436;
-    transform: translateY(-5px); /* Adds a subtle lift effect */
-}
-
-/* Scripture Section Styling */
-.scripture-section {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: linear-gradient(to bottom right, #f9f9f9, #ececec);
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-}
-
-.scripture-section p {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-    font-weight: 600;
-    color: #5f0e4c;
-}
-
-.scripture-section span {
-    font-style: italic;
-    color: #222;
-    font-size: 1.2rem;
-    display: block;
-    margin-top: 1rem;
-    font-weight: 400;
-    font-family: 'Merriweather', serif;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #e6a644;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 1rem;
-}
-
-footer .logo img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-}
-
-footer a {
-    color: purple;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Mobile Styling */
-@media (max-width: 767px) {
-    footer {
-        padding: 0.5rem;
-    }
-
-    footer .logo img {
-        width: 60px;
-    }
-
-    footer p {
-        font-size: 0.8rem;
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
     }
 }
