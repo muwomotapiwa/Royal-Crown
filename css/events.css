@@ -1,0 +1,101 @@
+/* Hero Banner */
+.hero-banner {
+    background: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/0d82a4829e40c026a2e64c48c7077904_screen.jpg?ts=1734914336') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f1bb65; /* Gold */
+}
+.hero-content p {
+    font-size: 20px;
+    color: #fff9e3; /* Cream */
+}
+
+/* Background Color */
+body {
+    background-color: #fff9e3; /* Cream background */
+    color: #5e0c4a; /* Purple text color */
+}
+
+/* Event List */
+.events-list {
+    padding: 40px 20px;
+}
+.events-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5e0c4a;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.event-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.event-card h3 {
+    color: #5e0c4a;
+    margin-bottom: 10px;
+}
+.event-card p {
+    margin: 5px 0;
+}
+.event-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f1bb65; /* Gold */
+    color: #5e0c4a; /* Purple */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.event-card .btn:hover {
+    background-color: #e0a84e; /* Darker Gold */
+}
+
+/* Event Calendar */
+.event-calendar {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light grey for contrast */
+}
+.event-calendar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5e0c4a;
+}
+.calendar-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border-left: 5px solid #5e0c4a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.calendar-item h4 {
+    margin: 0;
+    color: #5e0c4a;
+}
