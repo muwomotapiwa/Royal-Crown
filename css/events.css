@@ -22,12 +22,12 @@
 }
 @media (min-width: 769px) {
     .hero-banner {
-        height: 650px; /* Updated height for larger screens */
+        height: 500px; /* Updated height for larger screens */
     }
 }
 @media (max-width: 768px) {
     .hero-banner {
-        height: 350px; /* Updated height for smaller screens */
+        height: 250px; /* Updated height for smaller screens */
     }
 }
 .hero-content h1 {
