@@ -102,8 +102,7 @@ section h2 {
     background-color: #e0a84e; /* Darker Gold */
 }
 
-/* Video Player */
-/* Video Player */
+/* Video Player
 .video-player-container {
     text-align: center;
     margin: 40px 0;
@@ -111,9 +110,9 @@ section h2 {
 #videoPlayer {
     width: 600px;
     height: 600px;
-    border: 2px solid #5e0c4a; /* Purple border */
+    border: 2px solid #5e0c4a;
     border-radius: 8px;
-    background-color: black; /* Ensures player has a visible background */
+    background-color: black;
 }
 .video-controls {
     margin-top: 10px;
@@ -129,8 +128,8 @@ section h2 {
     margin: 0 5px;
 }
 .video-controls button:hover {
-    background-color: #e0a84e; /* Darker Gold */
-}
+    background-color: #e0a84e; 
+}*/
 
 /* Join Us Live Section */
 .join-live {

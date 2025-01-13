@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     // Example data for Featured Videos
-    const featuredVideos = [
+   /* const featuredVideos = [
         "assets/sermon1.mp4",
         "assets/sermon2.mp4",
         "assets/sermon3.mp4",
-    ];
+    ];*/
 
     // Select containers for dynamic content
     const recentSermonsGrid = document.querySelector(".sermons-grid");
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     });
 
-    // Featured Videos Player Functionality
+    /*// Featured Videos Player Functionality
     let currentVideoIndex = 0; // Track the current video index
     const videoPlayer = document.getElementById("videoPlayer");
     const playPauseButton = document.getElementById("playPauseVideo");
@@ -103,5 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Initialize the first video
-    updateVideo(currentVideoIndex);
+    updateVideo(currentVideoIndex);*/
 });
