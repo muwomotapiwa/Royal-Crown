@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sermons - Royal Crown Ministries</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sermons.css">
 </head>
 <body>
@@ -36,7 +36,18 @@
     <section class="recent-sermons">
         <h2>Recent Sermons</h2>
         <div class="sermons-grid">
-            <!-- Sermons will be dynamically added here -->
+            <div class="sermon-card">
+                <img src="assets/Vission_Reset.png" alt="Vision Reset">
+                <h3>Vision Reset</h3>
+                <p>By Pastor Jacob on 01/15/2024</p>
+                <a href="#" class="btn">Watch Now</a>
+            </div>
+            <div class="sermon-card">
+                <img src="assets/hope_in_hard_times.jpg" alt="Hope in Hard Times">
+                <h3>Hope in Hard Times</h3>
+                <p>By Pastor Jane Smith on 01/22/2024</p>
+                <a href="#" class="btn">Watch Now</a>
+            </div>
         </div>
     </section>
 
@@ -44,36 +55,20 @@
     <section class="sermon-series">
         <h2>Sermon Series</h2>
         <div class="series-grid">
-            <!-- Series will be dynamically added here -->
-        </div>
-    </section>
-
-    <!-- Featured Sermons Section -->
-    <!--<section class="featured-sermons">
-        <h2>Featured Sermons</h2>
-        <div class="video-player-container">
-             Video Player
-            <video id="videoPlayer" width="600" height="600" controls>
-                <source src="assets/sermon1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
-            <!-- Controls 
-            <div class="video-controls">
-                <button id="prevVideo">Previous</button>
-                <button id="playPauseVideo">Pause</button>
-                <button id="nextVideo">Next</button>
+            <div class="series-card">
+                <img src="assets/beatitudes.jpg" alt="The Beatitudes">
+                <h3>The Beatitudes</h3>
+                <p>Discover the blessings of Christ's teachings in Matthew 5.</p>
+                <a href="#" class="btn">View Series</a>
+            </div>
+            <div class="series-card">
+                <img src="assets/living_by_grace.jpg" alt="Living by Grace">
+                <h3>Living by Grace</h3>
+                <p>Explore the depths of God's grace through this series.</p>
+                <a href="#" class="btn">View Series</a>
             </div>
         </div>
-    </section> -->
-    
-
-    <!-- Explore More Section -->
-    <!--<section class="explore-more">
-        <h2>Explore More Sermons</h2>
-        <div class="explore-grid"> -->
-            <!-- Older sermons will be dynamically added here -->
-        <!--</div>
-    </section> -->
+    </section>
 
     <!-- Join Us Live Section -->
     <section class="join-live">
@@ -94,6 +89,5 @@
             nav.classList.toggle("show");
         }
     </script>
-    <script src="js/sermons.js"></script>
 </body>
 </html>
