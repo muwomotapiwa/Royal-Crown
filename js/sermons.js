@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Example data for Recent Sermons
     const recentSermons = [
         {
-            title: "Walking by Faith",
-            preacher: "Pastor John Doe",
+            title: "Vision Reset",
+            preacher: "Pastor Jacob",
             date: "2024-01-15",
-            thumbnail: "assets/walking_by_faith.jpg",
+            thumbnail: "assets/Vision_Reset.mp4",
         },
         {
             title: "Hope in Hard Times",
