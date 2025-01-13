@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Vision Reset",
             preacher: "Pastor Jacob",
             date: "2024-01-15",
-            thumbnail: "assets/Vission_Reset.png",
+            thumbnail: "assets/.png",
         },
         {
             title: "Hope in Hard Times",
