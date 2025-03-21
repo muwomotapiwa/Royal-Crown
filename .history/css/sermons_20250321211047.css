@@ -46,7 +46,7 @@ body {
 
 @media (min-width: 769px) {
     .hero-banner {
-        height: 690px; /* Match desktop height from index */
+        height: 0px; /* Match desktop height from index */
     }
 }
 @media (max-width: 768px) {

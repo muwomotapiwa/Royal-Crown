@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 690px; /* Fixed Height */
+    height: 790px; /* Fixed Height */
 }
 
 .hero-banner::before {
@@ -46,7 +46,7 @@ body {
 
 @media (min-width: 769px) {
     .hero-banner {
-        height: 690px; /* Match desktop height from index */
+        height: 700px; /* Match desktop height from index */
     }
 }
 @media (max-width: 768px) {
