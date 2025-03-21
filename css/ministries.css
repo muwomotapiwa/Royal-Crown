@@ -1,11 +1,15 @@
-/* Hero Banner */
+/* Hero Banner - Full Screen */
 .hero-banner {
-    background: url('assets/ministries_banner.jpg') center/cover no-repeat;
+    background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 100px 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full Screen */
 }
+
 .hero-banner::before {
     content: "";
     position: absolute;
@@ -16,19 +20,23 @@
     background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
     z-index: 1;
 }
+
 .hero-content {
     position: relative;
     z-index: 2;
 }
+
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
     color: #f1bb65; /* Gold */
 }
+
 .hero-content p {
     font-size: 20px;
     color: #fff9e3; /* Cream */
 }
+
 
 /* Fellowships Overview */
 .ministries-overview {
@@ -37,9 +45,10 @@
 }
 .ministries-overview h2 {
     text-align: center;
-    margin-bottom: 20px;+
+    margin-bottom: 20px;
     color: #5e0c4a; /* Purple */
 }
+
 .ministries-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
