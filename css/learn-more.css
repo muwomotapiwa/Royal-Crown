@@ -62,9 +62,17 @@
     color: #5e0c4a;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .content-section {
-        width: 95%;
+@media (min-width: 769px) {
+    .hero-banner {
+        height: 690px; /* Match desktop height from index */
     }
+}
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 350px; /* Match mobile height from index */
+    }
+}
+/* Section Styles */
+section {
+    padding: 40px 20px;
 }
