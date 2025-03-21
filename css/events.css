@@ -3,6 +3,7 @@
     background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
+    padding: 100px 20px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,12 +26,12 @@
 }
 @media (min-width: 769px) {
     .hero-banner {
-        height: 700px; /* Updated height for larger screens */
+        height: 700px; /* Match desktop height from index */
     }
 }
 @media (max-width: 768px) {
     .hero-banner {
-        height: 250px; /* Updated height for smaller screens */
+        height: 350px; /* Match mobile height from index */
     }
 }
 .hero-content h1 {
@@ -42,6 +43,7 @@
     font-size: 20px;
     color: #fff9e3; /* Cream */
 }
+
 
 /* Event List */
 .events-list {
