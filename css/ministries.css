@@ -47,7 +47,10 @@
         height: 350px; /* Match mobile height from index */
     }
 }
-
+/* Section Styles */
+section {
+    padding: 40px 20px;
+}
 /* Fellowships Overview */
 .ministries-overview {
     padding: 40px 20px;

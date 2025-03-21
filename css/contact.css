@@ -45,7 +45,10 @@
         height: 350px;
     }
 }
-
+/* Section Styles */
+section {
+    padding: 40px 20px;
+}
 /* Contact Info Section */
 .contact-info {
     padding: 40px 20px;

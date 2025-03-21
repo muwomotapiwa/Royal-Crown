@@ -33,6 +33,10 @@
         height: 350px; /* Updated height for smaller screens */
     }
 }
+/* Section Styles */
+section {
+    padding: 40px 20px;
+}
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
