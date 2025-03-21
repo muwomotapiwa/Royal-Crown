@@ -37,6 +37,16 @@
     color: #fff9e3; /* Cream */
 }
 
+@media (min-width: 769px) {
+    .hero-banner {
+        height: 650px; /* Match desktop height from index */
+    }
+}
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 350px; /* Match mobile height from index */
+    }
+}
 
 /* Fellowships Overview */
 .ministries-overview {
