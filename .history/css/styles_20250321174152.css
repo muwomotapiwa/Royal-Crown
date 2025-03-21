@@ -43,6 +43,7 @@
         .banner {
             position: relative;
             background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
+
             height: 400px;
             display: flex;
             justify-content: center;

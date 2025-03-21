@@ -42,7 +42,7 @@
         }
         .banner {
             position: relative;
-            background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
+            background: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/0d82a4829e40c026a2e64c48c7077904_screen.jpg?ts=1734914336') center/cover no-repeat;
             height: 400px;
             display: flex;
             justify-content: center;
