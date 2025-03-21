@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero-banner {
-    background: url('assets/contact_banner.jpg') center/cover no-repeat;
+    background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     position: relative;
