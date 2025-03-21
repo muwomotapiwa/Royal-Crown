@@ -3,8 +3,11 @@
     background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
-    padding: 100px 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; /* Fixed Height */
 }
 .hero-banner::before {
     content: "";
