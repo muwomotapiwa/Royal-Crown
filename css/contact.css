@@ -4,7 +4,10 @@
     color: white;
     text-align: center;
     position: relative;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; /* Fixed Height */
 .hero-banner::before {
     content: "";
     position: absolute;
@@ -125,4 +128,5 @@ button.btn {
 }
 button.btn:hover {
     background-color: #e0a84e; /* Darker Gold */
+}
 }
