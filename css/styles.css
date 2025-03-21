@@ -43,7 +43,7 @@
         .banner {
             position: relative;
             background: url('../assets/BackgroundAll.jpeg') center/cover no-repeat;
-            height: 100vh; /* Full-screen height */
+            height: 700px; /* Fixed Height */
             display: flex;
             justify-content: center;
             align-items: center;

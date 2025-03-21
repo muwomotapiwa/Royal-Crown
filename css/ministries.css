@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full Screen */
+    height: 700px; /* Fixed Height */
 }
 
 .hero-banner::before {
