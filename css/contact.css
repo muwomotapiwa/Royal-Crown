@@ -32,12 +32,12 @@
 }
 @media (min-width: 769px) {
     .hero-banner {
-        height: 500px;
+        height: 700px;
     }
 }
 @media (max-width: 768px) {
     .hero-banner {
-        height: 250px;
+        height: 350px;
     }
 }
 
