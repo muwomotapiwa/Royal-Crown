@@ -68,7 +68,12 @@
     <!-- Contact Form Section -->
     <section class="contact-form" id="contact-form">
         <h2>Send Us a Message</h2>
-        <form id="contactForm">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="90b589be-5845-4e7f-a508-23d2abce9674">
+            <input type="hidden" name="captcha" value="false">
+            <input type="hidden" name="redirect" value="https://royalcrownministriesinternational.co.za/thank-you.html">
+    
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -83,7 +88,7 @@
             </div>
             <button type="submit" class="btn">Send Message</button>
         </form>
-    </section>
+    </section>    
 
     <footer>
         <p>&copy; 2024 Royal Crown Ministries. All rights reserved.</p>
