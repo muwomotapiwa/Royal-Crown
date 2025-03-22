@@ -1,0 +1,47 @@
+/* Thank You Page Specific Styles */
+.sectionBody {
+    background-color: #fff9e3; /* Cream */
+    color: #5e0c4a; /* Purple */
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.section {
+    background: white;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    color: #5e0c4a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #5e0c4a;
+    line-height: 1.6;
+}
+
+.section .btn {
+    background-color: #f1bb65; /* Gold */
+    color: #5e0c4a; /* Purple */
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section .btn:hover {
+    background-color: #e0a84e; /* Darker gold */
+}
