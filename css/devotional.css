@@ -1,0 +1,48 @@
+/* Devotional Page Styles */
+.devotional-section {
+  padding: 40px 20px;
+  background-color: #fff9e3; /* Cream */
+  color: #5e0c4a; /* Purple */
+  font-family: Arial, sans-serif;
+}
+
+.devotional-section h2 {
+  text-align: center;
+  color: #5e0c4a;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.devotional-entry {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.devotional-entry h3 {
+  color: #5e0c4a;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.devotional-entry p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.devotional-entry blockquote {
+  font-style: italic;
+  background: #f9f3e3;
+  border-left: 5px solid #f1bb65;
+  margin: 20px 0;
+  padding: 15px 20px;
+  color: #5e0c4a;
+}
+
+@media (max-width: 768px) {
+  .devotional-entry {
+    padding: 20px;
+  }
+}
