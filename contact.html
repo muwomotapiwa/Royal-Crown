@@ -66,35 +66,33 @@
     </section>
 
     <!-- Contact Form Section -->
-<section class="contact-form" id="contact-form">
-    <h2>Send Us a Message</h2>
-    <form id="contactForm" action="https://formsubmit.co/rministriesinternational1@gmail.com" method="POST">
-        <!-- FormSubmit Configuration -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
-        <input type="hidden" name="_next" value="https://royalcrownministriesinternational.co.za/thank-you.html">
-
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</section>
-
-
+    <section class="contact-form" id="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Configuration -->
+            <input type="hidden" name="access_key" value="90b589be-5845-4e7f-a508-23d2abce9674">
+            <input type="hidden" name="subject" value="New Contact from Royal Crown Ministries">
+            <input type="hidden" name="redirect" value="https://royalcrownministriesinternational.co.za/thank-you.html">
+            <input type="hidden" name="from_name" value="Royal Crown Ministries Website">
+    
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" placeholder="Your Message" class="contact-inputs" required></textarea>
+            </div>
+    
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>    
     <footer>
         <p>&copy; 2024 Royal Crown Ministries. All rights reserved.</p>
         <p>Address: Eagles Nest Lodge,112 Leslie Avenue , Fourways, Johannesburg | Email: info@royalcrownministries.com | Contact: +27 (81) 760-0928</p>
