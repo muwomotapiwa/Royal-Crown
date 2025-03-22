@@ -32,3 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
       devotionalList.appendChild(entry);
     });
 });
+// Mobile navigation toggle function
+function toggleMenu() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("show");
+}
+
