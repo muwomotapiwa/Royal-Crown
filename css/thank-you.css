@@ -1,5 +1,23 @@
 /* Thank You Page Specific Styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-shrink: 0;
+}
+
 .sectionBody {
+    flex-grow: 1;
     background-color: #fff9e3; /* Cream */
     color: #5e0c4a; /* Purple */
     font-family: Arial, sans-serif;
@@ -44,4 +62,8 @@
 
 .section .btn:hover {
     background-color: #e0a84e; /* Darker gold */
+}
+
+footer {
+    flex-shrink: 0;
 }
