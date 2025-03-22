@@ -1,5 +1,27 @@
-/* Devotional Page Styles */
+/* Devotional Page Layout Fix */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* Devotional Section */
 .devotional-section {
+  flex-grow: 1;
   padding: 40px 20px;
   background-color: #fff9e3; /* Cream */
   color: #5e0c4a; /* Purple */
