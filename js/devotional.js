@@ -31,10 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       devotionalList.appendChild(entry);
     });
-});
-// Mobile navigation toggle function
-function toggleMenu() {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("show");
-}
 
+  // ✅ Hamburger Menu Functionality (mobile nav)
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector("nav");
+
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  }
+});
