@@ -167,6 +167,19 @@
             max-width: 500px;
             height: auto;
         }
+        /* Devotional Button - Purple background with Gold text */
+        .btn-devotional {
+            background-color: #5e0c4a; /* Purple */
+            color: #f1bb65; /* Gold */
+            border: 2px solid #f1bb65;
+        }
+
+        .btn-devotional:hover {
+            background-color: #4a093d; /* Darker purple */
+            color: #fff9e3; /* Cream on hover */
+            border-color: #fff9e3;
+        }
+
         /* Events Section */
         .events-grid {
             display: grid;
