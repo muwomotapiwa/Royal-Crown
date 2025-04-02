@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       prayer: `Dear Heavenly Father, thank You for the hope and future that You promise us. Help me to trust in Your plans even when I cannot see the way ahead. Teach me to surrender my anxieties and embrace the peace that comes from knowing You are in control. May I walk with faith and courage, assured that You are leading me towards Your beautiful purpose. In Jesus' name, I pray, Amen.`,
       contemplation: `Spend a few minutes in silence, allowing God's words to sink into your heart. What promises has He made to you? How can you embrace them today? Look for ways to carry hope and encouragement to others in your life, reminding them of God's faithfulness as well.`,
       action: `Consider writing down one area of your life where you need to embrace God's promise today. Share it with a trusted friend or family member and ask for their prayers or support as you navigate this journey together.`,
+      audio: "assets/audio/EmbracingGod'sPromises.mp3",
+      isCurrent: false,
     }
   ];
 
