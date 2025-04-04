@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
     {
+      id: 3,
+      week: "Monday 7 April – Saturday 12 April 2025",
+      title: "Weekly Devotional",
+      scripture: `Philippians 4:13 - \"I can do all things through Christ who strengthens me.\"`,
+      reflection: `Life can often feel like a rollercoaster, with unexpected twists and turns that leave us questioning our abilities. We face challenges that seem insurmountable, and doubts can creep in, whispering lies that we are not enough. It’s during these times when everything appears to be working against us that we must dig deep and remind ourselves of the strength and potential that lies within us.
+
+The world may cast shadows of negativity and self-doubt upon us, suggesting we are unworthy or incapable. Yet, as believers, we are called to rise above these circumstances. The enemy wants us to feel defeated, but God’s Word reminds us that we are equipped for greater things. Philippians 4:13 tells us that we can do all things through Christ who strengthens us. His strength does not depend on our circumstances; it flows from our faith in Him.`,
+      prayer: `Heavenly Father, today I come before You with my doubts and fears. I acknowledge that when I see the obstacles around me, it’s easy to feel inadequate. Help me to remember that my worth is not defined by my situation, but by the love and grace You have poured into my life. Fill me with Your strength and courage. Remind me that in moments of uncertainty, I can lean on You and trust in Your plan. Lord, I choose to believe in the talents and gifts You have given me. Teach me to recognize my potential, even when the world tells me otherwise. In Jesus' name, Amen.`,
+      contemplation: `1. What are some areas of your life where you have struggled to believe in yourself?\n2. Can you recall a time when you overcame self-doubt with faith? What did that experience teach you?\n3. How can you remind yourself of your inner strength and worth when negativity surrounds you?`,
+      action: `Take a moment to write down a list of affirmations rooted in God’s truth. For example:\n- I am fearfully and wonderfully made (Psalm 139:14).\n- I am equipped with everything I need to fulfill my purpose (2 Timothy 3:17).\n- I have not been given a spirit of fear, but of power, love, and a sound mind (2 Timothy 1:7).\n\nPost these affirmations somewhere visible, perhaps on your mirror or refrigerator, and read them daily. Let them serve as a reminder that no matter what the world says, you are uniquely created and empowered by God to shine in your own life.`,
+      closing: `Believing in yourself doesn't mean you won't face challenges or that you will never feel afraid. It means that you acknowledge the fear, but choose to stand firm in your faith, knowing that God’s presence is with you, giving you the strength to move forward. Trust in His promises, and you will find the courage to act, even when everything seems to be working against you.`,
+      audio: "assets/audio/7AprilTo12April2025.mp3",
+      isCurrent: true
+    },
+    {
       id: 2,
       week: "Monday 31 March – Saturday 5 April 2025",
       title: "Creating a Path",
@@ -9,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       prayer: `Gracious Father, thank You for being the God who makes a way in seemingly impossible situations. Help me to trust in Your plans and stay receptive to the new journeys You are crafting in my life. When I am faced with challenges, remind me that You are by my side and capable of transforming my dry places into rivers of hope. Grant me the faith to look beyond my current struggles and embrace the promise of a fresh start. In Jesus' name, I pray. Amen.`,
       action: `This week, take time to meditate on an area in your life where you seek divine guidance. Jot down any fears or uncertainties regarding that situation, and bring them before God in prayer, asking Him to unveil the new path He is preparing for you.`,
       audio: "assets/audio/31MarchTo5April2025.mp3",
-      isCurrent: true,
+      isCurrent: false,
     },
     {
       id: 1,
