@@ -214,21 +214,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        #whatsapp-floating-button {
-            position: fixed;
-            bottom: 100px; /* push it UP from the bottom so it's above the footer */
-            right: 20px;
-            z-index: 999;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-        }
-        
-        #whatsapp-floating-button img {
-            width: 60px;
-            height: 60px;
-        }
-               
         /* Sermons Section */
         .sermons-gallery {
             display: flex;

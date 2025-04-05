@@ -134,3 +134,31 @@ button.btn {
 button.btn:hover {
     background-color: #e0a84e; /* Darker Gold */
 }
+
+#whatsapp-container {
+    position: fixed;
+    bottom: 100px; /* adjust so it sits above footer */
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+  }
+  
+  #whatsapp-container:hover {
+    background-color: #1ebe5d;
+  }
+  
+  #whatsapp-container img {
+    width: 30px;
+    height: 30px;
+  }
+  
