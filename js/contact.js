@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         const message = `Hi, my name is ${firstName} ${lastName} and I would like to get in touch with Royal Crown Ministries.`;
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "27605023274"; // your WhatsApp number
+        const phoneNumber = "27605023284"; // your WhatsApp number
   
         window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
       });
