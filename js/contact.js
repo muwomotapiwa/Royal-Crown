@@ -31,22 +31,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const whatsappContainer = document.getElementById("whatsapp-container");
+    const chatLauncher = document.getElementById("chat-launcher");
+    const chatOptions = document.getElementById("chat-options");
   
-    if (whatsappContainer) {
-      whatsappContainer.addEventListener("click", function () {
-        const firstName = prompt("Please enter your FIRST name:");
-        if (!firstName) return;
-  
-        const lastName = prompt("Please enter your LAST name:");
-        if (!lastName) return;
-  
-        const message = `Hi, my name is ${firstName} ${lastName} and I would like to get in touch with Royal Crown Ministries.`;
-        const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "27605023284"; // your WhatsApp number
-  
-        window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    if (chatLauncher) {
+      chatLauncher.addEventListener("click", function () {
+        chatOptions.classList.toggle("hidden");
       });
     }
   });
+  
+  function openWhatsApp() {
+    const firstName = prompt("Please enter your FIRST name:");
+    if (!firstName) return;
+  
+    const lastName = prompt("Please enter your LAST name:");
+    if (!lastName) return;
+  
+    const message = `Hi, my name is ${firstName} ${lastName} and I would like to get in touch with Royal Crown Ministries.`;
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "27817600928"; // Replace with your WhatsApp number
+  
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+  }
+  
+  function openLiveChat() {
+    if (typeof Tawk_API !== "undefined") {
+      Tawk_API.maximize(); // Show the Tawk.to live chat widget
+    } else {
+      alert("Live chat is not available right now.");
+    }
+  }
+  
   
