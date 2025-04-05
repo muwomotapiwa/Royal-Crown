@@ -102,36 +102,36 @@
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section> 
-            <div id="whatsapp-container" onclick="openWhatsAppChat()">
-                <span>Chat with us on WhatsApp</span>
-                <img src="assets/whatsapp-icon.png" alt="WhatsApp" />
-            </div>
+            
     <footer>
         <p>&copy; 2024 Royal Crown Ministries. All rights reserved.</p>
         <p>Address: Eagles Nest Lodge,112 Leslie Avenue , Fourways, Johannesburg | Email: rministriesinternational1@gmail.com | Contact: +27 (81) 760-0928</p>
     </footer>
+    <  <!-- Your JS file -->
     <script src="js/contact.js"></script>  
+  
     <!-- ✅ Tawk.to Live Chat Script -->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-          s1.async=true;
-          s1.src='https://embed.tawk.to/67f0c55c0d18b7191024132d/1io285sie';
-          s1.charset='UTF-8';
-          s1.setAttribute('crossorigin','*');
-          s0.parentNode.insertBefore(s1,s0);
-        })();
-        </script>    
-        
-        <!-- Unified Chat Button -->
-        <div id="chat-launcher">
-            <img src="assets/chat-icon.png" alt="Chat" />
-            <div id="chat-options" class="hidden">
-            <button onclick="openWhatsApp()">WhatsApp</button>
-            <button onclick="openLiveChat()">Live Chat</button>
-            </div>
-        </div>
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67f0c55c0d18b7191024132d/1io285sie';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
   
-</body>
-</html>
+    <!-- ✅ Unified Chat Launcher (inside body, NOT after it) -->
+    <div id="chat-launcher">
+      <img src="assets/chat-icon.png" alt="Chat" />
+      <div id="chat-options" class="hidden">
+        <button onclick="openWhatsApp()">WhatsApp</button>
+        <button onclick="openLiveChat()">Live Chat</button>
+      </div>
+    </div>
+  
+  </body>
+  </html>
+  
