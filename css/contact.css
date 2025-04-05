@@ -137,7 +137,7 @@ button.btn:hover {
 
 #whatsapp-container {
     position: fixed;
-    bottom: 100px; /* adjust so it sits above footer */
+    bottom: 50px; /* adjust so it sits above footer */
     right: 20px;
     background-color: #25D366;
     color: white;
