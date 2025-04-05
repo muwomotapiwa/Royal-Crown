@@ -176,3 +176,18 @@ section {
 .join-ministry .btn:hover {
     background-color: #e0a84e;
 }
+.site-credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .site-credit a {
+    color: #FFA725;
+    text-decoration: none;
+  }
+  
+  .site-credit a:hover {
+    text-decoration: underline;
+  }
+  

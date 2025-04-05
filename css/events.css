@@ -110,3 +110,33 @@ section {
     margin: 0;
     color: #5e0c4a;
 }
+.site-credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .site-credit a {
+    color: #FFA725;
+    text-decoration: none;
+  }
+  
+  .site-credit a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .site-credit a {
+    color: #FFA725;
+    text-decoration: none;
+  }
+  
+  .site-credit a:hover {
+    text-decoration: underline;
+  }
+  
