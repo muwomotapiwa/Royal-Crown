@@ -62,5 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Live chat is not available right now.");
     }
   }
+
+  
+
   
   

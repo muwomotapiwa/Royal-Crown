@@ -122,6 +122,12 @@
         s0.parentNode.insertBefore(s1, s0);
       })();
     </script>
+    <script>
+        Tawk_API = Tawk_API || {};
+        Tawk_API.onLoad = function () {
+          Tawk_API.hideWidget(); // This hides the default bubble
+        };
+      </script>      
   
     <!-- ✅ Unified Chat Launcher (inside body, NOT after it) -->
     <div id="chat-launcher">
@@ -131,6 +137,38 @@
         <button onclick="openLiveChat()">Live Chat</button>
       </div>
     </div>
+
+    <script>
+        // Attempt to hide common 3rd-party WhatsApp widgets
+        document.addEventListener("DOMContentLoaded", function () {
+          // Check by common class or id
+          const interval = setInterval(() => {
+            // Common selectors used by 3rd-party WhatsApp widgets
+            const selectors = [
+              '.whatsapp-widget',
+              '.getbutton-widget',
+              '#whatsapp-chat',
+              '#whatsapp-widget',
+              '[src*="whatshelp.io"]',
+              '[src*="getbutton.io"]',
+              'iframe[src*="whatsapp"]'
+            ];
+      
+            selectors.forEach(sel => {
+              const el = document.querySelector(sel);
+              if (el) {
+                el.style.display = "none";
+                console.log(`✅ Removed extra WhatsApp widget: ${sel}`);
+              }
+            });
+      
+            // Optional: clear after a few seconds
+          }, 1000);
+      
+          setTimeout(() => clearInterval(interval), 5000); // Stop after 5 seconds
+        });
+      </script>
+      
   
   </body>
   </html>
