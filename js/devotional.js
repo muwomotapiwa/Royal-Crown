@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
     {
+      id: 4,
+      week: "Monday 14 April – Saturday 19 April 2025",
+      title: "Refuse to Isolate Yourself from Others",
+      scripture: `Ecclesiastes 4:9-10 - “Two are better than one, because they have a good reward for their toil. For if they fall, one will lift up his fellow, but woe to him who is alone when he falls and has not another to lift him up.”`,
+      reflection: `In a world that often values individualism, it’s easy to retreat into isolation, especially during times of trouble, sadness, or uncertainty. We may convince ourselves that withdrawing from others is a form of protection—saving others from our burdens and ourselves from vulnerability. However, God designed us for community, and His Word reminds us that we are stronger together.\n\nIsolation can lead us down a path of despair. When we distance ourselves from friends, family, and our faith community, we miss out on the support, encouragement, and love that others can provide. Just as a single candle’s light is only but a flicker, our strength shines brightest when combined with the light of others.\n\nDuring the struggles of life, remember that you are not alone. God has placed people around you, not just for your sake but for their own too. Your story, your experiences, and your presence can encourage others as much as theirs can uplift you.`,
+      prayer: `Gracious Father, thank You for the gift of community. Forgive me for the times I have isolated myself, believing that I needed to carry my burdens alone. Help me to reach out to others, to share my struggles, and to welcome their support. Remind me that vulnerability is not a weakness but a pathway to deeper connection. Guide me in being a source of encouragement and light to those around me. May I refuse to isolate myself and instead embrace the gift of community that You have provided.`,
+      contemplation: `Think about someone in your life who you haven’t connected with recently, whether due to busy schedules or personal struggles. Consider reaching out to them this week. Share your thoughts and invite them into your journey, allowing your relationship to be a mutual source of strength.`,
+      action: `Reach out to a friend or loved one you haven’t spoken to in a while. Ask how they’re doing and share something from your own life. Create a moment of connection that reminds both of you of the strength found in togetherness.`,
+      closing: `Refusing to isolate ourselves is a step of faith, reminding us that we are all part of the body of Christ. Each one of us has a role, a purpose, and unique strengths to contribute. Let’s commit to staying connected, lifting each other up, and embracing the beauty of community together. Remember, together we can face anything that comes our way, for we are indeed stronger together, anchored in the love of Christ.`,
+      audio: "assets/audio/14AprilTo19April2025.mp3",
+      isCurrent: true
+    }, 
+    {
       id: 3,
       week: "Monday 7 April – Saturday 12 April 2025",
       title: "Weekly Devotional",
@@ -13,7 +26,7 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
       action: `Take a moment to write down a list of affirmations rooted in God’s truth. For example:\n- I am fearfully and wonderfully made (Psalm 139:14).\n- I am equipped with everything I need to fulfill my purpose (2 Timothy 3:17).\n- I have not been given a spirit of fear, but of power, love, and a sound mind (2 Timothy 1:7).\n\nPost these affirmations somewhere visible, perhaps on your mirror or refrigerator, and read them daily. Let them serve as a reminder that no matter what the world says, you are uniquely created and empowered by God to shine in your own life.`,
       closing: `Believing in yourself doesn't mean you won't face challenges or that you will never feel afraid. It means that you acknowledge the fear, but choose to stand firm in your faith, knowing that God’s presence is with you, giving you the strength to move forward. Trust in His promises, and you will find the courage to act, even when everything seems to be working against you.`,
       audio: "assets/audio/7AprilTo12April2025.mp3",
-      isCurrent: true
+      isCurrent: false,
     },
     {
       id: 2,
