@@ -1,0 +1,58 @@
+.membership-main {
+  padding: 40px 20px;
+  background-color: #fff9e3;
+  color: #5e0c4a;
+  font-family: Arial, sans-serif;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 32px;
+  color: #5e0c4a;
+  margin-bottom: 10px;
+}
+
+.intro .scripture {
+  font-style: italic;
+  margin: 10px 0;
+  color: #a04075;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#membership-form input,
+#membership-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#membership-form button {
+  background-color: #5e0c4a;
+  color: #f1bb65;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#membership-form button:hover {
+  background-color: #4a093d;
+  color: #fff9e3;
+}
