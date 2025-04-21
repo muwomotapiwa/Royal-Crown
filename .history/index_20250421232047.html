@@ -84,7 +84,65 @@
             </div>
         </section>
 
-        
+        <section class="section ask-pastor" id="ask">
+  <h2>📝 Ask the Pastor</h2>
+  <p class="intro">Have a question about faith, life, or Scripture?<br>Submit below and Pastor will answer some each week!</p>
+
+  <form id="askForm" class="ask-form" onsubmit="submitToGoogleSheet(event)">
+    <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+    <textarea id="questionText" name="question" rows="4" placeholder="Your Question..." required></textarea>
+    <button type="submit">Submit My Question</button>
+  </form>
+
+  <div class="faq-preview">
+    <h3>✨ This Week's Featured Question</h3>
+    <blockquote>
+      <p><strong>Q:</strong> How do I grow in faith during hard times?</p>
+      <p><strong>A:</strong> Stay in the Word, stay in worship, and stay in community. Faith grows when it's tested — just like muscles grow when challenged. 💪 – Pastor</p>
+    </blockquote>
+    <a href="faq.html" class="btn btn-devotional">Read More Answers</a>
+  </div>
+</section>
+
+<script>
+  function submitToGoogleSheet(event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const question = document.getElementById("questionText").value.trim();
+
+    // Prevent submission if fields are empty (extra validation)
+    if (!fullName || !question) {
+      alert("Please fill in both your name and your question.");
+      return;
+    }
+
+    const data = { fullName, question };
+
+    fetch("https://script.google.com/macros/s/AKfycbwVxY67uWwvS4SPEssv7u4jNJedq7OqhDmX_8T1f7VoxsG6RV23k0OJr7UKCOUco2LK/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(res => {
+      console.log("Server response:", res);
+      if (res.result === "Success") {
+        alert("✅ Thank you for your question! Pastor will review it.");
+        document.getElementById("askForm").reset();
+      } else {
+        alert("⚠️ Something went wrong: " + res.message);
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("🚫 There was a problem submitting your question. Please try again.");
+    });
+  }
+</script>
+
 
     <!-- Events Section -->
     <section class="section" id="events">
