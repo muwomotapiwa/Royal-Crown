@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
     {
+      id: 5,
+      week: "Monday 21 April – Saturday 26 April 2025",
+      title: "The Finished Work of the Cross",
+      scripture: `“It is finished.” - John 19:30 (NIV)`,
+      reflection: `As we emerge from the profound season of Easter, we are reminded of the most pivotal moment in all of history — the crucifixion and resurrection of Jesus Christ. The words “It is finished” (John 19:30) were not a cry of defeat, but a declaration of total victory. In that moment, Jesus completed the work required for our salvation. Every sin, every shame, every chain — broken. Paid in full.\n\nThe cross is not just a symbol; it is a statement of love, power, and freedom. It represents the place where judgment met mercy, where death was swallowed up in victory, and where humanity’s greatest need was fully satisfied. Because of the finished work of the cross, we no longer strive for approval — we live from a place of being accepted, redeemed, and made new in Christ.\n\n2 Corinthians 5:21 (NIV) reminds us, “God made him who had no sin to be sin for us, so that in him we might become the righteousness of God.” This is the power of the Gospel: Christ took our place so that we could take His — sons and daughters of the Most High, fully forgiven, deeply loved, and eternally secure.`,
+      prayer: `Lord Jesus,\nThank You for the cross. Thank You for enduring the pain, the shame, and the weight of sin so that I might be free. Help me to live each day in the light of Your finished work — not striving, but abiding; not fearing, but resting in Your love. Let the truth of Your sacrifice transform my heart, renew my mind, and redirect my steps. I surrender every guilt, every fear, every doubt to You. Let Your resurrection power live in me and draw others through me. I declare that It is finished, and because of You, I am made new. In Your mighty name I pray, Amen.`,
+      contemplation: `Do you believe that Jesus’ sacrifice on the cross was truly enough for you? Are there areas of your life where you still feel the need to earn God's love or approval?\n\nWhat burdens are you still carrying that Christ has already nailed to the cross? What would it look like to fully trust in His finished work today?\n\nHow can your life reflect the freedom and joy of someone who has been redeemed?`,
+      action: `Daily Declaration: Each morning this week, declare aloud: “It is finished. I am free, I am forgiven, and I am loved because of Jesus.”\n\nShare the Good News: Look for an opportunity this week to share the message of the cross with someone — a friend, a co-worker, a family member. Invite them to experience the freedom Christ offers.\n\nRelease the Burden: Write down anything you’re still carrying (guilt, shame, regret) and prayerfully surrender it to Jesus. Tear up the paper as a symbolic act of freedom.`,
+      closing: `The cross was not the end — it was the beginning of new life. Because of Jesus, sin no longer has the final say. Death has lost its sting. The grave has been defeated. And you — yes, you — have been given a fresh start, a clean slate, and an eternal hope. Walk boldly in the finished work of the cross, and let your life be a living testimony to the saving grace of Jesus Christ.\n\nThis Easter season, may you not only remember what Christ has done, but fully receive it — and in doing so, lead others to the same life-changing truth.`,
+      audio: "assets/audio/It_is_finished.mp3",
+      isCurrent: true
+    },    
+    {
       id: 4,
       week: "Monday 14 April – Saturday 19 April 2025",
       title: "Refuse to Isolate Yourself from Others",
@@ -11,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       action: `Reach out to a friend or loved one you haven’t spoken to in a while. Ask how they’re doing and share something from your own life. Create a moment of connection that reminds both of you of the strength found in togetherness.`,
       closing: `Refusing to isolate ourselves is a step of faith, reminding us that we are all part of the body of Christ. Each one of us has a role, a purpose, and unique strengths to contribute. Let’s commit to staying connected, lifting each other up, and embracing the beauty of community together. Remember, together we can face anything that comes our way, for we are indeed stronger together, anchored in the love of Christ.`,
       audio: "assets/audio/14AprilTo19April2025.mp3",
-      isCurrent: true
+      isCurrent: false
     }, 
     {
       id: 3,
