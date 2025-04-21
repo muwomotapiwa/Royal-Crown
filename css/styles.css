@@ -383,4 +383,100 @@
           .btn.btn-devotional:hover {
             background-color: #e6004c;
           }
+
+          /* Ask the Pastor Section */
+.ask-pastor {
+    background-color: #fff9e3; /* Cream */
+    color: #5e0c4a; /* Purple */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #f1bb65;
+    border-bottom: 3px solid #f1bb65;
+  }
+  
+  .ask-pastor h2 {
+    color: #5e0c4a;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .ask-pastor .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .ask-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ask-form input,
+  .ask-form textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #f1bb65;
+    border-radius: 6px;
+    background: white;
+    color: #5e0c4a;
+    font-family: inherit;
+  }
+  
+  .ask-form input::placeholder,
+  .ask-form textarea::placeholder {
+    color: #b28a71;
+  }
+  
+  .ask-form button {
+    background-color: #5e0c4a; /* Purple */
+    color: #f1bb65;           /* Gold */
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .ask-form button:hover {
+    background-color: #4a093d;
+    color: #fff9e3; /* Cream */
+  }
+  
+  /* FAQ Preview Card */
+  .faq-preview {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #f1bb65;
+    text-align: left;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(94, 12, 74, 0.1);
+  }
+  
+  .faq-preview h3 {
+    color: #5e0c4a;
+    margin-bottom: 15px;
+  }
+  
+  .faq-preview blockquote {
+    margin: 0;
+    font-style: italic;
+    line-height: 1.6;
+    color: #5e0c4a;
+  }
+  
+  .faq-preview blockquote strong {
+    color: #5e0c4a;
+  }
+  
+  .faq-preview a.btn-devotional {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
           
