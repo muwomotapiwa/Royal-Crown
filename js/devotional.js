@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
     {
+      id: 6,
+      week: "Monday 28 April – Saturday 3 May 2025",
+      title: "Cultivating a Winner’s Mindset",
+      scripture: `“I press toward the goal for the prize of the upward call of God in Christ Jesus.” — Philippians 3:14 (NKJV)`,
+      reflection: `Adopting a winner’s mindset starts with believing that we are more than conquerors through Christ who loves us (Romans 8:37). It involves viewing every obstacle as an opportunity for growth, learning, and moving closer to God's purpose for our lives. True winners do not dwell on failures or setbacks; instead, they keep their focus on the goal, remain persistent, and rely on God's strength to see them through.`,
+      action: `**Key Points:**\n\n1. **Renew Your Mind:**\nTransform your thought patterns by meditating on God's promises and affirming victory over fears and doubts. Romans 12:2 teaches us not to conform to this world but to be changed by renewing our minds.\n\n2. **Cultivate Resilience:**\nA winner’s spirit is resilient. When challenges arise, see them as chances to demonstrate faith and perseverance. Philippians 4:13 affirms, “I can do all things through Christ who strengthens me.”\n\n3. **Maintain Focus on Your God-Given Goal:**\nKeep your eyes fixed on your divine calling. Hebrews 12:1-2 encourages us to run with endurance, looking unto Jesus, the author and finisher of our faith.\n\n4. **Rejoice in Small Victories:**\nEvery progress is a reason to celebrate and build momentum. Acknowledge God’s faithfulness in each small win as part of your journey.`,
+      prayer: `Heavenly Father, thank You for the victory we have through Jesus Christ. Help us develop a winner’s mentality—one grounded in faith, resilience, and unwavering focus on Your promises. Empower us to move forward confidently, knowing that with You, we are more than conquerors. Remind us that our success ultimately rests in Your hands. In Jesus’ name, we pray. Amen.`,
+      contemplation: `Today, renew your mind with the truth of God's Word. Declare aloud, “I am a winner because I am in Christ!” and step out in faith toward your goals. Trust that God's presence and strength are with you every step of the way.`,
+      isCurrent: true,
+      audio: "assets/audio/WinnersMindset.mp3"
+    },    
+    {
       id: 5,
       week: "Monday 21 April – Saturday 26 April 2025",
       title: "The Finished Work of the Cross",
@@ -11,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       action: `Daily Declaration: Each morning this week, declare aloud: “It is finished. I am free, I am forgiven, and I am loved because of Jesus.”\n\nShare the Good News: Look for an opportunity this week to share the message of the cross with someone — a friend, a co-worker, a family member. Invite them to experience the freedom Christ offers.\n\nRelease the Burden: Write down anything you’re still carrying (guilt, shame, regret) and prayerfully surrender it to Jesus. Tear up the paper as a symbolic act of freedom.`,
       closing: `The cross was not the end — it was the beginning of new life. Because of Jesus, sin no longer has the final say. Death has lost its sting. The grave has been defeated. And you — yes, you — have been given a fresh start, a clean slate, and an eternal hope. Walk boldly in the finished work of the cross, and let your life be a living testimony to the saving grace of Jesus Christ.\n\nThis Easter season, may you not only remember what Christ has done, but fully receive it — and in doing so, lead others to the same life-changing truth.`,
       audio: "assets/audio/It_is_finished.mp3",
-      isCurrent: true
+      isCurrent: false
     },    
     {
       id: 4,
