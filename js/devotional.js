@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
     {
+      id: 7,
+      week: "Monday 5 May – Saturday 10 May 2025",
+      title: "You Will Testify",
+      scripture: `“And they overcame him by the blood of the Lamb and by the word of their testimony, and they loved not their lives unto the death.” — Revelation 12:11 (NKJV)`,
+      reflection: `God has promised that you will testify of His goodness, His faithfulness, and His mighty works in your life. Your testimony is a powerful tool that not only brings glory to God but also encourages others to trust in His divine power. No matter what you are going through right now, hold on to the assurance that your breakthrough and your story of victory are on the way. Your season of testimony is near.`,
+      action: `**Key Points:**\n\n1. **Trust in God’s Timing:**\nSometimes, the waiting period is tough, but remember that God’s timing is perfect. Your testimony is being crafted behind the scenes, and soon, you will share it with joy. Habakkuk 2:3 reminds us that “the vision is yet for an appointed time.”\n\n2. **Stand Firm in Faith:**\nEven before you see the evidence, declare that you will testify. Faith is the evidence of things hoped for (Hebrews 11:1). Speak words of victory and gratitude, knowing that God is working things out for your good.\n\n3. **Share Your Testimony:**\nYour story can inspire others. When God delivers you, be quick to testify and give Him all the glory. Revelation 19:10 says that the testimony of Jesus is the spirit of prophecy—your testimony can also declare what God is about to do in others’ lives.\n\n4. **Celebrate the Testimony Ahead of Time:**\nPraise God in advance for what He is about to do. Your faith-filled praise sets the stage for your testimony to manifest.`,
+      prayer: `Father, I thank You because I know I will testify of Your goodness. Help me to trust in Your perfect timing and to stand firm in faith. Strengthen my heart to declare victory, even before I see it. May my life be a living testimony of Your grace, power, and love. Use my story to inspire others to believe in You. I give You all the glory in advance, for I know You are working all things together for my good. In Jesus’ name, I pray. Amen.`,
+      contemplation: `Begin to declare today: “I will testify of the goodness of the Lord!” Write down your testimonies, big or small, and share them when the time comes. Trust in God's promise that your story of victory is on its way.`,
+      isCurrent: true,
+      audio: "assets/audio/YouWillTestify.mp3"
+    },
+    
+    {
       id: 6,
       week: "Monday 28 April – Saturday 3 May 2025",
       title: "Cultivating a Winner’s Mindset",
@@ -9,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       action: `**Key Points:**\n\n1. **Renew Your Mind:**\nTransform your thought patterns by meditating on God's promises and affirming victory over fears and doubts. Romans 12:2 teaches us not to conform to this world but to be changed by renewing our minds.\n\n2. **Cultivate Resilience:**\nA winner’s spirit is resilient. When challenges arise, see them as chances to demonstrate faith and perseverance. Philippians 4:13 affirms, “I can do all things through Christ who strengthens me.”\n\n3. **Maintain Focus on Your God-Given Goal:**\nKeep your eyes fixed on your divine calling. Hebrews 12:1-2 encourages us to run with endurance, looking unto Jesus, the author and finisher of our faith.\n\n4. **Rejoice in Small Victories:**\nEvery progress is a reason to celebrate and build momentum. Acknowledge God’s faithfulness in each small win as part of your journey.`,
       prayer: `Heavenly Father, thank You for the victory we have through Jesus Christ. Help us develop a winner’s mentality—one grounded in faith, resilience, and unwavering focus on Your promises. Empower us to move forward confidently, knowing that with You, we are more than conquerors. Remind us that our success ultimately rests in Your hands. In Jesus’ name, we pray. Amen.`,
       contemplation: `Today, renew your mind with the truth of God's Word. Declare aloud, “I am a winner because I am in Christ!” and step out in faith toward your goals. Trust that God's presence and strength are with you every step of the way.`,
-      isCurrent: true,
+      isCurrent: false,
       audio: "assets/audio/WinnersMindset.mp3"
     },    
     {
