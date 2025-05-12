@@ -1,6 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
-    {
+        {
+        id: 8,
+        week: "Monday 12 May – Saturday 17 May 2025",
+        title: "Cultivating a Thirst for Change",
+        scripture: `“Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!” - 2 Corinthians 5:17 (NIV)`,
+        reflection: `In our ever-evolving world, the Christian life often invites us to welcome transformation. The idea of cultivating a thirst for change resonates powerfully with our aspiration for spiritual growth and character development. Just as our physical bodies require sustenance, our souls yearn for renewal, growth, and the chance to become more aligned with Christ.
+
+      Having a thirst for change means identifying the areas in our lives that need God’s healing touch. It involves facing our shortcomings, struggles, and our need for divine help. While the prospect of change can feel overwhelming, it is precisely through such transformations that we come to experience the depth of God’s power and love.`,
+        action: `**Take Action:** This week, focus on one specific area in your life where you desire change. Write it down, pray over it consistently, and seek small steps you can take towards this transformation.
+
+      **Seek Support:** Share your goal for change with a trusted friend or mentor. Invite them to encourage you and hold you accountable as you pursue your growth.`,
+        prayer: `Heavenly Father,  
+      I approach You with a heart open to transformation. Help me to see the areas in my life where I require Your renewing touch. Instill in me a deep hunger for growth that drives me to seek You every day. Let me accept the newness of life that You offer and release anything that holds me back. Cleanse my heart and renew my spirit that I may manifest Your love and grace. Lead me on this journey, and nurture my trust in the wonderful changes You are bringing into my life. In Jesus’ name, I pray. Amen.`,
+        contemplation: `- What aspects of your life are you feeling prompted to transform? Are there certain habits, mindsets, or relationships you could reexamine?
+      - What does it mean to you to be a new creation in Christ? Each day provides a new opportunity to release the past and embrace the fresh beginnings that Christ offers us.`,
+        isCurrent: true,
+        audio: "assets/audio/12MayTo17May2025.mp3"
+      },    
+      {
       id: 7,
       week: "Monday 5 May – Saturday 10 May 2025",
       title: "You Will Testify",
@@ -9,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       action: `**Key Points:**\n\n1. **Trust in God’s Timing:**\nSometimes, the waiting period is tough, but remember that God’s timing is perfect. Your testimony is being crafted behind the scenes, and soon, you will share it with joy. Habakkuk 2:3 reminds us that “the vision is yet for an appointed time.”\n\n2. **Stand Firm in Faith:**\nEven before you see the evidence, declare that you will testify. Faith is the evidence of things hoped for (Hebrews 11:1). Speak words of victory and gratitude, knowing that God is working things out for your good.\n\n3. **Share Your Testimony:**\nYour story can inspire others. When God delivers you, be quick to testify and give Him all the glory. Revelation 19:10 says that the testimony of Jesus is the spirit of prophecy—your testimony can also declare what God is about to do in others’ lives.\n\n4. **Celebrate the Testimony Ahead of Time:**\nPraise God in advance for what He is about to do. Your faith-filled praise sets the stage for your testimony to manifest.`,
       prayer: `Father, I thank You because I know I will testify of Your goodness. Help me to trust in Your perfect timing and to stand firm in faith. Strengthen my heart to declare victory, even before I see it. May my life be a living testimony of Your grace, power, and love. Use my story to inspire others to believe in You. I give You all the glory in advance, for I know You are working all things together for my good. In Jesus’ name, I pray. Amen.`,
       contemplation: `Begin to declare today: “I will testify of the goodness of the Lord!” Write down your testimonies, big or small, and share them when the time comes. Trust in God's promise that your story of victory is on its way.`,
-      isCurrent: true,
+      isCurrent: false,
       audio: "assets/audio/YouWillTestify.mp3"
     },
     
