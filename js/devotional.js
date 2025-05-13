@@ -127,23 +127,27 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
     `;
 
     if (devotional.isCurrent) {
-      entry.innerHTML = content;
-    } else {
-      const toggle = document.createElement("button");
-      toggle.textContent = `Past Week: ${devotional.title} (${devotional.week})`;
-      toggle.className = "past-toggle";
-      const details = document.createElement("div");
-      details.className = "collapsed";
-      details.innerHTML = content;
+  entry.innerHTML = content;
+} else {
+  const toggle = document.createElement("button");
+  toggle.innerHTML = `<span class="plus-icon">+</span> ${devotional.title} (${devotional.week})`;
+  toggle.className = "accordion-button";
 
-      toggle.addEventListener("click", () => {
-        details.classList.toggle("collapsed");
-      });
+  const details = document.createElement("div");
+  details.className = "accordion-content";
+  details.innerHTML = content;
 
-      entry.innerHTML = "";
-      entry.appendChild(toggle);
-      entry.appendChild(details);
-    }
+  toggle.addEventListener("click", () => {
+    const open = details.classList.toggle("open");
+    toggle.classList.toggle("active");
+    toggle.querySelector(".plus-icon").textContent = open ? "–" : "+";
+  });
+
+  entry.innerHTML = "";
+  entry.appendChild(toggle);
+  entry.appendChild(details);
+}
+
 
     devotionalList.appendChild(entry);
   });
