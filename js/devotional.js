@@ -110,10 +110,20 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
   ];
 
   const devotionalList = document.getElementById("devotional-list");
+  const memoryVerse = document.getElementById("memory-verse");
+  const searchBar = document.getElementById("searchBar");
 
-  devotionals.sort((a, b) => b.id - a.id).forEach((devotional) => {
+  // Display memory verse from the current devotional
+  const currentDevotional = devotionals.find(d => d.isCurrent);
+  if (currentDevotional) {
+    memoryVerse.innerHTML = `<div class="memory-verse"><strong>Memory Verse:</strong> ${currentDevotional.scripture}</div>`;
+  }
+
+  // Sort and render devotionals
+  devotionals.sort((a, b) => b.id - a.id).forEach((devotional, index) => {
     const entry = document.createElement("div");
     entry.classList.add("devotional-entry");
+    entry.style.setProperty('--i', index);
 
     const content = `
       <h3>${devotional.title}</h3>
@@ -123,36 +133,46 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
       ${devotional.prayer ? `<p><strong>Prayer:</strong> ${devotional.prayer}</p>` : ""}
       ${devotional.contemplation ? `<p><strong>Contemplation:</strong> ${devotional.contemplation}</p>` : ""}
       <p><strong>Action Step:</strong> ${devotional.action}</p>
-      ${devotional.audio ? `<audio controls style="margin-top:20px;"><source src="${devotional.audio}" type="audio/mpeg">Your browser does not support the audio element.</audio>` : ""}
+      ${devotional.audio ? `<audio controls ${devotional.isCurrent ? 'preload="auto"' : ''}><source src="${devotional.audio}" type="audio/mpeg">Your browser does not support the audio element.</audio>` : ""}
+      <div class="share-btn"><button onclick="navigator.share({ title: 'Weekly Devotional: ${devotional.title}', url: location.href })">📤 Share</button></div>
     `;
 
     if (devotional.isCurrent) {
-  entry.innerHTML = content;
-} else {
-  const toggle = document.createElement("button");
-  toggle.innerHTML = `<span class="plus-icon">+</span> ${devotional.title} (${devotional.week})`;
-  toggle.className = "accordion-button";
+      entry.innerHTML = content;
+    } else {
+      const toggle = document.createElement("button");
+      toggle.innerHTML = `<span class="plus-icon">+</span> ${devotional.title} (${devotional.week})`;
+      toggle.className = "accordion-button";
 
-  const details = document.createElement("div");
-  details.className = "accordion-content";
-  details.innerHTML = content;
+      const details = document.createElement("div");
+      details.className = "accordion-content";
+      details.innerHTML = content;
 
-  toggle.addEventListener("click", () => {
-    const open = details.classList.toggle("open");
-    toggle.classList.toggle("active");
-    toggle.querySelector(".plus-icon").textContent = open ? "–" : "+";
-  });
+      toggle.addEventListener("click", () => {
+        const open = details.classList.toggle("open");
+        toggle.classList.toggle("active");
+        toggle.querySelector(".plus-icon").textContent = open ? "–" : "+";
+        if (open) details.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
 
-  entry.innerHTML = "";
-  entry.appendChild(toggle);
-  entry.appendChild(details);
-}
-
+      entry.appendChild(toggle);
+      entry.appendChild(details);
+    }
 
     devotionalList.appendChild(entry);
   });
 
-  // Hamburger Menu for mobile
+  // Search functionality
+  if (searchBar) {
+    searchBar.addEventListener("input", (e) => {
+      const searchTerm = e.target.value.toLowerCase();
+      document.querySelectorAll(".devotional-entry").forEach((entry) => {
+        entry.style.display = entry.textContent.toLowerCase().includes(searchTerm) ? "block" : "none";
+      });
+    });
+  }
+
+  // Hamburger Menu
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector("nav");
   if (hamburger && nav) {
