@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
         {
+          id: 9,
+          week: "Monday 19 May – Saturday 24 May 2025",
+          title: "You Are Created to Dominate",
+          scripture: `Genesis 1:28 – "God blessed them, and God said to them, ‘Be fruitful and multiply; fill the earth and subdue it, and have dominion over the fish of the sea, over the birds of the air, and over every living thing that moves on the earth.’"`,
+          reflection: `The words “You are created to dominate” may stand out because of their strong tone, but in the biblical context, they reveal a divine purpose rooted in authority, responsibility, and stewardship. The word “dominate” here is closely related to “subdue” and “have dominion,” which signifies exercising God-given authority over creation, not exploiting or oppressing it.\n\nGod’s original design for humanity was to partner with Him—to rule and steward the earth with wisdom, love, and integrity. This divine mandate empowers us to shape our environments positively, to bring order out of chaos, and to fulfill our purpose in God's grand design.`,
+          contemplation: `**Understanding “Dominate”:**\nTo dominate, in God's intention, is to exercise authority on His behalf, reflecting His sovereignty. It is about taking responsibility, using our gifts, and influencing our surroundings for good. It’s about being a force for righteousness, justice, and love in every area of life.`,
+          action: `**Application:**\n- Embrace your God-given authority to influence your world positively.\n- Recognize that your dominion is rooted in God's power working through you.\n- Use your influence to bring about good, to protect, nurture, and uplift others.\n- Remember, true dominance is exercised with humility and a heart aligned with God's purposes.`,
+          prayer: `Lord God, thank You for creating me with authority and purpose. Help me to understand what it means to dominate in a way that honors You. Fill me with wisdom and strength to govern my life and surroundings responsibly. May I exercise my authority to bring blessing, order, and righteousness wherever I go. Teach me to lead with love and humility, reflecting Your sovereignty in all I do. In Jesus’ name, I pray, Amen.`,
+          closing: `You are created to dominate—not in control for selfish gain, but to influence and steward God's creation according to His divine plan. Walk confidently in your God-given authority today.`,
+          audio: "assets/audio/YouAreCreatedToDominate.mp3",
+          isCurrent: true
+        },
+        {
         id: 8,
         week: "Monday 12 May – Saturday 17 May 2025",
         title: "Cultivating a Thirst for Change",
@@ -15,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       I approach You with a heart open to transformation. Help me to see the areas in my life where I require Your renewing touch. Instill in me a deep hunger for growth that drives me to seek You every day. Let me accept the newness of life that You offer and release anything that holds me back. Cleanse my heart and renew my spirit that I may manifest Your love and grace. Lead me on this journey, and nurture my trust in the wonderful changes You are bringing into my life. In Jesus’ name, I pray. Amen.`,
         contemplation: `- What aspects of your life are you feeling prompted to transform? Are there certain habits, mindsets, or relationships you could reexamine?
       - What does it mean to you to be a new creation in Christ? Each day provides a new opportunity to release the past and embrace the fresh beginnings that Christ offers us.`,
-        isCurrent: true,
+        isCurrent: false,
         audio: "assets/audio/12MayTo17May2025.mp3"
       },    
       {

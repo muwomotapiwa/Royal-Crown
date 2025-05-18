@@ -126,3 +126,16 @@
   }
 }
 
+/* 🔒 Only show on screens smaller than 768px (mobile) */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+
