@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
-        {
+
+            {
+              id: 10,
+              week: "Monday 26 May – Saturday 30 May 2025",
+              title: "Take Charge of Your Destiny",
+              scripture: `Proverbs 16:3 – "Commit your works to the Lord, and your thoughts will be established."\nJeremiah 29:11 – "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope."`,
+              reflection: `The phrase “Take charge of your destiny” is a powerful reminder that your life is not merely happening to you; you are called to be an active participant in shaping your future. God has given you authority, wisdom, and responsibility to make choices that align with His divine purpose for your life.\n\nTaking charge doesn’t mean trying to control everything on your own, but rather partnering with God—trusting His plans, seeking His guidance, and intentionally moving forward in faith. Your destiny is a journey that God has already designed with hope, purpose, and promise. Your role is to align your actions with His will and step into the path He has prepared.`,
+              contemplation: `**How to Take Charge of Your Destiny:**\n- Seek God's Guidance: Regularly pray and ask for His direction in your decisions.\n- Believe in God’s Promises: Trust that His plans for you are good and full of hope.\n- Make Intentional Choices: Be deliberate about your actions, attitudes, and priorities.\n- Declare Your Faith: Speak life and purpose over your future, knowing God is with you.\n- Act with Courage: Step out in faith even when the way seems uncertain.`,
+              action: `Today is an opportunity to take responsibility for your life’s direction. Commit your plans to God, trust in His promises, and move forward with confidence. Remember, you are not alone—God is with you, guiding your steps and empowering you to fulfill your divine destiny.`,
+              prayer: `Father, I thank You for the incredible plans You have for my life. Today, I choose to take charge of my destiny by trusting You completely. Help me to seek Your guidance, make wise decisions, and walk in faith. Give me courage to pursue the purpose You have set before me. I surrender my plans to You, knowing You will establish my steps and lead me into a future filled with hope and promises. In Jesus’ name, I pray. Amen.`,
+              closing: `Your destiny is in your hands, but it is empowered and guided by God. Take charge today, trusting in His divine purpose for your life.`,
+              audio: "assets/audio/TakeChargeOfYourDestiny.mp3",
+              isCurrent: true
+            },    
+          {
           id: 9,
           week: "Monday 19 May – Saturday 24 May 2025",
           title: "You Are Created to Dominate",
@@ -11,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
           prayer: `Lord God, thank You for creating me with authority and purpose. Help me to understand what it means to dominate in a way that honors You. Fill me with wisdom and strength to govern my life and surroundings responsibly. May I exercise my authority to bring blessing, order, and righteousness wherever I go. Teach me to lead with love and humility, reflecting Your sovereignty in all I do. In Jesus’ name, I pray, Amen.`,
           closing: `You are created to dominate—not in control for selfish gain, but to influence and steward God's creation according to His divine plan. Walk confidently in your God-given authority today.`,
           audio: "assets/audio/YouAreCreatedToDominate.mp3",
-          isCurrent: true
+          isCurrent: false
         },
         {
         id: 8,
