@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
-
+            {
+              id: 11,
+              week: "Monday 02 June – Saturday 07 June 2025",
+              title: "You Are Not Created to Suffer",
+              scripture: `"For I consider that the sufferings of this present time are not worth comparing with the glory that will be revealed in us." — Romans 8:18 (NIV)`,
+              reflection: `Many of us face trials, pain, and hardships that can feel overwhelming and unending. It’s natural to wonder why we must experience suffering or to question if there’s a purpose behind our pain. However, as followers of Christ, we are reminded in Scripture that our suffering is temporary and does not define our destiny.\n\nGod created us with purpose and intention. His plan for each of us includes hope, healing, and victory—not lifelong suffering. The pain we endure can be a part of our growth, refining us and drawing us closer to Him. But ultimately, God's promise is that glory, peace, and eternal joy await us—far outweighing any difficulty we face now.\n\nRemember, you are not created to suffer forever. Your Heavenly Father sees your pain, understands your struggles, and has prepared a future filled with hope and restoration. Trust in His love and His promise that better days are ahead.`,
+              prayer: `Heavenly Father, thank You for creating me with purpose and for the hope I have in You. I acknowledge the pain and struggles I face, but I choose to trust Your promise that I am not created to suffer forever. Please strengthen me in my times of difficulty and remind me of the glory that awaits me in You. Fill my heart with peace, hope, and assurance of Your loving plan for my life. Help me to keep my eyes fixed on You, knowing that You are working all things together for good. In Jesus’ name, I pray. Amen.`,
+              action: `**Application:**\n- Remind yourself of God's promise of future glory and eternal joy.\n- Speak words of faith over your situation, declaring that this moment is temporary.\n- Trust that God's love is greater than any pain, and He is working behind the scenes for your good.`,
+              closing: `Remember, you were created to live in victory—not suffering. Hold onto hope, and let God's truth uplift you today.`,
+              audio: "assets/audio/YouAreNotCreatedToSuffer.mp3",
+              isCurrent: true
+            },
             {
               id: 10,
               week: "Monday 26 May – Saturday 30 May 2025",
@@ -12,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
               prayer: `Father, I thank You for the incredible plans You have for my life. Today, I choose to take charge of my destiny by trusting You completely. Help me to seek Your guidance, make wise decisions, and walk in faith. Give me courage to pursue the purpose You have set before me. I surrender my plans to You, knowing You will establish my steps and lead me into a future filled with hope and promises. In Jesus’ name, I pray. Amen.`,
               closing: `Your destiny is in your hands, but it is empowered and guided by God. Take charge today, trusting in His divine purpose for your life.`,
               audio: "assets/audio/TakeChargeOfYourDestiny.mp3",
-              isCurrent: true
+              isCurrent: false
             },    
           {
           id: 9,
