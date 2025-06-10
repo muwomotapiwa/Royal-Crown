@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
             {
+              id: 12,
+              week: "Monday 9 June – Saturday 14 June 2025",
+              title: "Be Heavenly Conscious",
+              scripture: `"But seek first his kingdom and his righteousness, and all these things will be given to you as well." — Matthew 6:33 (NIV)`,
+              reflection: `In our daily lives, it's easy to become consumed with the temporary concerns of this world—our responsibilities, worries, ambitions, and distractions. While these are part of life, Jesus reminds us in Matthew 6:33 to prioritize seeking God's kingdom above all else. Being heavenly conscious means aligning our thoughts, desires, and actions with eternal values rather than just earthly pursuits.\n\nWhen we focus on heavenly things, our perspective shifts. We begin to see beyond the immediate, understanding that our true home and purpose are found in God's eternal kingdom. This consciousness influences how we handle challenges, relationships, and opportunities—knowing that our lives are part of a larger divine plan.`,
+              prayer: `Heavenly Father, help me to be conscious of Your kingdom in every aspect of my life. Open my eyes to see beyond the temporary and focus on what truly matters—living according to Your will. May my thoughts be aligned with heavenly values, and may my actions reflect Your love and righteousness. Keep me rooted in Your eternal perspective, so I can walk confidently knowing I am part of Your divine plan. In Jesus' name, I pray. Amen.`,
+              action: `**Application:**\n- What are my thoughts most centered on—earthly concerns or heavenly realities?\n- How can I intentionally bring my focus back to God's kingdom throughout my day?\n- In what ways can I reflect heavenly consciousness in my interactions and decisions?`,
+              closing: `Remember, being heavenly conscious is a daily choice—an ongoing commitment to keep our hearts and minds fixed on God's eternal truths. Let this awareness guide you and fill your life with purpose and peace.`,
+              audio: "assets/audio/BeHeavenlyConscious.mp3",
+              isCurrent: true
+            },
+            {
               id: 11,
               week: "Monday 02 June – Saturday 07 June 2025",
               title: "You Are Not Created to Suffer",
@@ -10,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
               action: `**Application:**\n- Remind yourself of God's promise of future glory and eternal joy.\n- Speak words of faith over your situation, declaring that this moment is temporary.\n- Trust that God's love is greater than any pain, and He is working behind the scenes for your good.`,
               closing: `Remember, you were created to live in victory—not suffering. Hold onto hope, and let God's truth uplift you today.`,
               audio: "assets/audio/YouAreNotCreatedToSuffer.mp3",
-              isCurrent: true
+              isCurrent: false
             },
             {
               id: 10,
