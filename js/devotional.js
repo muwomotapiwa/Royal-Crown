@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
             {
+              id: 13,
+              week: "Monday 16 June – Saturday 21 June 2025",
+              title: "Believing in Yourself Against the Odds",
+              scripture: `Philippians 4:13 (NIV) – "I can do all this through him who gives me strength."`,
+              reflection: `Life often presents us with challenges that feel insurmountable. We may find ourselves facing situations where the odds seem stacked against us—be it in our personal lives, careers, or spiritual journeys. In these moments of despair, we must remind ourselves of the incredible power of belief. Believing in ourselves is not about being arrogant or overconfident; it is about recognizing our potential and infusing our hearts with the knowledge that we are capable of overcoming whatever comes our way.\n\nWhen we lean on God and trust in His strength, we find the courage to face obstacles head-on. Every challenge becomes an opportunity for growth, and every setback can be a stepping stone toward our goals. It's essential to cultivate self-belief rooted in faith, remembering that we are never alone in our struggles. God equips us with the strength we need to persevere, even when the path seems daunting.`,
+              prayer: `Heavenly Father, help me to strengthen my belief in myself, even when faced with overwhelming odds. Remind me that through You, I have the strength to overcome any challenge. Instill in me the confidence to take bold steps forward, knowing that I am equipped with Your love and guidance. May I always turn to You for support and encouragement, trusting that I can achieve my dreams and fulfill my purpose. Amen.`,
+              contemplation: `- Take a moment to reflect on areas in your life where you feel uncertain or challenged. What specific odds are you facing right now?\n- Consider how faith in God can transform your perspective on these challenges and empower you to move forward.`,
+              action: `This week, identify one area of your life where you want to build more self-belief. Set a small, achievable goal related to this area. Each day, affirm your capability by reminding yourself of Philippians 4:13 and take one step toward accomplishing that goal.`,
+              closing: `Believing in yourself against the odds is an act of faith. As you nurture this belief, remember that with God’s strength, there is no obstacle too great to overcome. Trust in His power, and embrace the journey ahead with confidence and hope.`,
+              audio: "assets/audio/BelievingInYourself.mp3",
+              isCurrent: true
+            },
+            {
               id: 12,
               week: "Monday 9 June – Saturday 14 June 2025",
               title: "Be Heavenly Conscious",
@@ -10,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
               action: `**Application:**\n- What are my thoughts most centered on—earthly concerns or heavenly realities?\n- How can I intentionally bring my focus back to God's kingdom throughout my day?\n- In what ways can I reflect heavenly consciousness in my interactions and decisions?`,
               closing: `Remember, being heavenly conscious is a daily choice—an ongoing commitment to keep our hearts and minds fixed on God's eternal truths. Let this awareness guide you and fill your life with purpose and peace.`,
               audio: "assets/audio/BeHeavenlyConscious.mp3",
-              isCurrent: true
+              isCurrent: false
             },
             {
               id: 11,
