@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+              {
+              id: 14,
+              week: "Monday 23 June – Saturday 28 June 2025",
+              title: "Keep Believing in Yourself",
+              scripture: `Philippians 4:13 – "I can do all things through Christ who strengthens me."`,
+              reflection: `At times, life’s challenges can shake our confidence and make us doubt ourselves. In those moments, it’s vital to remember that you are intentionally created by God with purpose and strength. No matter how tough the circumstances, your faith and perseverance can see you through. Don’t give up on believing in yourself because God’s power is sufficient to strengthen you in every weakness.\n\nBelieving in yourself is also a way of trusting the divine plan God has for your life. Your talents, dreams, and purpose are not accidental—they are part of His perfect design. Lean on Him, who empowers you to face obstacles and grow stronger with each step forward.`,
+              prayer: `Dear Heavenly Father, I thank You for the gift of life and the purpose You have placed within me. Help me to hold on to faith and confidence, especially when doubts try to creep in. Remind me that with You, all things are possible. Strengthen my belief in myself and in Your plan. Guide me to walk confidently in Your grace. In Jesus’ name, I pray. Amen.`,
+              action: `**Encouragement:**\nAlways remember, your confidence is rooted in God’s belief in you. Keep trusting, keep believing, and keep moving ahead—because with Christ, nothing is impossible.`,
+              isCurrent: true,
+              audio: "assets/audio/KeepBelievingInYourself.mp3"
+            }
+             ,
             {
               id: 13,
               week: "Monday 16 June – Saturday 21 June 2025",
