@@ -384,5 +384,43 @@
             background-color: #e6004c;
           }
 
-          
+          #chat-launcher {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: white;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Chat Launcher Styles */
+#chat-launcher img {
+  width: 40px;
+  height: 40px;
+}
+
+#chat-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#chat-options button {
+  background: #5e0c4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#chat-options.hidden {
+  display: none;
+}
+
           

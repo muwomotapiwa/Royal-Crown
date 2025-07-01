@@ -171,5 +171,81 @@
     </footer>
     <!-- Link to the JavaScript file in the js folder -->
     <script src="js/scripts.js" defer></script>
+
+    <!-- ✅ Tawk.to Live Chat Script -->
+    <!-- ✅ Unified Chat Launcher (inside body, NOT after it) -->
+<div id="chat-launcher">
+  <img src="assets/chat-icon.png" alt="Chat" />
+  <div id="chat-options" class="hidden">
+    <button onclick="openWhatsApp()">WhatsApp</button>
+    <button onclick="openLiveChat()">Live Chat</button>
+  </div>
+</div>
+
+<!-- ✅ Tawk.to Live Chat Script -->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/67f0c55c0d18b7191024132d/1io285sie';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<script>
+  Tawk_API = Tawk_API || {};
+  Tawk_API.onLoad = function () {
+    Tawk_API.hideWidget(); // This hides the default bubble
+  };
+</script>
+
+<!-- ✅ Chat Functionality -->
+<script>
+  function toggleChatOptions() {
+    const options = document.getElementById("chat-options");
+    options.classList.toggle("hidden");
+  }
+
+  function openWhatsApp() {
+    window.open("https://wa.me/27817600928", "_blank");
+  }
+
+  function openLiveChat() {
+    if (typeof Tawk_API !== "undefined") {
+      Tawk_API.maximize();
+    }
+  }
+
+  // Hide extra WhatsApp widgets
+  document.addEventListener("DOMContentLoaded", function () {
+    const interval = setInterval(() => {
+      const selectors = [
+        '.whatsapp-widget',
+        '.getbutton-widget',
+        '#whatsapp-chat',
+        '#whatsapp-widget',
+        '[src*="whatshelp.io"]',
+        '[src*="getbutton.io"]',
+        'iframe[src*="whatsapp"]'
+      ];
+      selectors.forEach(sel => {
+        const el = document.querySelector(sel);
+        if (el) {
+          el.style.display = "none";
+          console.log(`✅ Removed extra WhatsApp widget: ${sel}`);
+        }
+      });
+    }, 1000);
+    setTimeout(() => clearInterval(interval), 5000);
+  });
+
+  // Attach toggle event
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("chat-launcher").addEventListener("click", toggleChatOptions);
+  });
+</script>
+
 </body>
 </html>
