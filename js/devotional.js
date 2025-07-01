@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+
+              {
+                id: 15,
+                week: "Monday 30 June – Saturday 5 July 2025",
+                title: "Nurturing a Heart Willing to be Rebuked",
+                scripture: `Proverbs 12:1 – "Whoever loves discipline loves knowledge, but whoever hates correction is foolish."`,
+                reflection: `As we navigate our faith journey, embracing a spirit that is open to rebuke is crucial. This openness reflects a heart ready for correction and personal growth. God desires for us to deepen our wisdom and understanding, and part of that process is being receptive to guidance when we deviate from His will.\n\nHaving a rebukable spirit signifies humility and an eagerness to improve. Rather than reacting defensively when faced with criticism, we can choose to see such moments as valuable opportunities for growth. It requires bravery to acknowledge that we don’t have all the answers, and often, God’s direction comes through the insights of others—friends, family, or mentors.`,
+                prayer: `Dear Lord, please help me develop a heart that welcomes correction. Teach me to embrace rebuke in love, understanding that it leads to my growth and a deeper comprehension of Your truths. Grant me the grace to respond humbly, letting Your wisdom steer my path. May I consistently seek to learn and evolve, transforming every rebuke into a stepping stone toward becoming more like Christ. Amen.`,
+                contemplation: `- Reflect on your reactions to criticism. Are there specific areas where accepting correction is particularly challenging for you?\n- Think about reaching out to a trusted individual to request sincere feedback on an aspect of your life where you wish to grow.`,
+                action: `This week, make a conscious effort to receive feedback with an open mind. When someone offers you constructive criticism, take a moment to pause before responding. Reflect on how this feedback might contribute to your growth, and remember to express gratitude for their forthrightness.`,
+                closing: `A heart willing to be rebuked is not a symbol of weakness but rather a powerful indication of our strength and commitment to personal growth. Let us adopt this attitude as we draw nearer to God's heart.`,
+                audio: "assets/audio/NurturingAHeartRebuked.mp3",
+                isCurrent: true
+              },
               {
               id: 14,
               week: "Monday 23 June – Saturday 28 June 2025",
@@ -8,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
               reflection: `At times, life’s challenges can shake our confidence and make us doubt ourselves. In those moments, it’s vital to remember that you are intentionally created by God with purpose and strength. No matter how tough the circumstances, your faith and perseverance can see you through. Don’t give up on believing in yourself because God’s power is sufficient to strengthen you in every weakness.\n\nBelieving in yourself is also a way of trusting the divine plan God has for your life. Your talents, dreams, and purpose are not accidental—they are part of His perfect design. Lean on Him, who empowers you to face obstacles and grow stronger with each step forward.`,
               prayer: `Dear Heavenly Father, I thank You for the gift of life and the purpose You have placed within me. Help me to hold on to faith and confidence, especially when doubts try to creep in. Remind me that with You, all things are possible. Strengthen my belief in myself and in Your plan. Guide me to walk confidently in Your grace. In Jesus’ name, I pray. Amen.`,
               action: `**Encouragement:**\nAlways remember, your confidence is rooted in God’s belief in you. Keep trusting, keep believing, and keep moving ahead—because with Christ, nothing is impossible.`,
-              isCurrent: true,
+              isCurrent: false,
               audio: "assets/audio/KeepBelievingInYourself.mp3"
             }
              ,
@@ -23,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
               action: `This week, identify one area of your life where you want to build more self-belief. Set a small, achievable goal related to this area. Each day, affirm your capability by reminding yourself of Philippians 4:13 and take one step toward accomplishing that goal.`,
               closing: `Believing in yourself against the odds is an act of faith. As you nurture this belief, remember that with God’s strength, there is no obstacle too great to overcome. Trust in His power, and embrace the journey ahead with confidence and hope.`,
               audio: "assets/audio/BelievingInYourself.mp3",
-              isCurrent: true
+              isCurrent: false
             },
             {
               id: 12,
