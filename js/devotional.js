@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 week: "Monday 7 July – Saturday 12 July 2025",
                 title: "Call on the Name of Jesus",
                 scripture: `Romans 10:13 – "Everyone who calls on the name of the Lord will be saved."`,
-                reflection: `In our busy, often overwhelming lives, it can be easy to forget the power and comfort found in simply calling on the name of Jesus. When we face trials, uncertainties, or moments of weakness, turning to Jesus in prayer is our greatest hope and strength. His name carries authority, love, and grace that can transform any situation.\n\nThe act of calling on Jesus is more than just uttering His name; it’s a heartfelt cry of faith, trust, and surrender. It acknowledges that we need Him and that His power is greater than any problem we face. When we call on His name, we invite His presence into our circumstances, allowing His peace to reign in our hearts.`,
+                reflection: `In our busy, often overwhelming lives, it can be easy to forget the power and comfort found in simply calling on the name of Jesus. When we face trials, uncertainties, or moments of weakness, turning to Jesus in prayer is our greatest hope and strength. His name carries authority, love and grace that can transform any situation.\n\nThe act of calling on Jesus is more than just uttering His name; it’s a heartfelt cry of faith, trust and surrender. It acknowledges that we need Him and that His power is greater than any problem we face. When we call on His name, we invite His presence into our circumstances, allowing His peace to reign in our hearts.`,
                 prayer: `Jesus, I call on Your name today. You are my refuge and strength, my Savior and friend. Help me to remember that in every moment of need, I can turn to You. Thank You for Your unfailing love and the promise of salvation. May I always find comfort in calling on Your name, knowing that You hear me and answer according to Your perfect will. Amen.`,
                 contemplation: `- What situations are currently overwhelming you? Have you paused to call on Jesus in those moments?\n- What does it mean to you personally to trust in the power of His name?`,
                 action: `Today, whenever you feel overwhelmed or in need, pause and call on Jesus by name. Trust that He hears you and is with you. Let His name be a source of hope and peace in your life.`,
-                closing: `His name is power. His name is peace. Call on Jesus this week with confidence, and let His presence strengthen you in every moment.`,
+                closing: `His name is power. His name is peace. Call on Jesus this week with confidence and let His presence strengthen you in every moment.`,
                 audio: "assets/audio/CallOnTheNameOfJesus.mp3",
                 isCurrent: true
-              },
+                },
 
               {
                 id: 15,
