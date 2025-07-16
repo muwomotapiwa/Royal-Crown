@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+
+              {
+                id: 17,
+                week: "Monday 14 July – Saturday 20 July 2025",
+                title: "Faith That Moves Mountains",
+                scripture: `Matthew 17:20 – "Truly I tell you, if you have faith as small as a mustard seed, you can say to this mountain, ‘Move from here to there,’ and it will move. Nothing will be impossible for you."`,
+                reflection: `Have you ever faced a situation so overwhelming that it felt like a mountain standing in your way? Jesus tells us that even the smallest amount of genuine faith can produce miraculous results. Mountains represent challenges, fears, doubts, or impossible circumstances—but God’s Word reminds us that faith activates heaven’s power.\n\nA mustard seed may be tiny, but it carries the potential for exponential growth when nurtured. The same goes for our faith. It doesn’t have to be huge—it just needs to be real, rooted in trust, and connected to God’s promise.\n\nWhat matters most is not the size of your faith, but the greatness of the One you place it in. With God, even the immovable can shift.`,
+                prayer: `Lord Jesus,\nThank You for the reminder that faith—even as small as a mustard seed—is powerful when placed in You. Strengthen my heart to believe in the impossible, to trust You even when I don’t see the outcome, and to speak life over every obstacle I face. Teach me to grow in confidence and expectation, knowing You are faithful. In Your mighty name I pray, Amen.`,
+                contemplation: `- What mountain are you currently facing that feels immovable?\n- Have you been trying to conquer it alone, or are you trusting God with it?\n- How can you water and grow your mustard-seed faith this week?`,
+                action: `Write down one "mountain" you’re believing God to move. Each day this week, pray over it, speak the Word of God concerning it, and declare in faith that it will be moved. Don’t wait to see the outcome—thank God in advance.`,
+                closing: `Your faith may be small, but your God is mighty. Keep believing, keep praying, and keep speaking to those mountains. They will move.`,
+                audio: "assets/audio/FaithThatMovesMountains.mp3",
+                isCurrent: true
+              },
+
               {
                 id: 16,
                 week: "Monday 7 July – Saturday 12 July 2025",
@@ -11,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 action: `Today, whenever you feel overwhelmed or in need, pause and call on Jesus by name. Trust that He hears you and is with you. Let His name be a source of hope and peace in your life.`,
                 closing: `His name is power. His name is peace. Call on Jesus this week with confidence and let His presence strengthen you in every moment.`,
                 audio: "assets/audio/CallOnTheNameOfJesus.mp3",
-                isCurrent: true
+                isCurrent: false
                 },
 
               {
