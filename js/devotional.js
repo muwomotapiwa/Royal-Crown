@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
 
               {
+  id: 18,
+  week: "Monday 21 July – Saturday 26 July 2025",
+  title: "What Stopped My Parents Will Not Stop Me",
+  scripture: `Joshua 1:9 – "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."`,
+  reflection: `Our parents’ experiences and struggles can shape our understanding of life, challenges, and perseverance. Sometimes, the obstacles that halted their progress or dreams might seem insurmountable. But as children of God, we are called to move forward with faith and confidence, knowing that God’s strength is greater than any barrier.\n\nWhat stopped our parents or previous generations may have been their limitations, fears, or circumstances. However, through God's power, we have the opportunity to break free from those cycles. We are not bound by the past; we are empowered by God's promises and His presence in our lives.\n\nRemember, God has a unique purpose for each of us. The obstacles others faced do not define our destiny. Instead, our faith in God's ability to lead us beyond those barriers will propel us forward.`,
+  prayer: `Lord, I thank You that what may have stopped my parents or others before me will not stop me. Your strength and grace are enough to overcome any obstacle. Help me to walk in courage and faith, trusting that You are with me every step of the way. Break any barriers that hinder my progress, and lead me into the destiny You have prepared.\nIn Jesus’ name, I pray. Amen.`,
+  contemplation: `- What generational limitations or fears are you ready to break?\n- How has God already begun to equip you for more than what came before you?`,
+  action: `Identify one thing that may have held back your family or yourself in the past. Pray for God's strength to move beyond it and step into the future He has for you. Trust that with God, nothing can truly stop what He has called you to do.`,
+  closing: `You are not defined by what stopped others before you. You are propelled by God's promises. Walk forward boldly.`,
+  audio: "assets/audio/WhatStoppedMyParents.mp3",
+  isCurrent: true
+},
+
+
+              {
                 id: 17,
                 week: "Monday 14 July – Saturday 20 July 2025",
                 title: "Faith That Moves Mountains",
@@ -12,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 action: `Write down one "mountain" you’re believing God to move. Each day this week, pray over it, speak the Word of God concerning it, and declare in faith that it will be moved. Don’t wait to see the outcome—thank God in advance.`,
                 closing: `Your faith may be small, but your God is mighty. Keep believing, keep praying, and keep speaking to those mountains. They will move.`,
                 audio: "assets/audio/FaithThatMovesMountains.mp3",
-                isCurrent: true
+                isCurrent: false
               },
 
               {
