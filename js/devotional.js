@@ -2,18 +2,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
 
               {
-  id: 18,
-  week: "Monday 21 July – Saturday 26 July 2025",
-  title: "What Stopped My Parents Will Not Stop Me",
-  scripture: `Joshua 1:9 – "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."`,
-  reflection: `Our parents’ experiences and struggles can shape our understanding of life, challenges, and perseverance. Sometimes, the obstacles that halted their progress or dreams might seem insurmountable. But as children of God, we are called to move forward with faith and confidence, knowing that God’s strength is greater than any barrier.\n\nWhat stopped our parents or previous generations may have been their limitations, fears, or circumstances. However, through God's power, we have the opportunity to break free from those cycles. We are not bound by the past; we are empowered by God's promises and His presence in our lives.\n\nRemember, God has a unique purpose for each of us. The obstacles others faced do not define our destiny. Instead, our faith in God's ability to lead us beyond those barriers will propel us forward.`,
-  prayer: `Lord, I thank You that what may have stopped my parents or others before me will not stop me. Your strength and grace are enough to overcome any obstacle. Help me to walk in courage and faith, trusting that You are with me every step of the way. Break any barriers that hinder my progress, and lead me into the destiny You have prepared.\nIn Jesus’ name, I pray. Amen.`,
-  contemplation: `- What generational limitations or fears are you ready to break?\n- How has God already begun to equip you for more than what came before you?`,
-  action: `Identify one thing that may have held back your family or yourself in the past. Pray for God's strength to move beyond it and step into the future He has for you. Trust that with God, nothing can truly stop what He has called you to do.`,
-  closing: `You are not defined by what stopped others before you. You are propelled by God's promises. Walk forward boldly.`,
-  audio: "assets/audio/WhatStoppedMyParents.mp3",
-  isCurrent: true
-},
+                id: 19,
+                week: "Monday 28 July – Saturday 2 August 2025",
+                title: "Trusting in What God Said He Will Do for You",
+                scripture: `2 Corinthians 1:20 – "For no matter how many promises God has made, they are 'Yes' in Christ. And so through him the 'Amen' is spoken by us to the glory of God."`,
+                reflection: `God is a promise-keeper. Throughout His Word, He assures us of many things—His love, His protection, His provision, and His presence. When God speaks, His words are sure and unchanging. He has declared what He will do for you, and His promises are rooted in His faithfulness and love.\n\nThink about some of the promises God has made in your life—perhaps He has promised to never leave you nor forsake you, to supply all your needs, or to give you hope and a future. These promises are not empty words but divine assurances that you can stand on.`,
+                prayer: `Heavenly Father, thank You for Your unwavering promises. Thank You that in You, I have hope and assurance. Help me to trust in what You have said You will do for me. Strengthen my faith to stand firm on Your Word, and may I always remember that Your promises are yes and amen. In Jesus’ name, I pray. Amen.`,
+                contemplation: `- What promise of God do you need to hold onto right now?\n- In what ways have you seen God’s faithfulness through His Word in the past?\n- How can you remind yourself daily of what He has spoken over your life?`,
+                action: `Today, meditate on God's promises. Write down the promises that resonate with your current situation. Trust that what God has said He will do, He will accomplish. Let your faith be strengthened by His Word. Remember, God's promises are "Yes" in Christ, and through faith, you can confidently say "Amen" to His promises.`,
+                closing: `God doesn’t break His promises. He fulfills them in His time and in His way. Trust Him and stand on His Word.`,
+                audio: "assets/audio/TrustingWhatGodSaid.mp3",
+                isCurrent: true
+              },
+
+              {
+                id: 18,
+                week: "Monday 21 July – Saturday 26 July 2025",
+                title: "What Stopped My Parents Will Not Stop Me",
+                scripture: `Joshua 1:9 – "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."`,
+                reflection: `Our parents’ experiences and struggles can shape our understanding of life, challenges, and perseverance. Sometimes, the obstacles that halted their progress or dreams might seem insurmountable. But as children of God, we are called to move forward with faith and confidence, knowing that God’s strength is greater than any barrier.\n\nWhat stopped our parents or previous generations may have been their limitations, fears, or circumstances. However, through God's power, we have the opportunity to break free from those cycles. We are not bound by the past; we are empowered by God's promises and His presence in our lives.\n\nRemember, God has a unique purpose for each of us. The obstacles others faced do not define our destiny. Instead, our faith in God's ability to lead us beyond those barriers will propel us forward.`,
+                prayer: `Lord, I thank You that what may have stopped my parents or others before me will not stop me. Your strength and grace are enough to overcome any obstacle. Help me to walk in courage and faith, trusting that You are with me every step of the way. Break any barriers that hinder my progress, and lead me into the destiny You have prepared.\nIn Jesus’ name, I pray. Amen.`,
+                contemplation: `- What generational limitations or fears are you ready to break?\n- How has God already begun to equip you for more than what came before you?`,
+                action: `Identify one thing that may have held back your family or yourself in the past. Pray for God's strength to move beyond it and step into the future He has for you. Trust that with God, nothing can truly stop what He has called you to do.`,
+                closing: `You are not defined by what stopped others before you. You are propelled by God's promises. Walk forward boldly.`,
+                audio: "assets/audio/WhatStoppedMyParents.mp3",
+                isCurrent: false
+              },
 
 
               {
