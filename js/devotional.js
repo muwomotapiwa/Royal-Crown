@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
-
+                {
+                id: 20,
+                week: "Monday 4 August – Saturday 9 August 2025",
+                title: "You Are Royalty",
+                scripture: `1 Peter 2:9 – "But you are a chosen people, a royal priesthood, a holy nation, God's special possession."`,
+                reflection: `In the eyes of the world, titles and possessions often define a person’s worth. But as followers of Christ, our true identity goes far beyond worldly measures. The Bible declares that you are royalty—part of God's royal priesthood, His special possession.\n\nThink about it: Jesus, the King of kings, has made you a prince or princess in His kingdom. You are heirs to His eternal glory, loved unconditionally, and called with purpose. Your worth is not determined by circumstances, achievements, or others' opinions but by God's own declaration.\n\nWhen life feels overwhelming or when you face doubts, remember this truth: You are royalty. Walk confidently today, knowing you are cherished by the King of kings. Embrace your identity with pride and humility, shining as a light in the world because of who you are in Christ.`,
+                prayer: `Heavenly Father, thank You for calling me Your child and making me part of Your royal family. Help me to live each day with the confidence and dignity that come from my identity in You. Remind me of my worth and purpose as I walk in Your love. May I reflect Your kingdom in everything I do. In Jesus’ name, I pray. Amen.`,
+                contemplation: `- How does knowing you are part of God's royal family change the way you see yourself?\n- In what areas of your life do you need to walk more confidently as royalty?`,
+                action: `Speak a declaration over yourself today: "I am a child of the King. I am loved, valued, and called with purpose." Let this truth guide your actions and attitude.`,
+                closing: `Don’t live like a beggar when you are a child of the King. Walk confidently, love deeply, and shine brightly—you are royalty.`,
+                audio: "assets/audio/YouAreRoyalty.mp3",
+                isCurrent: true
+              },  
               {
                 id: 19,
                 week: "Monday 28 July – Saturday 2 August 2025",
@@ -12,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 action: `Today, meditate on God's promises. Write down the promises that resonate with your current situation. Trust that what God has said He will do, He will accomplish. Let your faith be strengthened by His Word. Remember, God's promises are "Yes" in Christ, and through faith, you can confidently say "Amen" to His promises.`,
                 closing: `God doesn’t break His promises. He fulfills them in His time and in His way. Trust Him and stand on His Word.`,
                 audio: "assets/audio/TrustingWhatGodSaid.mp3",
-                isCurrent: true
+                isCurrent: false
               },
 
               {
