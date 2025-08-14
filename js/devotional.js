@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
                 {
+                  id: 21,
+                  week: "Monday 18 August – Saturday 23 August 2025",
+                  title: "The Treasure of Truth",
+                  scripture: `Proverbs 23:23 – "Buy the truth, and sell it not."`,
+                  reflection: `In a world filled with shifting opinions and fleeting pleasures, truth remains steadfast and invaluable. Proverbs reminds us of the importance of valuing truth above all else. To "buy the truth" means to seek it earnestly, to invest in understanding and living by God's Word. It is a purchase that costs us nothing but is worth everything.\n\nOnce we acquire the truth, we are called to hold onto it tightly. Selling it or compromising it for temporary gains diminishes its worth and endangers our spiritual well-being. Truth is a precious gift from God—faithful, unchanging, and life-giving. It serves as our guide, our foundation, and our shield.`,
+                  prayer: `Heavenly Father, thank You for revealing Your truth through Your Word. Help me to seek it diligently and to cherish it above all else. Guard my heart from the temptation to compromise or sell out my faith. May I hold tightly to Your truth and live it boldly every day. In Jesus' name, I pray. Amen.`,
+                  contemplation: `- Reflect on what truth means to you personally and spiritually.\n- Are there areas where you've been tempted to compromise or "sell" your convictions?\n- Commit today to value God's truth above worldly opinions, popularity, or comfort.\n- Invest time in studying God's Word and allow it to shape your life.`,
+                  action: `Spend time this week in the Word. Identify a truth from Scripture that challenges or inspires you, and write it somewhere visible. Let it guide your choices and guard your heart.`,
+                  closing: `True riches are found in God's truth—treasure that cannot be lost or stolen. Let us buy it with our hearts and refuse to sell it for anything less.`,
+                  audio: "assets/audio/TheTreasureOfTruth.mp3",
+                  isCurrent: true
+                },
+
+                {
                 id: 20,
                 week: "Monday 4 August – Saturday 9 August 2025",
                 title: "You Are Royalty",
@@ -11,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 action: `Speak a declaration over yourself today: "I am a child of the King. I am loved, valued, and called with purpose." Let this truth guide your actions and attitude.`,
                 closing: `Don’t live like a beggar when you are a child of the King. Walk confidently, love deeply, and shine brightly—you are royalty.`,
                 audio: "assets/audio/YouAreRoyalty.mp3",
-                isCurrent: true
+                isCurrent: false
               },  
               {
                 id: 19,
