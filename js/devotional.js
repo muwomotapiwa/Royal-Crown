@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+                  {
+                    id: 22,
+                    week: "Monday 25 August – Saturday 30 August 2025",
+                    title: "The Spell is Broken",
+                    scripture: `John 8:36 – "So if the Son sets you free, you will be free indeed."`,
+                    reflection: `There are times in life when we feel trapped — caught in habits, doubts, fears, or circumstances that seem beyond our control. These feelings can feel like a spell, binding us and whispering that we are powerless to change.\n\nBut the truth of the Gospel is that Jesus has broken every spell of bondage. His love and sacrifice have paved the way for true freedom. When Jesus declares us free, the chains that held us captive are shattered. The spell is broken — and with it, the lie that we are forever bound.`,
+                    prayer: `Heavenly Father, thank You for sending Your Son to break every chain that binds us. Help us to believe in the freedom You have secured for us through the cross. Fill us with Your Holy Spirit so we can walk confidently in the liberty of Christ. May we live today knowing that the spell is broken and that we are truly free in You. In Jesus’ name, we pray. Amen.`,
+                    contemplation: `- What areas in your life have felt like a “spell” — keeping you bound or discouraged?\n- Do you believe Jesus has the power to break even the deepest chains?\n- What would it look like to live today like someone who is truly free?`,
+                    action: `Today, reflect on the areas of your life where you feel imprisoned or held back. Bring these to Jesus in prayer, asking Him to reveal the ways He has already set you free. Trust in His power to break every chain and release you into the abundant life He offers.`,
+                    closing: `No spell—no fear, addiction, doubt, or pain—can withstand the power of Christ’s victory. Walk forward in freedom, knowing that through Jesus, the spell is broken.`,
+                    audio: "assets/audio/TheSpellIsBroken.mp3",
+                    isCurrent: true
+                },
+
                 {
                   id: 21,
                   week: "Monday 18 August – Saturday 23 August 2025",
@@ -11,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   action: `Spend time this week in the Word. Identify a truth from Scripture that challenges or inspires you, and write it somewhere visible. Let it guide your choices and guard your heart.`,
                   closing: `True riches are found in God's truth—treasure that cannot be lost or stolen. Let us buy it with our hearts and refuse to sell it for anything less.`,
                   audio: "assets/audio/TheTreasureOfTruth.mp3",
-                  isCurrent: true
+                  isCurrent: false
                 },
 
                 {
