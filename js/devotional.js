@@ -1,8 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
                   {
-                    id: 22,
+                    id: 23,
                     week: "Monday 25 August – Saturday 30 August 2025",
+                    title: "Take That Brave Step",
+                    scripture: `Joshua 1:9 – "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."`,
+                    reflection: `In life, there are moments when we feel prompted to move forward but hesitate because of fear, doubt, or uncertainty. Taking a brave step can seem daunting, yet it is often necessary for growth and breakthrough. God calls us to be courageous, trusting that He is with us every step of the way.\n\nRemember, faith is not the absence of fear but the action in spite of it. Every journey of purpose begins with a single, brave step. Whether it’s stepping out into a new opportunity, forgiving someone, or surrendering a worry to God, these moments of courage lead us closer to the plans He has for us.`,
+                    prayer: `Lord, thank You for always being with us and for calling us to be brave. Help us to trust You when we feel afraid and give us the courage to take that first step. Strengthen our faith so we can move forward with confidence, knowing You are leading us. May we be bold in obedience and eager to see what You will do through our steps of faith. In Jesus’ name, we pray. Amen.`,
+                    contemplation: `- What step have you been hesitant to take because of fear?\n- How might God be preparing to strengthen you through it?\n- What does obedience look like for you this week?`,
+                    action: `Today, consider what brave step God may be encouraging you to take. It might be small or large, but trust that He will guide and strengthen you. Don’t let fear hold you back. With God’s presence and power, you can step boldly into what He has prepared.`,
+                    closing: `Breakthrough often begins with one brave step. Trust God, move forward, and watch Him lead you into His promise.`,
+                    audio: "assets/audio/TakeThatBraveStep.mp3",
+                    isCurrent: true
+                  },
+                  {
+                    id: 22,
+                    week: "Monday 18 August – Saturday 23 August 2025",
                     title: "The Spell is Broken",
                     scripture: `John 8:36 – "So if the Son sets you free, you will be free indeed."`,
                     reflection: `There are times in life when we feel trapped — caught in habits, doubts, fears, or circumstances that seem beyond our control. These feelings can feel like a spell, binding us and whispering that we are powerless to change.\n\nBut the truth of the Gospel is that Jesus has broken every spell of bondage. His love and sacrifice have paved the way for true freedom. When Jesus declares us free, the chains that held us captive are shattered. The spell is broken — and with it, the lie that we are forever bound.`,
@@ -11,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Today, reflect on the areas of your life where you feel imprisoned or held back. Bring these to Jesus in prayer, asking Him to reveal the ways He has already set you free. Trust in His power to break every chain and release you into the abundant life He offers.`,
                     closing: `No spell—no fear, addiction, doubt, or pain—can withstand the power of Christ’s victory. Walk forward in freedom, knowing that through Jesus, the spell is broken.`,
                     audio: "assets/audio/TheSpellIsBroken.mp3",
-                    isCurrent: true
+                    isCurrent: false
                 },
 
                 {
                   id: 21,
-                  week: "Monday 18 August – Saturday 23 August 2025",
+                  week: "Monday 11 August – Saturday 16 August 2025",
                   title: "The Treasure of Truth",
                   scripture: `Proverbs 23:23 – "Buy the truth, and sell it not."`,
                   reflection: `In a world filled with shifting opinions and fleeting pleasures, truth remains steadfast and invaluable. Proverbs reminds us of the importance of valuing truth above all else. To "buy the truth" means to seek it earnestly, to invest in understanding and living by God's Word. It is a purchase that costs us nothing but is worth everything.\n\nOnce we acquire the truth, we are called to hold onto it tightly. Selling it or compromising it for temporary gains diminishes its worth and endangers our spiritual well-being. Truth is a precious gift from God—faithful, unchanging, and life-giving. It serves as our guide, our foundation, and our shield.`,
