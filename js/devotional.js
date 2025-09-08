@@ -1,6 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
                   {
+                    id: 25,
+                    week: "Monday 8 September – Saturday 13 September 2025",
+                    title: "Embrace the New",
+                    scripture: `Revelation 21:5 – "Behold, I am making all things new."`,
+                    reflection: `God is always at work, bringing about renewal and fresh beginnings in our lives. Sometimes, holding on to the familiar or the past can hinder us from experiencing the fullness of what He has planned. The phrase "Embrace the new" invites us to open our hearts to God's ongoing transformation.\n\nWhen we step into the new—whether it’s a new season, a new opportunity, or a new way of thinking—we invite God's power to move in us and through us. Change can be uncomfortable, but it is often necessary for growth. Trust that God's plans for you are good, and that His new beginnings are filled with hope, purpose, and His divine guidance.\n\nLet go of fears or doubts about what’s ahead. Instead, lean into God's promise that He is making all things new. Embrace the new with faith, knowing that God's love and grace are sufficient for every change.`,
+                    prayer: `Lord, thank You for the new things You are doing in my life. Help me to embrace change with trust and faith, knowing that Your plans are better than I can imagine. Give me courage to step into the new, and fill me with Your peace as I surrender my fears. Help me to see Your hand in every new beginning. In Jesus’ name, I pray. Amen.`,
+                    contemplation: `- Are there areas of your life where you're clinging to the old because it's comfortable?\n- What new opportunities, relationships, or mindsets might God be inviting you to embrace?\n- How can you stay open to God's transforming work this week?`,
+                    action: `Today, ask God to reveal what new things He wants to bring into your life. Be open to His leading, and take a step of faith toward embracing what’s next, trusting that He is making all things new.`,
+                    closing: `Don’t be afraid of the new—God is already in your tomorrow, preparing the way. Embrace His promise and walk boldly into what He is doing.`,
+                    audio: "assets/audio/EmbraceTheNew.mp3",
+                    isCurrent: true
+                  },
+                  {
+                    id: 24,
+                    week: "Monday 1 September – Saturday 6 September 2025",
+                    title: "The Old Life is Gone",
+                    scripture: `2 Corinthians 5:17 – "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."`,
+                    reflection: `In Christ, we are offered a fresh start. The phrase "the old life is gone" signifies more than just a change of habits; it marks a profound transformation of our very identity. When we accept Jesus as our Lord and Savior, we leave behind the burdens, sins, and struggles of our past. We are no longer defined by guilt, shame, or the mistakes we've made. Instead, we are reborn into new life—filled with hope, purpose, and the promise of eternity.\n\nThis new beginning calls us to step forward with confidence, knowing that God's mercy has wiped the slate clean. Our past no longer holds power over us because Jesus's sacrifice has paid the price for our freedom. As we embrace this truth, let us live each day with gratitude and a renewed commitment to walk in the Spirit.`,
+                    prayer: `Heavenly Father, thank You for the gift of new life through Jesus Christ. Thank You that the old has passed away and that I am made new in You. Help me to leave behind the burdens of my past and to walk forward in the freedom and grace You provide. Fill me with Your Spirit and guide my steps so that I may live in the truth of this new beginning. In Jesus’ name, I pray. Amen.`,
+                    contemplation: `- Are there areas in your life where you're still holding onto your "old self"?\n- How can you more fully embrace your new identity in Christ today?\n- What does it look like to live each day as a new creation?`,
+                    action: `Today, meditate on the truth that your past is forgiven and gone. Take a step of faith to leave behind old habits or regrets and embrace the new life Christ offers. Share this hope with someone who needs to hear that transformation is possible.`,
+                    closing: `You are no longer who you used to be. You are made new in Christ—walk boldly in that truth.`,
+                    audio: "assets/audio/TheOldLifeIsGone.mp3",
+                    isCurrent: false
+                  },
+                  {
                     id: 23,
                     week: "Monday 25 August – Saturday 30 August 2025",
                     title: "Take That Brave Step",
@@ -11,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Today, consider what brave step God may be encouraging you to take. It might be small or large, but trust that He will guide and strengthen you. Don’t let fear hold you back. With God’s presence and power, you can step boldly into what He has prepared.`,
                     closing: `Breakthrough often begins with one brave step. Trust God, move forward, and watch Him lead you into His promise.`,
                     audio: "assets/audio/TakeThatBraveStep.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
                   {
                     id: 22,
