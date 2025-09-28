@@ -1,6 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
                   {
+                    id: 28,
+                    week: "Monday 29 September – Saturday 4 October 2025",
+                    title: "It’s Not Luck, but God’s Blessings",
+                    scripture: `James 1:17 – "Every good gift and every perfect gift is from above, coming down from the Father of lights."`,
+                    reflection: `In a world that often attributes successes or positive circumstances to luck or chance, we as believers recognize the true source: God's blessings. Nothing we have or experience is truly accidental. God's favor is poured out on us daily, guiding, protecting, and providing in ways we may not always see.\n\nWhen blessings come into our lives—whether it's good health, opportunities, relationships, or peace—they are not the result of luck, but of God's gracious kindness. Recognizing this shifts our perspective from luck to gratitude, reminding us to thank God for His abundant goodness.\n\nRemember, God's blessings are purposeful and intentional. They are signs of His love and faithfulness. As you go about your day, give thanks for His blessings, knowing they come from His heart and not by mere chance.`,
+                    prayer: `Heavenly Father, I thank You for Your blessings in my life. I know that nothing is by luck, but everything is by Your divine grace. Help me to be grateful and to recognize Your hand in all I have and all I experience. May I always give You the glory and trust in Your continued goodness. In Jesus’ name, I pray. Amen.`,
+                    contemplation: `- Do you sometimes attribute blessings to luck rather than God’s hand?\n- What blessings in your life can you recognize today as gifts from God?\n- How can you cultivate a heart of gratitude this week?`,
+                    action: `Take a moment today to reflect on and thank God for specific blessings in your life. Remember, each one is a gift from Him, not luck. Share this gratitude with someone else to remind them of God's faithfulness.`,
+                    closing: `What the world calls luck, we know as God’s blessings. Live with gratitude, and let His goodness shine through you.`,
+                    audio: "assets/audio/ItsNotLuckButGodsBlessings.mp3",
+                    isCurrent: false
+                  },
+                  {
+                    id: 27,
+                    week: "Monday 22 September – Saturday 27 September 2025",
+                    title: "The Sky Is Not the Limit",
+                    scripture: `Luke 1:37 – "For with God, nothing shall be impossible."`,
+                    reflection: `When we hear the phrase "The sky is the limit," it suggests endless possibilities. But as believers, we know that even the sky is not the boundary of God's power and our potential. With God, there are no limits to what we can achieve, what we can dream, or how far we can go.\n\nGod's plans for us are greater than we can imagine. His strength and grace enable us to rise above circumstances, doubts, and fears. When we align our hearts with His purpose, we become capable of doing things that seem impossible by human standards.\n\nRemember, the only real limit is the one we place on ourselves—God’s power is limitless. Trust in His ability to open doors, empower your dreams, and lead you beyond what the world considers impossible. The sky is just the beginning of what God can do through you.`,
+                    prayer: `Lord, I thank You because with You, all things are possible. Help me to see beyond limitations and to trust in Your limitless power. Remove any doubts or fears that hold me back, and inspire me to dream big in You. Guide my steps as I step into the plans You have for my life. In Jesus’ name, I pray. Amen.`,
+                    contemplation: `- Where in your life have you placed limits that God never set?\n- What “impossible” dream or goal might God be calling you to pursue?\n- How can you shift your perspective this week to see God’s limitless power at work in you?`,
+                    action: `Today, challenge yourself to think bigger than ever before. Pray for God to reveal the boundaries He wants to expand in your life and trust that with Him, the possibilities are endless.`,
+                    closing: `With God, the sky is not the limit—it’s just the beginning. Step boldly into His limitless plans for your life.`,
+                    audio: "assets/audio/TheSkyIsNotTheLimit.mp3",
+                    isCurrent: false
+                  },
+                  {
+                    id: 26,
+                    week: "Monday 15 September – Saturday 20 September 2025",
+                    title: "You Are Unstoppable",
+                    scripture: `Philippians 4:13 – "I can do all things through Him who strengthens me."`,
+                    reflection: `In Christ, we are empowered to face every challenge, overcome obstacles, and press forward with confidence. The phrase "You are unstoppable" is a reminder that with God's strength, nothing can stand in your way. When we rely on His power, our limitations diminish, and our potential expands beyond what we can imagine.\n\nLife may present difficulties, setbacks, or doubts, but God's grace equips us to keep moving forward. His Spirit inside us gives us resilience, courage, and perseverance. Remember, your strength does not come from your own abilities but from God's limitless power working through you.\n\nStand firm today, knowing that with Jesus, you are unstoppable. No obstacle is too great, no fear too strong, because your source of strength is eternal and unshakeable.`,
+                    prayer: `Heavenly Father, thank You for the strength You give me through Your Spirit. Remind me that with You, I am unstoppable. Help me to face each challenge with confidence and courage, trusting in Your power working within me. Fill me with perseverance and hope, and guide my steps each day. In Jesus’ name, I pray. Amen.`,
+                    contemplation: `- What challenges or fears have you been letting limit you?\n- How can you remind yourself daily that God's strength is your source of power?\n- Where might God be asking you to take a bold step of faith this week?`,
+                    action: `Today, declare over yourself: "I am unstoppable in Christ." When doubts creep in, remember that God's strength is within you. Take a bold step of faith toward a goal or purpose He’s placed in your heart.`,
+                    closing: `You are unstoppable in Christ—walk forward with courage, knowing that His strength makes victory possible.`,
+                    audio: "assets/audio/YouAreUnstoppable.mp3",
+                    isCurrent: false
+                  },
+                  {
                     id: 25,
                     week: "Monday 8 September – Saturday 13 September 2025",
                     title: "Embrace the New",
@@ -11,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Today, ask God to reveal what new things He wants to bring into your life. Be open to His leading, and take a step of faith toward embracing what’s next, trusting that He is making all things new.`,
                     closing: `Don’t be afraid of the new—God is already in your tomorrow, preparing the way. Embrace His promise and walk boldly into what He is doing.`,
                     audio: "assets/audio/EmbraceTheNew.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
                   {
                     id: 24,
