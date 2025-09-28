@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Take a moment today to reflect on and thank God for specific blessings in your life. Remember, each one is a gift from Him, not luck. Share this gratitude with someone else to remind them of God's faithfulness.`,
                     closing: `What the world calls luck, we know as God’s blessings. Live with gratitude, and let His goodness shine through you.`,
                     audio: "assets/audio/ItsNotLuckButGodsBlessings.mp3",
-                    isCurrent: false
+                    isCurrent: true
                   },
                   {
                     id: 27,
