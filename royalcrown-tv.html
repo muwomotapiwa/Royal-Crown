@@ -45,15 +45,19 @@
     </div>
   </section>
   <main class="tv-main">
-    <section class="tv-section">
+        <section class="tv-section">
       <h2>Join Meeting</h2>
-      <div class="tv-zoom-wrapper">
-        <iframe id="zoomFrame" src="https://us04web.zoom.us/wc/join/77917796072?pwd=WuRvc8yeXJfOb9g8ngzuDJBUTb3QZT.1" allow="camera; microphone; fullscreen; speaker"></iframe>
+      <p class="tv-info">Zoom Meetings are every Tuesday and Wednesday at 20:15 (South Africa Standard Time).</p>
+      <div class="tv-countdown" id="countdownContainer" hidden>
+        <span class="tv-countdown-label">Meeting starts in</span>
+        <span class="tv-countdown-time" id="countdownTime">--:--:--</span>
       </div>
-      <p class="tv-note">
-        For desktop, tablet, or mobile &mdash; join directly here.<br>
-        <strong>Note:</strong> If the meeting does not load, Zoom may require you to open their app or sign in.
-      </p>
+      <div class="tv-quiet-notice" id="quietNotice" hidden>
+        Music is paused between 20:13 and 22:00 (SAST) on meeting nights.
+      </div>
+      <button type="button" class="tv-music-button" id="musicToggle">Play music while you wait</button>
+      <p class="tv-music-status" id="musicStatus"></p>
+      <audio id="waitingAudio" src="assets/audio/powerful-worship--prophetic-praise.mp3" preload="auto"></audio>
     </section>
   </main>
   <footer>
@@ -67,6 +71,8 @@
   <script src="js/royalcrown-tv.js" defer></script>
 </body>
 </html>
+
+
 
 
 

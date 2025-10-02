@@ -34,48 +34,104 @@
   color: #5e0c4a;
 }
 
-.royalcrown-tv-page .tv-zoom-wrapper {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  max-width: 850px;
-  margin: 0 auto 1.25rem;
-  border-radius: 0.75rem;
-  border: 2px solid #f1bb65;
-  box-shadow: 0 8px 24px rgba(94, 12, 74, 0.22);
-  background: #fff9e3;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
-}
-
-.royalcrown-tv-page .tv-zoom-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: #fff;
-}
-
-.royalcrown-tv-page .tv-note {
+.royalcrown-tv-page .tv-info {
   margin: 0;
   text-align: center;
   color: #5e0c4a;
+  font-size: 1.05rem;
   line-height: 1.6;
+}
+
+.royalcrown-tv-page .tv-countdown {
+  margin: 2rem auto 0;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: #fff9e3;
+  border: 1px solid rgba(94, 12, 74, 0.15);
+  max-width: 320px;
+  box-shadow: 0 12px 24px rgba(94, 12, 74, 0.12);
+}
+
+.royalcrown-tv-page .tv-countdown-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5e0c4a;
+}
+
+.royalcrown-tv-page .tv-countdown-time {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #5e0c4a;
+}
+
+.royalcrown-tv-page .tv-quiet-notice {
+  margin: 1.5rem auto 0;
+  max-width: 420px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #9b2c2c;
+  background: rgba(241, 187, 101, 0.15);
+  border: 1px solid rgba(241, 187, 101, 0.4);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.royalcrown-tv-page .tv-music-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto 0;
+  padding: 0.85rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff9e3;
+  background: #5e0c4a;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(94, 12, 74, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.royalcrown-tv-page .tv-music-button:hover:not([disabled]) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(94, 12, 74, 0.3);
+}
+
+.royalcrown-tv-page .tv-music-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.royalcrown-tv-page .tv-music-status {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #5e0c4a;
+  min-height: 1.2rem;
 }
 
 @media (max-width: 768px) {
   .royalcrown-tv-page .tv-section {
-    padding: 1.5rem 1rem;
+    padding: 1.75rem 1rem;
   }
 
-  .royalcrown-tv-page .tv-zoom-wrapper {
-    aspect-ratio: 4 / 3;
+  .royalcrown-tv-page .tv-countdown {
+    padding: 1.25rem;
+  }
+
+  .royalcrown-tv-page .tv-countdown-time {
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 480px) {
-  .royalcrown-tv-page .tv-zoom-wrapper {
-    aspect-ratio: 1 / 1;
+  .royalcrown-tv-page .tv-music-button {
+    width: 100%;
   }
 }
