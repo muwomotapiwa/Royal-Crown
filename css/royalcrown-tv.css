@@ -135,3 +135,18 @@
     width: 100%;
   }
 }
+
+.royalcrown-tv-page .tv-music-credit {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #5e0c4a;
+}
+
+.royalcrown-tv-page .tv-music-credit a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+
