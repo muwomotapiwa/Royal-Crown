@@ -42,6 +42,16 @@
   line-height: 1.6;
 }
 
+.royalcrown-tv-page .tv-info + .tv-info {
+  margin-top: 0.75rem;
+}
+
+.royalcrown-tv-page .tv-info a {
+  color: #5e0c4a;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .royalcrown-tv-page .tv-countdown {
   margin: 2rem auto 0;
   text-align: center;
