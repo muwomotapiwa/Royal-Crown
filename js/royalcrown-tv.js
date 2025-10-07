@@ -21,8 +21,12 @@ const TIME_ZONE = 'Africa/Johannesburg';
 const MEETING_DAYS = [2, 3]; // Tuesday, Wednesday
 const MEETING_HOUR = 20;
 const MEETING_MINUTE = 15;
+const MEETING_PREP_LEAD_MINUTES = 5; // Show inline meeting 5 minutes before start
+const INLINE_OPEN_MIN = Math.max(MEETING_HOUR * 60 + MEETING_MINUTE - MEETING_PREP_LEAD_MINUTES, 0);
 const QUIET_START_MIN = MEETING_HOUR * 60 + 13; // 20:13
 const QUIET_END_MIN = 22 * 60; // 22:00
+
+let inlineMeetingLoaded = false;
 
 function setUpMeetingWidgets() {
   const countdownContainer = document.getElementById('countdownContainer');
@@ -31,6 +35,18 @@ function setUpMeetingWidgets() {
   const musicStatus = document.getElementById('musicStatus');
   const quietNotice = document.getElementById('quietNotice');
   const audio = document.getElementById('waitingAudio');
+  const inlineContainer = document.getElementById('inlineZoomContainer');
+  const inlineFrame = document.getElementById('inlineZoomFrame');
+  const inlineStatus = document.getElementById('inlineZoomStatus');
+  let defaultInlineStatus = '';
+
+  if (inlineStatus) {
+    defaultInlineStatus = inlineStatus.dataset.defaultMessage
+      || inlineStatus.textContent
+      || `The meeting will open here at ${formatMinutesLabel(INLINE_OPEN_MIN)} (SAST) on meeting nights.`;
+    inlineStatus.dataset.defaultMessage = defaultInlineStatus;
+    inlineStatus.textContent = defaultInlineStatus;
+  }
 
   if (!countdownContainer || !countdownTime || !musicToggle || !audio) {
     return;
@@ -38,10 +54,31 @@ function setUpMeetingWidgets() {
 
   const updateUi = () => {
     const now = getNowInSAST();
-    const isMeetingDay = MEETING_DAYS.includes(now.getDay());
     const nextMeeting = getNextMeeting(now);
+    const inlineVisible = shouldDisplayInlineMeeting(now);
+    const minutesUntilMeeting = nextMeeting ? Math.floor((nextMeeting - now) / 60000) : null;
+    const shouldShowCountdown = Boolean(nextMeeting)
+      && minutesUntilMeeting !== null
+      && minutesUntilMeeting > MEETING_PREP_LEAD_MINUTES
+      && !inlineVisible;
 
-    if (isMeetingDay && nextMeeting) {
+    if (inlineStatus) {
+      if (inlineVisible) {
+        inlineStatus.textContent = 'Meeting ready - click Join Meeting in the panel below.';
+      } else {
+        inlineStatus.textContent = defaultInlineStatus;
+      }
+    }
+
+    if (inlineContainer) {
+      if (inlineVisible) {
+        showInlineMeeting(inlineContainer, inlineFrame);
+      } else {
+        inlineContainer.hidden = true;
+      }
+    }
+
+    if (shouldShowCountdown) {
       countdownContainer.hidden = false;
       updateCountdownDisplay(nextMeeting, now, countdownTime);
     } else {
@@ -169,6 +206,35 @@ function copyTextToClipboard(text) {
       reject(error);
     }
   });
+}
+
+function shouldDisplayInlineMeeting(now) {
+  const day = now.getDay();
+  if (!MEETING_DAYS.includes(day)) {
+    return false;
+  }
+
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  return minutes >= INLINE_OPEN_MIN && minutes < QUIET_END_MIN;
+}
+
+function showInlineMeeting(container, frame) {
+  if (container.hidden) {
+    container.hidden = false;
+  }
+
+  if (!inlineMeetingLoaded && container.dataset.zoomSrc && frame) {
+    frame.src = container.dataset.zoomSrc;
+    inlineMeetingLoaded = true;
+  }
+}
+
+function formatMinutesLabel(totalMinutes) {
+  const hours = Math.floor(totalMinutes / 60) % 24;
+  const minutes = totalMinutes % 60;
+  return [hours, minutes]
+    .map((unit) => unit.toString().padStart(2, '0'))
+    .join(':');
 }
 
 function getNowInSAST() {

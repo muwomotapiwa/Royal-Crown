@@ -93,6 +93,65 @@
   min-height: 1.2rem;
 }
 
+.royalcrown-tv-page .tv-inline-status {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #5e0c4a;
+}
+
+.royalcrown-tv-page .tv-inline-zoom {
+  margin: 1.5rem auto 0;
+  padding: 1.75rem 1.5rem;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(94, 12, 74, 0.12);
+  box-shadow: 0 18px 36px rgba(94, 12, 74, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.royalcrown-tv-page .tv-inline-heading {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #5e0c4a;
+  text-align: center;
+}
+
+.royalcrown-tv-page .tv-inline-zoom iframe {
+  width: 100%;
+  min-height: 440px;
+  border: none;
+  border-radius: 0.75rem;
+  background: #000000;
+}
+
+.royalcrown-tv-page .tv-inline-note {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #5e0c4a;
+}
+
+@media (max-width: 768px) {
+  .royalcrown-tv-page .tv-inline-zoom {
+    padding: 1.25rem 1rem;
+  }
+
+  .royalcrown-tv-page .tv-inline-zoom iframe {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .royalcrown-tv-page .tv-inline-zoom iframe {
+    min-height: 280px;
+  }
+}
+
 .royalcrown-tv-page .tv-countdown {
   margin: 2rem auto 0;
   text-align: center;
