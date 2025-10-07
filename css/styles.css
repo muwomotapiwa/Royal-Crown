@@ -180,6 +180,16 @@
             border-color: #fff9e3;
         }
 
+        .btn-zoom {
+            background-color: #1c64f2;
+            color: #ffffff;
+        }
+
+        .btn-zoom:hover {
+            background-color: #174bc1;
+            color: #ffffff;
+        }
+
         /* Events Section */
         .events-grid {
             display: grid;
