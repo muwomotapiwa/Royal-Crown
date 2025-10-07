@@ -52,6 +52,47 @@
   text-decoration: underline;
 }
 
+.royalcrown-tv-page .tv-info-row {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.royalcrown-tv-page .tv-copy-button {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff9e3;
+  background: #1c64f2;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(28, 100, 242, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.royalcrown-tv-page .tv-copy-button:hover {
+  background: #174bc1;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(23, 75, 193, 0.3);
+}
+
+.royalcrown-tv-page .tv-copy-button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(23, 75, 193, 0.35);
+}
+
+.royalcrown-tv-page .tv-copy-feedback {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #174bc1;
+  min-height: 1.2rem;
+}
+
 .royalcrown-tv-page .tv-countdown {
   margin: 2rem auto 0;
   text-align: center;

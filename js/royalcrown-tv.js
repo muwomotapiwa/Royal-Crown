@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   setUpNavCollapse();
   setUpMeetingWidgets();
+  setUpCopyButtons();
 });
 
 function setUpNavCollapse() {
@@ -78,6 +79,95 @@ function setUpMeetingWidgets() {
   audio.addEventListener('ended', () => {
     musicToggle.textContent = 'Play music while you wait';
     musicStatus.textContent = 'Music paused.';
+  });
+}
+
+function setUpCopyButtons() {
+  const buttons = document.querySelectorAll('.tv-copy-button');
+
+  if (!buttons.length) {
+    return;
+  }
+
+  const feedbackEl = document.getElementById('copyFeedback');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      handleCopyButtonClick(button, feedbackEl);
+    });
+  });
+}
+
+function handleCopyButtonClick(button, feedbackEl) {
+  const targetId = button.dataset.copyTarget;
+  if (!targetId) {
+    return;
+  }
+
+  const target = document.getElementById(targetId);
+  if (!target) {
+    return;
+  }
+
+  const text = target.textContent.trim();
+  if (!text) {
+    return;
+  }
+
+  const label = button.dataset.copyLabel || 'Details';
+  const originalText = button.textContent;
+
+  button.disabled = true;
+
+  copyTextToClipboard(text)
+    .then(() => {
+      button.textContent = 'Copied!';
+      if (feedbackEl) {
+        feedbackEl.textContent = `${label} copied to clipboard.`;
+      }
+
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.disabled = false;
+        if (feedbackEl) {
+          feedbackEl.textContent = '';
+        }
+      }, 2000);
+    })
+    .catch(() => {
+      if (feedbackEl) {
+        feedbackEl.textContent = `Copy failed. Please copy the ${label.toLowerCase()} manually.`;
+      }
+      button.disabled = false;
+      button.textContent = originalText;
+    });
+}
+
+// Copy helper with fallback for legacy clipboard APIs.
+function copyTextToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
+
+  return new Promise((resolve, reject) => {
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.setAttribute('readonly', '');
+      textArea.style.position = 'absolute';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      const successful = document.execCommand('copy');
+      document.body.removeChild(textArea);
+      if (successful) {
+        resolve();
+      } else {
+        reject(new Error('Copy command was unsuccessful.'));
+      }
+    } catch (error) {
+      reject(error);
+    }
   });
 }
 
