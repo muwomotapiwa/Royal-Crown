@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoyalCrown TV</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/royalcrown-tv.css">
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Royal Crown Ministries International" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNLJR76CZ9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNLJR76CZ9');
+  </script>
+</head>
+<body class="royalcrown-tv-page">
+  <header>
+    <div class="logo">Royal Crown Ministries</div>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="events.html">Events</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="sermons.html">Sermons</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  <section class="banner">
+    <div>
+      <p class="tv-banner-subheading">Royal Crown TV presents</p>
+      <h1>Join Our Free Zoom Meeting</h1>
+      <p>Connect, collaborate, and create &mdash; right from your browser, phone, or tablet.</p>
+      <p class="tv-banner-schedule">Every Tuesday and Wednesday at 20:15pm</p>
+    </div>
+  </section>
+  <main class="tv-main">
+        <section class="tv-section">
+      <h2>Join Meeting</h2>
+      <p class="tv-info">Zoom Meetings are every Tuesday and Wednesday at 20:15 (South Africa Standard Time).</p>
+      <p class="tv-info"><a href="https://us04web.zoom.us/j/8057953224?pwd=VWlHUGRJWHQxckl6cGVSWDRtZFdiQT09&omn=71166272435" target="_blank" rel="noopener">Join the Zoom meeting</a></p>
+      <div class="tv-info-row">
+        <p class="tv-info">Meeting ID: <span id="meetingIdValue">805 795 3224</span></p>
+        <button type="button" class="tv-copy-button" data-copy-target="meetingIdValue" data-copy-label="Meeting ID">Copy</button>
+      </div>
+      <div class="tv-info-row">
+        <p class="tv-info">Passcode: <span id="passcodeValue">YQ9vg5</span></p>
+        <button type="button" class="tv-copy-button" data-copy-target="passcodeValue" data-copy-label="Passcode">Copy</button>
+      </div>
+      <p class="tv-copy-feedback" id="copyFeedback" aria-live="polite"></p>
+      <p class="tv-inline-status" id="inlineZoomStatus">The meeting will open here <strong>5 minutes</strong>before the meeting at 20:10 (SAST) on meeting nights.</p>
+      <div class="tv-inline-zoom" id="inlineZoomContainer" data-zoom-src=6
+        <p class="tv-inline-note">If the meeting does not load, please use the join link above.</p>
+      </div>
+      <div class="tv-countdown" id="countdownContainer" hidden>
+        <span class="tv-countdown-label">Meeting starts in</span>
+        <span class="tv-countdown-time" id="countdownTime">--:--:--</span>
+      </div>
+      <div class="tv-quiet-notice" id="quietNotice" hidden>
+        Music is paused between 20:13 and 22:00 (SAST) on meeting nights.
+      </div>
+      <button type="button" class="tv-music-button" id="musicToggle">Play music while you wait</button>
+      <p class="tv-music-status" id="musicStatus"></p>
+      <p class="tv-music-credit">
+        We do not own the rights to this song. All rights and credits belong to PraiseHaven TV.
+      </p>
+      <audio id="waitingAudio" src="assets/audio/powerful-worship--prophetic-praise.mp3" preload="auto"></audio>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Royal Crown Ministries. All rights reserved.</p>
+    <p>Address: Eagles Nest Lodge,112 Leslie Avenue , Fourways, Johannesburg | Email: rministriesinternational1@gmail.com | Contact: +27 (81) 760-0928</p>
+    <div class="site-credit">
+      <a href="mailto:muwomotapiwa@gmail.com?subject=Clicked Website Credit on royalcrownministries.org - RoyalCrown TV Page">Website by KypexTech</a>
+    </div>
+  </footer>
+  <script src="js/scripts.js" defer></script>
+  <script src="js/royalcrown-tv.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
