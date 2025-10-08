@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+
+                  {
+                    id: 29,
+                    week: "Monday 6 October – Saturday 11 October 2025",
+                    title: "Breaking Strongholds",
+                    scripture: `2 Corinthians 10:4-5 (NIV) – "The weapons we fight with are not the weapons of the world. On the contrary, they have divine power to demolish strongholds. We demolish arguments and every pretension that sets itself up against the knowledge of God, and we take captive every thought to make it obedient to Christ."`,
+                    reflection: `Strongholds are mental and spiritual barriers that can hold us captive—doubts, fears, addictions, habits, or lies we’ve believed about ourselves or God. These strongholds can feel unbreakable, but the Word of God declares that the weapons we fight with have *divine power* to demolish them.\n\nTrue freedom begins when we stop relying on our strength and lean into God's power. Victory isn’t about how hard we fight but about how much we surrender. When we bring every thought, fear, or habit before God and allow His truth to reshape our minds, strongholds crumble.\n\nJesus has already defeated the powers of darkness. The same resurrection power that raised Him from the dead lives in us. Today, take authority over the lies and fears that hold you back—declare God’s promises over them and walk in His freedom.`,
+                    prayer: `Lord, thank You for the victory You have already won. I bring before You every stronghold in my life—every fear, doubt, and false belief. By Your power, I declare freedom and renewal over my mind and heart. Help me to see myself as You see me: redeemed, loved, and victorious. Strengthen me to walk daily in Your truth and demolish every barrier that stands against Your will. In Jesus’ name, Amen.`,
+                    contemplation: `- What strongholds have you allowed to remain unchallenged in your life?\n- How can you use God’s Word to counter lies or fears?\n- What would freedom in this area look like for you this week?`,
+                    action: `Take time today to pray and identify any strongholds that may be limiting your spiritual growth. Find a Bible verse that speaks directly to that area, and declare it daily this week. Remember, God’s Word is your weapon of victory.`,
+                    closing: `You are not powerless. The divine power of God lives in you to break every stronghold and walk in lasting freedom.`,
+                    audio: "assets/audio/BreakingStrongholds.mp3",
+                    isCurrent: true
+                  },
                   {
                     id: 28,
                     week: "Monday 29 September – Saturday 4 October 2025",
@@ -11,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Take a moment today to reflect on and thank God for specific blessings in your life. Remember, each one is a gift from Him, not luck. Share this gratitude with someone else to remind them of God's faithfulness.`,
                     closing: `What the world calls luck, we know as God’s blessings. Live with gratitude, and let His goodness shine through you.`,
                     audio: "assets/audio/ItsNotLuckButGodsBlessings.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
                   {
                     id: 27,
