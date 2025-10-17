@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+                  {
+                    id: 30,
+                    week: "Monday 13 October – Saturday 18 October 2025",
+                    title: "Maintain Your Deliverance",
+                    scripture: `Galatians 5:1 (NIV) – "It is for freedom that Christ has set us free. Stand firm, then, and do not let yourselves be burdened again by a yoke of slavery."`,
+                    reflection: `Receiving deliverance from bondage—whether sin, fear, habit, or oppression—is a powerful moment of victory. But the journey doesn't end there. Maintaining that freedom requires intentional effort, steadfastness, and reliance on God's strength.\n\nDeliverance is a gift from God, but it also calls us to guard it carefully. The enemy often tries to steal our liberty through doubts, temptations, or old patterns. That’s why Paul urges us in Galatians to stand firm. We are to stay vigilant, rooted in God's Word, prayer, and community.\n\nRemember, the enemy’s goal is to bring us back into captivity, but God's plan is for us to walk continuously in freedom. Every day presents an opportunity to choose life, to resist temptation, and to reinforce our commitment to live in Christ’s victory.\n\nToday, declare your freedom in Christ and resolve to maintain it. Keep your heart guarded and your focus fixed on Jesus, who has already won the battle for you. By His grace, you can stand firm and enjoy the fullness of your deliverance.`,
+                    prayer: `Lord, I thank You for setting me free through Your Son, Jesus Christ. Help me to maintain my deliverance by staying rooted in Your truth. Guard my heart against the enemy’s schemes and give me the strength to stand firm in my freedom. Teach me to walk daily in Your grace and to resist anything that threatens my liberty. I declare that I am free in You, and I choose to remain steadfast in Your love. In Jesus’ name, Amen.`,
+                    contemplation: `- What areas in your life do you need to actively guard to maintain your freedom?\n- What habits or thoughts try to pull you back into bondage?\n- How can you strengthen your walk in the Word this week to remain free?`,
+                    action: `Spend time in prayer today, reaffirming your freedom in Christ. Identify one practical step to guard your heart—whether through Scripture meditation, accountability, or worship. Freedom must be nurtured daily.`,
+                    closing: `Christ has set you free—walk in that freedom with boldness, guard it with truth, and maintain it with faith. 💫`,
+                    audio: "assets/audio/MaintainYourDeliverance.mp3",
+                    isCurrent: true
+                  },
 
                   {
                     id: 29,
@@ -12,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Take time today to pray and identify any strongholds that may be limiting your spiritual growth. Find a Bible verse that speaks directly to that area, and declare it daily this week. Remember, God’s Word is your weapon of victory.`,
                     closing: `You are not powerless. The divine power of God lives in you to break every stronghold and walk in lasting freedom.`,
                     audio: "assets/audio/BreakingStrongholds.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
                   {
                     id: 28,
