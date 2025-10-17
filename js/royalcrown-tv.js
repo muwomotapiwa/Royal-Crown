@@ -38,6 +38,7 @@ function setUpMeetingWidgets() {
   const inlineContainer = document.getElementById('inlineZoomContainer');
   const inlineFrame = document.getElementById('inlineZoomFrame');
   const inlineStatus = document.getElementById('inlineZoomStatus');
+  const thumbnailCard = document.getElementById('thumbnailCard');
   let defaultInlineStatus = '';
 
   if (inlineStatus) {
@@ -77,6 +78,10 @@ function setUpMeetingWidgets() {
       } else {
         inlineContainer.hidden = true;
       }
+    }
+
+    if (thumbnailCard) {
+      thumbnailCard.hidden = inlineVisible;
     }
 
     if (shouldShowCountdown) {
