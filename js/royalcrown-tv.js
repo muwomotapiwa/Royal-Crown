@@ -57,7 +57,8 @@ function setUpMeetingWidgets() {
     const nextMeeting = getNextMeeting(now);
     const inlineVisible = shouldDisplayInlineMeeting(now);
     const minutesUntilMeeting = nextMeeting ? Math.floor((nextMeeting - now) / 60000) : null;
-    const shouldShowCountdown = Boolean(nextMeeting)
+    const nextMeetingIsToday = Boolean(nextMeeting) && nextMeeting.getDay() === now.getDay();
+    const shouldShowCountdown = nextMeetingIsToday
       && minutesUntilMeeting !== null
       && minutesUntilMeeting > MEETING_PREP_LEAD_MINUTES
       && !inlineVisible;
