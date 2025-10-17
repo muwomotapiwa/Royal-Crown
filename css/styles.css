@@ -132,6 +132,24 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .mobile-event {
+            display: none;
+        }
+        .mobile-event-media {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        .mobile-event-video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            .mobile-event {
+                display: block;
+            }
+        }
         .cta .btn {
             display: inline-block;
             background-color: #f1bb65; /* Gold */
