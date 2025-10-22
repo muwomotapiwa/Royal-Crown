@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
                   {
+                    id: 31,
+                    week: "Monday 20 October – Saturday 25 October 2025",
+                    title: "The Year Is Not Over Yet",
+                    scripture: `Philippians 1:6 – "Being confident of this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus."`,
+                    reflection: `As we approach the end of the year, it’s easy to feel discouraged about what we’ve accomplished or to think that time has run out for new beginnings. But let me remind you today: The year is not over yet. There is still time—time for God to move, to restore, to renew, and to fulfill His promises in your life.\n\nGod is a God of completion. The work He started in us is not finished until His purpose is fully realized. No matter what setbacks or disappointments you’ve faced this year, remember that God’s grace is still at work. There is still hope, still opportunity, and still time for miracles.`,
+                    contemplation: `- Don’t give up now—keep praying, believing, and moving forward.\n- Use the remaining days of the year to seek God’s guidance and favor.\n- Trust that God's plans for you are unfolding, even when you cannot see it yet.`,
+                    prayer: `Heavenly Father, thank You for the gift of this new day and for the reminder that the year is not over yet. We trust in Your promises, knowing that You who began a good work in us will bring it to completion. Help us to finish strong, to rely on Your strength, and to remain hopeful for what You still want to do in our lives. May we finish this year with faith and anticipation of Your goodness. In Jesus’ name, we pray. Amen.`,
+                    action: `Finish this week—and this year—with faith. Write down three things you’re still believing God to complete before the year ends, and pray over them daily.`,
+                    closing: `The year is not over, and neither is God’s work in your life. Keep believing—He’s not finished yet.`,
+                    audio: "assets/audio/TheYearIsNotOverYet.mp3",
+                    isCurrent: true
+                  },
+                  {
                     id: 30,
                     week: "Monday 13 October – Saturday 18 October 2025",
                     title: "Maintain Your Deliverance",
@@ -11,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Spend time in prayer today, reaffirming your freedom in Christ. Identify one practical step to guard your heart—whether through Scripture meditation, accountability, or worship. Freedom must be nurtured daily.`,
                     closing: `Christ has set you free—walk in that freedom with boldness, guard it with truth, and maintain it with faith. 💫`,
                     audio: "assets/audio/MaintainYourDeliverance.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
 
                   {
