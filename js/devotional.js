@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+                          {
+                          id: 35,
+                          week: "Monday 17 November – Saturday 22 November 2025",
+                          title: "Was the Wilderness Not Better Than Egypt?",
+                          scripture: `Deuteronomy 8:2-3 – "Remember how the Lord your God led you all the way in the wilderness these forty years, to humble and test you, in order to know what was in your heart, whether or not you would keep his commands. He humbled you, causing you to hunger and then feeding you with manna, to teach you that man does not live on bread alone but on every word that comes from the mouth of the Lord."`,
+                          reflection: `Sometimes, when we look back at difficult seasons in our lives—those wilderness moments—we wonder if they were truly better than the bondage we left behind. The Israelites experienced this during their journey from Egypt to the Promised Land. Though the wilderness was harsh and testing, it was also a place of divine provision, growth, and revelation.\n\nThe wilderness stripped away their dependence on Egypt, revealing their true hearts and teaching them to trust God fully. It was in that season of hardship that they learned to rely not on their own strength or the fleeting comforts of Egypt, but on God's daily provision and faithfulness.`,
+                          contemplation: `- What lessons is God teaching you in your wilderness?\n- Are you trusting in His provision and His promises?\n- Can you recognize His hand guiding you—even in the difficult moments?`,
+                          prayer: `Lord, thank You for the wilderness seasons in my life that teach me to trust You more deeply. Help me to see Your hand in every moment, to rely on Your provision, and to remember that You are with me, leading me toward a better, promised future. Give me faith to trust You even when the journey is hard, knowing that Your plans for me are good. In Jesus’ name, Amen.`,
+                          action: `Write down one area of your life where you feel like you're in a wilderness. Surrender it to God this week and ask Him to show you what He is teaching you through it.`,
+                          closing: `The wilderness is not punishment—it is preparation.`,
+                          audio: "assets/audio/WasTheWildernessBetterThanEgypt.mp3",
+                          isCurrent: false
+                        },
                         {
                       id: 34,
                       week: "Monday 10 November – Saturday 15 November 2025",
