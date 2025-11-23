@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+                            {
+                            id: 36,
+                            week: "Monday 24 November – Saturday 29 November 2025",
+                            title: "Expect More, Dream Bigger",
+                            scripture: `Ephesians 3:20 – "Now to Him who is able to do immeasurably more than all we ask or imagine, according to His power that is at work within us."`,
+                            reflection: `God is a God of abundance and limitless possibilities. Often, our hearts settle for small dreams or minimal expectations because we doubt God's ability to do more. But the truth of God's Word is that He desires to do "immeasurably more" than we can ask or imagine.\n\nWhen we learn to expect more from God, we open the door for Him to move in ways we never thought possible. Dreaming bigger is not about wishful thinking—it’s about trusting in a God who is able to exceed every expectation and move beyond what we can comprehend.`,
+                            contemplation: `- Are your expectations aligned with God's greatness?\n- What big dreams has God placed in your heart?\n- How can you begin to trust Him more for the impossible?`,
+                            prayer: `Lord, I thank You for Your limitless power and love. Help me to expect more from You and to dream bigger than I ever have before. Remove any doubts or fears that hold me back, and ignite a faith within me that believes for the extraordinary. I declare that I serve a God who can do far beyond anything I can ask or imagine. In Jesus' name, Amen.`,
+                            action: `Write down one big dream or goal that feels beyond your reach. Pray over it daily, trusting that God is able to bring it to pass.`,
+                            closing: `Open your heart—God is ready to exceed your greatest expectations.`,
+                            audio: "assets/audio/ExpectMoreDreamBigger.mp3",
+                            isCurrent: true
+                          },
+
                           {
                           id: 35,
                           week: "Monday 17 November – Saturday 22 November 2025",
