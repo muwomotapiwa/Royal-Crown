@@ -1,5 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
+                        {
+                      id: 34,
+                      week: "Monday 10 November – Saturday 15 November 2025",
+                      title: "Pray for Spiritual Eyes",
+                      scripture: `Ephesians 1:18 – "I pray that the eyes of your heart may be enlightened in order that you may know the hope to which He has called you, the riches of His glorious inheritance in His holy people."`,
+                      reflection: `As believers, we often see the world through natural eyes—focused on what we can perceive with our physical senses. But God's Word encourages us to pray for spiritual eyes—eyes that see beyond the surface and understand His divine truths.\n\nPraying for spiritual eyes means asking God to open our understanding to discern His will, recognize His presence, and see others with His love. It’s about gaining divine insight that transforms our perspective and deepens our faith.\n\nWhen our spiritual eyes are enlightened, we can see hope amid despair, purpose in our struggles, and God's hand guiding every detail of our lives.`,
+                      contemplation: `- Pray daily for God to open the eyes of your heart.\n- Seek His perspective in decisions, relationships, and challenges.\n- Look beyond the visible—trust in His unseen but eternal truths.`,
+                      prayer: `Heavenly Father, I ask You today to open the eyes of my heart. Illuminate my understanding so I can see Your hope, Your love, and Your purpose for my life. Help me to perceive what I cannot see with my physical eyes—Your presence in my circumstances and Your sovereignty over all things. Increase my faith to trust in what I see through spiritual eyes. In Jesus’ name, I pray. Amen.`,
+                      action: `Pause at least once each day this week and ask God: “What are You showing me that I cannot see naturally?”`,
+                      closing: `When your spiritual eyes open, your whole life changes.`,
+                      audio: "assets/audio/PrayForSpiritualEyes.mp3",
+                      isCurrent: false
+                    },
+                   {
+                    id: 33,
+                    week: "Monday 3 November – Saturday 8 November 2025",
+                    title: "Breaking the Cycle: Don’t Fail Where Your Parents Failed",
+                    scripture: `Joshua 1:9 – "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."`,
+                    reflection: `Many of us carry the stories of our family’s past—good and bad. Sometimes, we see patterns or struggles that seem to repeat from generation to generation. It might be a lack of faith, broken relationships, or missed opportunities. But today, I want to encourage you: You have the power to break the cycle.\n\nGod has called us to be different—to rise above past failures and to walk in the newness He offers. The Bible reminds us to be strong and courageous because God is with us. We don’t have to repeat the mistakes of those before us. Instead, we can choose to trust God, seek His guidance, and walk in obedience.`,
+                    contemplation: `- Reflect on areas where your family faced challenges—pray for strength to rise above them.\n- Break free from limiting patterns by trusting in God's transforming power.\n- Lead with faith and courage for future generations.`,
+                    prayer: `Heavenly Father, thank You for the new beginnings You offer. I ask for Your strength to not fail where my family may have fallen short. Help me to walk in faith, courage, and obedience, trusting that You are with me every step of the way. Break any cycles of failure or discouragement, and help me to leave a legacy of hope, faith, and victory for those who come after me. In Jesus’ name, I pray. Amen.`,
+                    action: `Write down one family cycle or pattern you refuse to repeat—and commit it to God in prayer.`,
+                    closing: `You are called to rise higher. The cycle ends with you.`,
+                    audio: "assets/audio/BreakingTheCycle.mp3",
+                    isCurrent: false
+                  },
+
+                  {
+                  id: 32,
+                  week: "Monday 27 October – Saturday 1 November 2025",
+                  title: "Pray with Faith and Expectation",
+                  scripture: `Mark 11:24 – "Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours."`,
+                  reflection: `Prayer is our direct line of communication with God, and it is through prayer that we express our trust, hopes, and needs to our Heavenly Father. But prayer is not just about asking; it’s about believing with confidence that God hears us and is able to answer.\n\nWhen we pray with faith and expectation, we are aligning our hearts with God's promises and trusting that He will move on our behalf. Hebrews 11:6 reminds us, "And without faith, it is impossible to please God..." Faith is the foundation that activates our prayers. Expectation is the attitude that opens our eyes to see God's hand at work.`,
+                  contemplation: `- Approach prayer with confidence, knowing that God hears you.\n- Expect God to move in ways that surpass your understanding.\n- Trust that His timing is perfect, even when the answer seems delayed.`,
+                  prayer: `Lord Jesus, I come before You today with faith and expectation. I believe that You are able to do exceedingly abundantly above all I ask or think. Help me to pray with confidence, trusting that You hear me and are working on my behalf. Increase my faith to believe in Your promises and my patience to wait for Your perfect timing. I thank You in advance for the answers, breakthroughs, and blessings that are on the way. In Your mighty name, I pray. Amen.`,
+                  action: `Pray this week with intentional faith—write down your top three prayers and declare God’s promises over each one.`,
+                  closing: `Pray boldly. Believe deeply. Expect God to move.`,
+                  audio: "assets/audio/PrayWithFaithAndExpectation.mp3",
+                  isCurrent: false
+                 },
                   {
                     id: 31,
                     week: "Monday 20 October – Saturday 25 October 2025",
@@ -11,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     action: `Finish this week—and this year—with faith. Write down three things you’re still believing God to complete before the year ends, and pray over them daily.`,
                     closing: `The year is not over, and neither is God’s work in your life. Keep believing—He’s not finished yet.`,
                     audio: "assets/audio/TheYearIsNotOverYet.mp3",
-                    isCurrent: true
+                    isCurrent: false
                   },
                   {
                     id: 30,
