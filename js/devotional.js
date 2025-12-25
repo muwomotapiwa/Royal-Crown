@@ -1,6 +1,58 @@
 document.addEventListener("DOMContentLoaded", () => {
   const devotionals = [
-                            {
+                                  {
+                                id: 40,
+                                week: "Monday 22 Dec – Saturday 27 Dec 2025",
+                                title: "We Live by Faith",
+                                scripture: `2 Corinthians 5:7 – "For we walk by faith, not by sight."`,
+                                reflection: `Living by faith means trusting in God's promises even when we cannot see the full picture. It’s a daily walk that requires us to rely on God's Word, His character, and His faithfulness, rather than our circumstances or feelings.\n\nFaith is the foundation of our relationship with God. It encourages us to believe in what we cannot see—His love, His plans, and His power to work all things together for good. Living by faith is choosing to trust God’s timing, His provision, and His promises, even in moments of doubt or difficulty.\n\nRemember, faith is not about blind optimism but about confident trust in a faithful God. As we live by faith, we step out of our comfort zones and into the supernatural work of God in our lives.`,
+                                contemplation: `- Are there areas in your life where you need to choose faith over fear?\n- How can you strengthen your trust in God today?\n- What promises from God are you holding onto by faith?`,
+                                prayer: `Father, thank You for calling me to live by faith. Help me to trust You completely, even when I cannot see the way ahead. Increase my faith and help me to rely on Your promises and Your Word. Teach me to walk confidently in Your love and power, knowing that You are always with me. I choose to live by faith today and every day. In Jesus’ name, I pray. Amen.`,
+                                action: `Identify one area where you need to walk more by faith. Declare God's promises over that situation and take a step forward, trusting that He is guiding you every step of the way.`,
+                                closing: `Faith is your foundation—walk boldly with God.`,
+                                audio: "assets/audio/WeLiveByFaith.mp3",
+                                isCurrent: true
+                              },
+                              {
+                                id: 39,
+                                week: "Monday 15 Dec – Saturday 20 Dec 2025",
+                                title: "The Power of Networking",
+                                scripture: `Proverbs 27:17 – "As iron sharpens iron, so one person sharpens another."`,
+                                reflection: `God designed us for community. The power of networking—building meaningful connections—can open doors, provide support, and bring new opportunities that we could never achieve alone. When we intentionally connect with others, we create a network of encouragement, wisdom, and resources.\n\nNetworking is not just about exchanging business cards or contacts; it’s about fostering relationships rooted in genuine care and faith. Jesus Himself modeled this when He called His disciples—ordinary people who became part of His extraordinary mission.\n\nIn the kingdom of God, our connections can be a source of strength and divine influence. As we network with purpose, we align ourselves with others who can uplift, challenge, and propel us toward God's purpose for our lives.`,
+                                contemplation: `- Who can you intentionally connect with today to encourage or be encouraged?\n- How can your relationships serve to build up others and advance God's kingdom?\n- Are there new opportunities or partnerships God is calling you to pursue?`,
+                                prayer: `Father, thank You for the gift of community and the power of genuine connections. Help me to build relationships that honor You and that strengthen my faith. Lead me to people who will sharpen me and whom I can serve in love. May my networking be rooted in Your purpose, and may it bring glory to Your name. Use these connections to advance Your kingdom here on earth. In Jesus’ name, I pray. Amen.`,
+                                action: `Reach out to someone today—whether for encouragement, prayer, or collaboration. Pray over your relationships and ask God to reveal how He can use them for His glory.`,
+                                closing: `You are not called to do life alone—God works through relationships.`,
+                                audio: "assets/audio/ThePowerOfNetworking.mp3",
+                                isCurrent: false
+                              },
+                              {
+                                id: 38,
+                                week: "Monday 8 Dec – Saturday 13 Dec 2025",
+                                title: "Don’t Wait for Opportunities, Create Your Own",
+                                scripture: `2 Corinthians 1:21-22 – "Now it is God who makes both us and you stand firm in Christ. He anointed us, set his seal of ownership on us, and put his Spirit in our hearts as a deposit, guaranteeing what is to come."`,
+                                reflection: `Waiting for the perfect opportunity can sometimes lead to missed chances or stagnation. Instead of waiting around for circumstances to be ideal, God calls us to be proactive—creating our own opportunities through faith, creativity, and action.\n\nJesus is an example of this mindset. He didn’t wait for people to come to Him; He went out, healed, taught, and made ways where none seemed possible. When we trust in God's Spirit within us, we have the power to forge new paths, open doors, and bring about change.\n\nCreating your own opportunities requires boldness and faith—believing that God has equipped you to make a difference. It’s about seeing what could be and taking steps of faith to bring it to life.`,
+                                contemplation: `- Are you waiting for the right opportunity, or are you ready to create one?\n- What steps can you take today to open new doors or make a way where none exists?\n- How can you rely on God's Spirit to guide and empower your efforts?`,
+                                prayer: `Father, thank You for the Spirit of creativity and boldness You’ve placed within me. Help me not to wait passively for opportunities but to create them with faith and wisdom. Lead me to steps of action that align with Your purpose. May I be a trailblazer for Your kingdom, trusting that You are with me every step of the way. In Jesus’ name, I pray. Amen.`,
+                                action: `Identify one area in your life where you’ve been waiting. Pray and ask God for wisdom and courage to create an opportunity for growth, breakthrough, or service. Take a concrete step today toward making it happen.`,
+                                closing: `Stop waiting—step out in faith and create what God has placed in your heart.`,
+                                audio: "assets/audio/DontWaitCreateYourOwn.mp3",
+                                isCurrent: false
+                              },
+                              {
+                                id: 37,
+                                week: "Monday 1 Dec – Saturday 6 Dec 2025",
+                                title: "Keep Saying It",
+                                scripture: `Proverbs 18:21 – "Death and life are in the power of the tongue, and those who love it will eat its fruits."`,
+                                reflection: `Our words have incredible power. What we speak consistently can shape our reality and influence our mindset. When God gives us promises, visions, or words of encouragement, it’s vital to keep saying them—even when circumstances seem to suggest otherwise.\n\n"Keep saying it" is a reminder to remain persistent in faith, to declare God’s truth over our lives repeatedly. David, for example, kept declaring God's promises even when faced with giants or opposition. His words became a declaration of faith that set the course for victory.\n\nRemember, the enemy often tries to silence or distort your words of faith. But if you keep speaking God's promises, you build up your spirit and create a path for God's power to work in your life.`,
+                                contemplation: `- What promises or declarations have you spoken that need reinforcement?\n- Are there words of faith you need to keep saying until they manifest?\n- How can your words align more with God's truth?`,
+                                prayer: `Lord, I thank You for the power of my words. Help me to keep saying what You have spoken over my life. Give me the strength to declare Your promises daily and to stand firm in faith. Teach me to speak life, hope, and victory, even in challenging times. I believe that Your Word will not return void, and I will keep saying it until I see it come to pass. In Jesus’ name, I pray. Amen.`,
+                                action: `Choose one promise from God that you need to declare regularly. Say it aloud several times today, and believe that God's Word is working on your behalf.`,
+                                closing: `Don’t stop speaking it—your words shape your tomorrow.`,
+                                audio: "assets/audio/KeepSayingIt.mp3",
+                                isCurrent: false
+                              },
+                                                          {
                             id: 36,
                             week: "Monday 24 November – Saturday 29 November 2025",
                             title: "Expect More, Dream Bigger",
@@ -11,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             action: `Write down one big dream or goal that feels beyond your reach. Pray over it daily, trusting that God is able to bring it to pass.`,
                             closing: `Open your heart—God is ready to exceed your greatest expectations.`,
                             audio: "assets/audio/ExpectMoreDreamBigger.mp3",
-                            isCurrent: true
+                            isCurrent: false
                           },
 
                           {
