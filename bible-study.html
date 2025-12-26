@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Study Tool - Royal Crown Ministries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bible-study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ✅ Favicon Setup -->
+    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Royal Crown Ministries International" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNLJR76CZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FNLJR76CZ9');
+</script>
+</head>
+
+<body class="bible-body">
+    <header>
+        <div class="logo">Royal Crown Ministries</div>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="events.html">Events</a>
+            <a href="ministries.html">Ministries</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="bible-study.html">Bible Study Tool</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main class="bible-page">
+        <div class="bible-study">
+            <div class="study-container">
+                <div class="study-hero">
+                    <div class="crown-icon">👑</div>
+                    <h1>RoyalCrown AI</h1>
+                    <p>Your Bible study companion — exploring Scripture with wisdom, reverence, and clarity.</p>
+                </div>
+                
+                <div class="api-config">
+                    <h3><i class="fas fa-crown"></i> Powered by Netlify Functions</h3>
+                    <div class="config-item">
+                        <strong>API Status:</strong> Secure via Netlify backend (API key hidden server-side)
+                    </div>
+                    <div class="config-item">
+                        <strong>Model:</strong> DeepSeek via OpenRouter
+                    </div>
+                    <div class="config-item">
+                        <strong>Allowed Use:</strong> Bible study, Scripture exploration, and related questions only.
+                    </div>
+                </div>
+                
+                <div class="chat-container">
+                    <div class="verse-of-day">
+                        <h3><i class="fas fa-star"></i> Verse of the Day</h3>
+                        <div class="verse-text">"Your word is a lamp to my feet and a light to my path."</div>
+                        <div class="verse-reference">— Psalm 119:105 (ESV)</div>
+                    </div>
+                    
+                    <div id="status" class="status"></div>
+                    
+                    <div class="conversation" id="conversation">
+                        <div class="message ai-message">
+                            <div class="message-header">
+                                <div class="ai-icon">👑</div>
+                                <span>RoyalCrown AI</span>
+                            </div>
+                            <div class="message-content">
+                                <p>Greetings in the name of our Lord! I am RoyalCrown AI, your Bible study companion.</p>
+                                
+                                <p>I'm here to help you explore Scripture, understand biblical teachings, and apply God's Word to daily life. I stay focused on the Bible and related faith questions.</p>
+                                
+                                <div class="scripture">
+                                    <span class="verse">James 1:5</span> — "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him."
+                                </div>
+                                
+                                <p><strong>Try asking me:</strong></p>
+                                <ul>
+                                    <li>Explain the meaning of John 3:16</li>
+                                    <li>What does the Bible say about forgiveness?</li>
+                                    <li>Tell me about the fruits of the Spirit</li>
+                                    <li>How can I apply Proverbs to daily decisions?</li>
+                                </ul>
+                                
+                                <span class="blessing">May God bless your study of His Word today! ✝</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <span>RoyalCrown AI is reflecting on Scripture...</span>
+                    </div>
+                    
+                    <div class="input-area">
+                        <textarea id="question" placeholder="Ask your Bible question here... (e.g., 'Explain the parable of the prodigal son' or 'What does Philippians 4:13 mean?')">What is the significance of the crown in the Bible?</textarea>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn-primary" onclick="askQuestion()" id="askBtn">
+                            <i class="fas fa-pray"></i> Ask RoyalCrown AI
+                        </button>
+                        <button class="btn-secondary" onclick="clearChat()">
+                            <i class="fas fa-eraser"></i> Clear Conversation
+                        </button>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn-example" onclick="useExample('Explain the meaning of John 3:16')">
+                            <i class="fas fa-quote-right"></i> John 3:16
+                        </button>
+                        <button class="btn-example" onclick="useExample('What are the fruits of the Spirit?')">
+                            <i class="fas fa-apple-alt"></i> Fruits of Spirit
+                        </button>
+                        <button class="btn-example" onclick='useExample("Explain the Lord's Prayer")'>
+                            <i class="fas fa-hands-praying"></i> Lord's Prayer
+                        </button>
+                        <button class="btn-example" onclick="useExample('What does the Bible say about hope?')">
+                            <i class="fas fa-dove"></i> Biblical Hope
+                        </button>
+                    </div>
+                    
+                    <div class="footer-note">
+                        <strong><i class="fas fa-info-circle"></i> Note:</strong> This Bible study tool sends your prompt to a secure Netlify Function so your API key stays hidden. Always compare insights with your own study, prayer, and counsel from spiritual leaders. AI supports learning Scripture; it does not replace personal relationship with God.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Royal Crown Ministries. All rights reserved.</p>
+        <p>Address: Eagles Nest Lodge,112 Leslie Avenue , Fourways, Johannesburg | Email: rministriesinternational1@gmail.com | Contact: +27 (81) 760-0928</p>
+            <div class="site-credit">
+                <a href="mailto:muwomotapiwa@gmail.com?subject=Clicked Website Credit on royalcrownministries.org - Bible Study Tool">Website by KypexTech</a>
+            </div>          
+    </footer>
+    
+    <script>
+        // Update with your deployed Netlify function URL
+        const NETLIFY_FUNCTION_URL = 'https://royalcrownbackend.netlify.app/.netlify/functions/bible-chat';
+        
+        // DOM Elements
+        const questionInput = document.getElementById('question');
+        const askBtn = document.getElementById('askBtn');
+        const conversation = document.getElementById('conversation');
+        const loading = document.getElementById('loading');
+        const status = document.getElementById('status');
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        // Bible-themed example prompts
+        const biblePrompts = [
+            "What is the meaning of the Sermon on the Mount?",
+            "Explain the significance of Jesus' resurrection",
+            "How do the Ten Commandments apply today?",
+            "What does the Bible say about love?",
+            "Tell me about the armor of God in Ephesians 6",
+            "Explain the story of David and Goliath",
+            "What are the Beatitudes?",
+            "How can I trust God in difficult times?"
+        ];
+        
+        // Ask question via Netlify backend
+        async function askQuestion() {
+            const question = questionInput.value.trim();
+            
+            if (!question) {
+                showStatus('Please enter a Bible question or topic', 'error');
+                questionInput.focus();
+                return;
+            }
+
+            // Protect against forgotten placeholder
+            if (NETLIFY_FUNCTION_URL.includes('your-site-name')) {
+                showStatus('Please set NETLIFY_FUNCTION_URL to your deployed Netlify function endpoint.', 'error');
+                return;
+            }
+            
+            // Add user message to conversation
+            addMessage(question, 'user');
+            
+            // Clear input
+            questionInput.value = '';
+            
+            // Show loading
+            loading.style.display = 'flex';
+            askBtn.disabled = true;
+            
+            try {
+                const response = await fetch(NETLIFY_FUNCTION_URL, {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: question })
+                });
+                
+                const data = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(data.error || `API Error ${response.status}`);
+                }
+                
+                const aiResponse = data.response || data.choices?.[0]?.message?.content || 'No response content received.';
+                addMessage(aiResponse, 'ai');
+                
+                setTimeout(() => {
+                    const lastMessage = conversation.lastElementChild;
+                    if (lastMessage) {
+                        lastMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 100);
+                
+                const usageInfo = data.usage ? ` (Scripture explored with ${data.usage.total_tokens} tokens)` : '';
+                showStatus(`✅ RoyalCrown AI has responded with biblical insights${usageInfo}`, 'success');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                addMessage(`I encountered an error: ${error.message}. Please try again with your Bible question.`, 'ai');
+                showStatus(`❌ Error: ${error.message}`, 'error');
+            } finally {
+                loading.style.display = 'none';
+                askBtn.disabled = false;
+                updateBackToTopButton();
+            }
+        }
+        
+        // Add message to conversation with special Bible formatting
+        function addMessage(content, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const icon = sender === 'user' ? '🙏' : '👑';
+            const senderName = sender === 'user' ? 'You' : 'RoyalCrown AI';
+            
+            const formattedContent = formatBibleContent(content);
+            
+            messageDiv.innerHTML = `
+                <div class="message-header">
+                    <div class="${sender}-icon">${icon}</div>
+                    <span>${senderName}</span>
+                </div>
+                <div class="message-content">${formattedContent}</div>
+            `;
+            
+            conversation.appendChild(messageDiv);
+            
+            setTimeout(updateBackToTopButton, 100);
+        }
+        
+        // Format message with special Bible highlighting
+        function formatBibleContent(text) {
+            let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            formatted = formatted.replace(/\n\n/g, '</p><p>');
+            formatted = formatted.replace(/\n/g, '<br>');
+            
+            if (!formatted.startsWith('<p>')) {
+                formatted = '<p>' + formatted + '</p>';
+            }
+            
+            formatted = formatted.replace(
+                /(\b(?:Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|Samuel|Kings|Chronicles|Ezra|Nehemiah|Esther|Job|Psalms?|Proverbs|Ecclesiastes|Song of Solomon|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|Corinthians|Galatians|Ephesians|Philippians|Colossians|Thessalonians|Timothy|Titus|Philemon|Hebrews|James|Peter|Jude|Revelation)\s+\d+:\d+(?:-\d+)?)/gi,
+                '<span class="verse">$1</span>'
+            );
+            
+            if (formatted.includes('class="verse"')) {
+                formatted = formatted.replace(/<p>(.*?class="verse".*?)<\/p>/g, '<div class="scripture"><p>$1</p></div>');
+            }
+            
+            if (formatted.toLowerCase().includes('god bless') || formatted.includes('✝') || formatted.includes('Amen')) {
+                formatted += '<span class="blessing">May God bless your study of His Word! ✝</span>';
+            }
+            
+            return formatted;
+        }
+        
+        // Use example question
+        function useExample(question) {
+            questionInput.value = question;
+            questionInput.focus();
+            questionInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        // Show status message
+        function showStatus(message, type) {
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+            
+            setTimeout(() => {
+                if (type === 'success') {
+                    status.style.display = 'none';
+                }
+            }, 5000);
+        }
+        
+        // Clear chat but keep the initial welcome message
+        function clearChat() {
+            conversation.innerHTML = `
+                <div class="message ai-message">
+                    <div class="message-header">
+                        <div class="ai-icon">👑</div>
+                        <span>RoyalCrown AI</span>
+                    </div>
+                    <div class="message-content">
+                        <p>Greetings in the name of our Lord! I am RoyalCrown AI, your Bible study companion.</p>
+                        
+                        <p>I'm here to help you explore Scripture, understand biblical teachings, and apply God's Word to daily life. I stay focused on the Bible and related faith questions.</p>
+                        
+                        <div class="scripture">
+                            <span class="verse">James 1:5</span> — "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him."
+                        </div>
+                        
+                        <p><strong>Try asking me:</strong></p>
+                        <ul>
+                            <li>Explain the meaning of John 3:16</li>
+                            <li>What does the Bible say about forgiveness?</li>
+                            <li>Tell me about the fruits of the Spirit</li>
+                            <li>How can I apply Proverbs to daily decisions?</li>
+                        </ul>
+                        
+                        <span class="blessing">May God bless your study of His Word today! ✝</span>
+                    </div>
+                </div>
+            `;
+            
+            const randomPrompt = biblePrompts[Math.floor(Math.random() * biblePrompts.length)];
+            questionInput.value = randomPrompt;
+            status.style.display = 'none';
+            
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+            
+            showStatus('Conversation cleared. Ready for your next Bible question.', 'success');
+            updateBackToTopButton();
+        }
+        
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Update back to top button visibility
+        function updateBackToTopButton() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        }
+        
+        // Handle Enter key (send on Enter, new line on Shift+Enter)
+        questionInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            questionInput.focus();
+            showStatus('RoyalCrown AI is ready to explore Scripture with you via the secure Netlify backend.', 'success');
+            
+            window.addEventListener('scroll', updateBackToTopButton);
+            
+            const bibleVerses = [
+                { text: '"For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."', ref: "John 3:16" },
+                { text: '"I can do all things through him who strengthens me."', ref: "Philippians 4:13" },
+                { text: '"Trust in the Lord with all your heart, and do not lean on your own understanding."', ref: "Proverbs 3:5" },
+                { text: '"The Lord is my shepherd; I shall not want."', ref: "Psalm 23:1" },
+                { text: '"Be still, and know that I am God."', ref: "Psalm 46:10" },
+                { text: '"But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control."', ref: "Galatians 5:22-23" }
+            ];
+            
+            if (Math.random() < 0.2) {
+                const randomVerse = bibleVerses[Math.floor(Math.random() * bibleVerses.length)];
+                document.querySelector('.verse-of-day .verse-text').textContent = `${randomVerse.text}`;
+                document.querySelector('.verse-of-day .verse-reference').textContent = `— ${randomVerse.ref}`;
+            }
+        });
+    </script>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
