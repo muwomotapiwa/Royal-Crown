@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const events = [
-        // 2025 Ministry Events Only
+        // New placeholder upcoming event
+        {
+            id: 0,
+            name: "New Year's Eve All-Night Service",
+            date: "2026-12-31",
+            time: "All night",
+            location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
+            description: "Join us for our all-night crossover service into the new year.",
+        },
+        // 2025 Ministry Events
         {
             id: 1,
             name: "Easter Conference",
