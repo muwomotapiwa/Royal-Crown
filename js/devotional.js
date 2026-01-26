@@ -1,5 +1,27 @@
 const fallbackDevotionals = [
   {
+  id: 45,
+  week: "Monday 26 Jan – Saturday 31 Jan 2026",
+  title: "It’s Not About Others — It’s About You",
+  scripture: `Matthew 7:3 – "Why do you look at the speck in your brother’s eye, but do not consider the plank in your own eye?"`,
+  reflection: `We live in a world obsessed with comparison. We look at what others have, what others are doing, and how others are living—and we measure our worth against them. But God’s kingdom doesn’t operate on comparison.
+
+Your life is not a competition. Your faith is not a performance. Your journey is personal—and God is more interested in your heart than your image.
+
+When you focus on others, you become distracted. You begin to judge instead of pray, compete instead of cooperate, complain instead of confess, and compare instead of cultivate. But God is calling you to a higher standard—not the standard of the world, but the standard of the heart.
+
+It’s not about what others are doing. It’s about what God is doing in you. God wants to deal with your pride, jealousy, bitterness, anger, and even self-condemnation. He desires to refine you, shape you, and make you a vessel of honor.`,
+  contemplation: `- What am I focusing on—others or God?
+- Am I comparing myself to people instead of connecting with God?
+- What area of my life needs God’s attention today?`,
+  prayer: `Father, forgive me for being distracted by what others are doing. Help me to focus on You and the work You are doing in me. Give me a heart that is humble, content, and committed to Your purpose. Let my life reflect Your glory, not my comparison. In Jesus’ name, Amen.`,
+  action: `This week, redirect your focus inward. Replace comparison with prayer and ask God to work deeply in the areas He wants to refine.`,
+  closing: `The moment you stop looking outward and start looking inward, you discover the true purpose God is shaping within you.`,
+  meditationScripture: `Matthew 6:33 – "But seek first the kingdom of God and His righteousness, and all these things will be added to you."`,
+  audio: "assets/audio/ItsNotAboutOthersItsAboutYou.mp3",
+  isCurrent: true
+},
+  {
   id: 44,
   week: "Monday 19 Jan – Saturday 24 Jan 2026",
   title: "Demand What Is Yours in Faith",
