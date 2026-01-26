@@ -1,20 +1,74 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const devotionals = [
+const fallbackDevotionals = [
+  {
+  id: 43,
+  week: "Monday 12 Jan – Saturday 17 Jan 2026",
+  title: "Win in the New Year with a Changed Mindset",
+  scripture: `Romans 12:2 – "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect."`,
+  reflection: `As we step into a new year, many of us set goals, make resolutions, and hope for positive change. But true victory in the new year begins with a shift—the renewal of our mindset. If we keep thinking the same way, we’ll likely face the same struggles and miss the opportunities God has for us.
+
+A different mindset involves trusting God's promises, viewing challenges as opportunities for growth, and believing that with Him, all things are possible. It’s about aligning our thoughts with His truth, letting go of limiting beliefs, and embracing a perspective rooted in faith and hope.
+
+Winning in life and purpose doesn’t start with external circumstances—it begins within. When our minds are renewed, our actions follow, and victory becomes inevitable.`,
+  contemplation: `- What thoughts or beliefs need renewal in your life?
+- How do your daily thoughts align with God’s truth?
+- What mindset shift is God inviting you to make this year?`,
+  prayer: `Father, thank You for new beginnings and fresh opportunities. Help me to renew my mind and to think differently this year—with faith, hope, and confidence in You. Remove any limiting beliefs or negative thoughts that hinder my progress. Align my thoughts with Your truth so I can walk in victory and fulfill Your purpose for my life. In Jesus’ name, I pray. Amen.`,
+  action: `Renew your mind daily by replacing negative thoughts with God’s promises. Declare victory through Christ over your life.`,
+  closing: `In the new year, you win with a renewed mind rooted in faith and God’s promises.`,
+  audio: "assets/audio/ChangedMindset.mp3",
+  isCurrent: false
+},
+  {
+  id: 42,
+  week: "Monday 5 Jan – Saturday 10 Jan 2026",
+  title: "Embrace Your Difference",
+  scripture: `1 Peter 2:9 – "But you are a chosen generation, a royal priesthood, a holy nation, His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light."`,
+  reflection: `In a world that often encourages conformity, standing out can feel challenging. But as followers of Christ, we are called to be different—not to isolate ourselves, but to reflect His light and truth in a way that sets us apart from worldly patterns.
+
+Being different means embracing God's unique design for our lives. It’s about living with integrity, showing kindness in the midst of negativity, and acting with love when others act selfishly. It’s about standing firm in our faith, even when it’s unpopular, and shining as a beacon of hope in a dark world.
+
+God intentionally made us different—each with our own gifts, passions, and purpose. When we choose to be different in His love, we become His witnesses, revealing His glory and drawing others to Him.`,
+  contemplation: `- Where have you felt pressure to conform instead of standing firm?
+- How can your difference reflect Christ more clearly?
+- What gift or trait has God given you to use for His glory?`,
+  prayer: `Lord, help me to be different in a world that often promotes sameness. Give me the courage to stand firm in my faith, to live with integrity, and to shine Your light brightly. Help me to embrace the differences You’ve designed in me and to use them to glorify You. May my life be a reflection of Your love and truth, drawing others closer to Your kingdom. In Jesus’ name, I pray. Amen.`,
+  action: `Identify one area where you can intentionally be different—through your words, actions, or attitude—and let it reflect Christ.`,
+  closing: `To be different is to be a reflection of Christ. Stand out for His glory.`,
+  audio: "assets/audio/EmbraceYourDifference.mp3",
+  isCurrent: false
+},
+  {
+  id: 41,
+  week: "Monday 29 Dec – Saturday 3 Jan 2026",
+  title: "Guard Your Words—Conversations that Shape Destiny",
+  scripture: `Proverbs 18:21 – "Death and life are in the power of the tongue, and those who love it will eat its fruits."`,
+  reflection: `Our words are powerful. They have the capacity to build up, encourage, and bring life. Conversely, they can also destroy, discourage, and delay God's plans for our lives. The truth is, not every conversation is neutral. Some exchanges can inadvertently delay our destiny or steer us away from God's purpose.
+
+Think about times when a careless word or a negative comment led to misunderstandings or missed opportunities. Or consider how speaking doubt instead of faith can hinder your progress. Every conversation carries weight—either aligning us with God's promises or pulling us away from them.`,
+  contemplation: `- Are there conversations in your life that may be delaying your destiny?
+- Do your words consistently reflect faith or fear?
+- How can you be more intentional with what you say this week?`,
+  prayer: `Lord, help me to be mindful of my words. Guard my tongue so that I do not speak words that delay Your plan for my life. Give me wisdom to speak life, encouragement, and faith. May my conversations align with Your purpose and bring about the destiny You have for me. Help me to recognize when my words are not neutral but potentially harmful, and grant me the grace to choose my words wisely. In Jesus’ name, I pray. Amen.`,
+  action: `Be intentional about your conversations today. Before speaking, ask God if your words will build life or delay destiny. Let your speech be seasoned with grace, truth, and faith.`,
+  closing: `Not every conversation is neutral—choose your words carefully, for they shape your destiny.`,
+  audio: "assets/audio/GuardYourWords.mp3",
+  isCurrent: false
+},
                                   {
-                                id: 40,
-                                week: "Monday 22 Dec – Saturday 27 Dec 2025",
-                                title: "We Live by Faith",
-                                scripture: `2 Corinthians 5:7 – "For we walk by faith, not by sight."`,
-                                reflection: `Living by faith means trusting in God's promises even when we cannot see the full picture. It’s a daily walk that requires us to rely on God's Word, His character, and His faithfulness, rather than our circumstances or feelings.\n\nFaith is the foundation of our relationship with God. It encourages us to believe in what we cannot see—His love, His plans, and His power to work all things together for good. Living by faith is choosing to trust God’s timing, His provision, and His promises, even in moments of doubt or difficulty.\n\nRemember, faith is not about blind optimism but about confident trust in a faithful God. As we live by faith, we step out of our comfort zones and into the supernatural work of God in our lives.`,
-                                contemplation: `- Are there areas in your life where you need to choose faith over fear?\n- How can you strengthen your trust in God today?\n- What promises from God are you holding onto by faith?`,
-                                prayer: `Father, thank You for calling me to live by faith. Help me to trust You completely, even when I cannot see the way ahead. Increase my faith and help me to rely on Your promises and Your Word. Teach me to walk confidently in Your love and power, knowing that You are always with me. I choose to live by faith today and every day. In Jesus’ name, I pray. Amen.`,
-                                action: `Identify one area where you need to walk more by faith. Declare God's promises over that situation and take a step forward, trusting that He is guiding you every step of the way.`,
-                                closing: `Faith is your foundation—walk boldly with God.`,
-                                audio: "assets/audio/WeLiveByFaith.mp3",
-                                isCurrent: true
-                              },
-                              {
-                                id: 39,
+  id: 40,
+  week: "Monday 22 Dec – Saturday 27 Dec 2025",
+  title: "We Live by Faith",
+  scripture: `2 Corinthians 5:7 – "For we walk by faith, not by sight."`,
+  reflection: `Living by faith means trusting in God's promises even when we cannot see the full picture. It’s a daily walk that requires us to rely on God's Word, His character, and His faithfulness, rather than our circumstances or feelings.\n\nFaith is the foundation of our relationship with God. It encourages us to believe in what we cannot see—His love, His plans, and His power to work all things together for good. Living by faith is choosing to trust God’s timing, His provision, and His promises, even in moments of doubt or difficulty.\n\nRemember, faith is not about blind optimism but about confident trust in a faithful God. As we live by faith, we step out of our comfort zones and into the supernatural work of God in our lives.`,
+  contemplation: `- Are there areas in your life where you need to choose faith over fear?\n- How can you strengthen your trust in God today?\n- What promises from God are you holding onto by faith?`,
+  prayer: `Father, thank You for calling me to live by faith. Help me to trust You completely, even when I cannot see the way ahead. Increase my faith and help me to rely on Your promises and Your Word. Teach me to walk confidently in Your love and power, knowing that You are always with me. I choose to live by faith today and every day. In Jesus’ name, I pray. Amen.`,
+  action: `Identify one area where you need to walk more by faith. Declare God's promises over that situation and take a step forward, trusting that He is guiding you every step of the way.`,
+  closing: `Faith is your foundation—walk boldly with God.`,
+  audio: "assets/audio/WeLiveByFaith.mp3",
+  isCurrent: false
+},
+{
+  id: 39,
                                 week: "Monday 15 Dec – Saturday 20 Dec 2025",
                                 title: "The Power of Networking",
                                 scripture: `Proverbs 27:17 – "As iron sharpens iron, so one person sharpens another."`,
@@ -532,7 +586,25 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
     }
   ];
 
-  const devotionalList = document.getElementById("devotional-list");
+const loadDevotionals = async () => {
+  if (window.DevotionalData && typeof window.DevotionalData.fetchDevotionals === "function") {
+    try {
+      const data = await window.DevotionalData.fetchDevotionals();
+      if (Array.isArray(data) && data.length) {
+        return data;
+      }
+    } catch (err) {
+      console.warn("Failed to load devotionals from sheet. Using fallback data.", err);
+    }
+  }
+
+  return fallbackDevotionals;
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const start = async () => {
+    const devotionals = await loadDevotionals();
+    const devotionalList = document.getElementById("devotional-list");
   const memoryVerse = document.getElementById("memory-verse");
   const searchBar = document.getElementById("searchBar");
 
@@ -603,4 +675,7 @@ The world may cast shadows of negativity and self-doubt upon us, suggesting we a
       nav.classList.toggle("show");
     });
   }
+  };
+
+  start();
 });

@@ -73,18 +73,18 @@
 
 
 <!-- Devotional Highlight Section -->
-<section class="devotional-highlight">
+<section class="devotional-highlight" data-devotional-highlight>
   <div class="devotional-wrapper">
     <div class="devotional-image">
-      <img src="assets/welivebyfaith.jpeg" alt="We Live by Faith" />
+      <img src="assets/welivebyfaith.jpeg" alt="We Live by Faith" id="devotional-image" />
     </div>
     <div class="devotional-content">
       <h2>🔥 This Week's Devotional</h2>
-      <h3><strong>We Live by Faith</strong></h3>
-      <p class="scripture">
+      <h3 id="devotional-title"><strong>We Live by Faith</strong></h3>
+      <p class="scripture" id="devotional-scripture">
         “For we walk by faith, not by sight.” – 2 Corinthians 5:7
       </p>
-      <p class="highlight">
+      <p class="highlight" id="devotional-highlight">
         Faith goes beyond what you can see — it trusts what God has spoken.  
         Step boldly into what He has for you, even if the path isn’t fully visible. 🙏✨
       </p>
@@ -93,9 +93,7 @@
   </div>
 </section>
 
-
-
-    <!-- Events Section -->
+<!-- Events Section -->
     <section class="section" id="events">
         <h2>Upcoming Events</h2>
         <div class="events-grid">
@@ -175,6 +173,8 @@
             </div>          
     </footer>
     <!-- Link to the JavaScript file in the js folder -->
+    <script src="js/devotional-data.js" defer></script>
+    <script src="js/home-devotional.js" defer></script>
     <script src="js/scripts.js" defer></script>
 
     <!-- ✅ Tawk.to Live Chat Script -->
