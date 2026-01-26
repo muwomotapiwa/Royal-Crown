@@ -1,5 +1,25 @@
 const fallbackDevotionals = [
   {
+  id: 44,
+  week: "Monday 19 Jan – Saturday 24 Jan 2026",
+  title: "Demand What Is Yours in Faith",
+  scripture: `Psalm 2:8 – "Ask of me, and I will make the nations your inheritance, the ends of the earth your possession."`,
+  reflection: `Many times, we find ourselves pleading and begging for God's blessings, asking Him to move on our behalf. But God’s Word reminds us that as His children, certain blessings and promises are rightfully ours—things we don’t have to beg for, but can confidently demand through faith.
+
+2026 is a year to stand firm and demand what belongs to you in Christ. It’s time to shift from a posture of pleading to a posture of declaration. Speak God's promises over your life with boldness. Declare your rights as a child of God—healing, provision, favor, wisdom, and breakthrough.
+
+Remember, Jesus already paid the price for everything you need. You don’t have to beg for what is already yours; you need to demand it in faith, knowing that God's promises are yes and amen.`,
+  contemplation: `- What promises from God have I been begging for instead of believing are already mine?
+- Where do I need to shift from pleading to faith-filled declaration?
+- Do my prayers reflect confidence in my identity as a child of God?
+- What inheritance in Christ do I need to start declaring boldly?`,
+  prayer: `Father, thank You for Your abundant promises. I declare that 2026 is the year I will demand what is rightfully mine in Christ. I refuse to beg or plead, but I stand firm in faith, confident that You will fulfill Your Word in my life. Help me to walk in authority and declare Your blessings over my family, my future, and my purpose. In Jesus’ name, I demand my inheritance. Amen.`,
+  action: `Write down the promises of God that you are believing for. Declare them daily with faith and authority, trusting that what is yours in Christ is already secured.`,
+  closing: `What God has promised is already yours—stand in faith, speak with authority, and walk confidently in your inheritance.`,
+  audio: "assets/audio/DemandWhatIsYoursInFaith.mp3",
+  isCurrent: false
+},
+  {
   id: 43,
   week: "Monday 12 Jan – Saturday 17 Jan 2026",
   title: "Win in the New Year with a Changed Mindset",
