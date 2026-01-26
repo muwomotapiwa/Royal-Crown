@@ -79,38 +79,22 @@ form.addEventListener("submit", async (event) => {
     return;
   }
 
+  const body = new URLSearchParams(payload).toString();
+
   try {
     setStatus("Publishing devotional...");
-    const response = await fetch(SCRIPT_URL, {
+    await fetch(SCRIPT_URL, {
       method: "POST",
-      body: JSON.stringify(payload)
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body
     });
 
-    let result = null;
-    try {
-      const text = await response.text();
-      result = JSON.parse(text);
-    } catch (parseError) {
-      result = null;
-    }
-
-    if (!response.ok || (result && !result.ok)) {
-      throw new Error((result && result.error) || "Publish failed.");
-    }
-
-    setStatus("Published! The site will update shortly.");
+    setStatus("Submitted. Please check the sheet to confirm.", false);
     form.reset();
   } catch (err) {
-    try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        body: JSON.stringify(payload)
-      });
-      setStatus("Submitted. Please check the sheet to confirm.", false);
-      form.reset();
-    } catch (fallbackError) {
-      setStatus(`Publish failed: ${err.message}`, true);
-    }
+    setStatus(`Publish failed: ${err.message}`, true);
   }
 });
