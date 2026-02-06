@@ -1,5 +1,30 @@
 const fallbackDevotionals = [
   {
+  id: 46,
+  week: "Monday 2 Feb – Saturday 7 Feb 2026",
+  title: "Break the Cycle and Start Afresh",
+  scripture: `Isaiah 43:18–19 – "Forget the former things; do not dwell on the past. See, I am doing a new thing!"`,
+  reflection: `Many people live in cycles—repeating the same mistakes, experiencing the same setbacks, and attracting the same kind of pain. But God is a God of fresh starts.
+
+The enemy wants you trapped in the past so you will remain stuck in the present. He wants you to believe that your history defines your destiny. But God says your past is not your future.
+
+You don’t have to keep repeating the same story. You don’t have to stay in the same season. You don’t have to live with the same pain. It’s time to break the cycle and start afresh.
+
+A new season begins when you decide to change your mindset, your habits, and your focus. You can’t start afresh while still living in yesterday’s mindset.
+
+Release the past. Renew your mind. Refuse old patterns. Receive God’s new direction.`,
+  contemplation: `- What cycle am I stuck in?
+- What habits keep pulling me back?
+- What do I need to release in order to move forward?
+- What is God saying to me right now?`,
+  prayer: `Father, I thank You for the power of new beginnings. Break every cycle that has kept me trapped. Help me to release the past and embrace the new thing You are doing in my life. Renew my mind, restore my hope, and guide my steps. I choose to start afresh today, in Jesus’ name. Amen.`,
+  action: `Identify one pattern or habit to release this week. Replace it intentionally with a God-aligned choice that moves you forward.`,
+  closing: `Your past does not define you—your God does. Break the cycle. Start afresh. Walk boldly into your new season.`,
+  meditationScripture: `2 Corinthians 5:17 – "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."`,
+  audio: "assets/audio/BreakTheCycleAndStartAfresh.mp3",
+  isCurrent: false
+},
+  {
   id: 45,
   week: "Monday 26 Jan – Saturday 31 Jan 2026",
   title: "It’s Not About Others — It’s About You",
