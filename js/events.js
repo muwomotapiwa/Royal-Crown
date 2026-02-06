@@ -1,54 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
     const events = [
-        // New placeholder upcoming event
-        {
-            id: 0,
-            name: "New Year's Eve All-Night Service",
-            date: "2026-12-31",
-            time: "All night",
-            location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "Join us for our all-night crossover service into the new year.",
-        },
-        // 2025 Ministry Events
         {
             id: 1,
             name: "Easter Conference",
-            date: "2025-04-18",
-            time: "1:30 PM",
+            startDate: "2026-04-03",
+            endDate: "2026-04-05",
+            time: "From 1:30 PM daily",
             location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "Join us for a powerful 3-day Easter Conference.",
+            description: "Three days of worship, word, and fellowship over Easter weekend.",
         },
         {
             id: 2,
-            name: "9th Year Church Anniversary",
-            date: "2025-05-02",
+            name: "10th Year Church Anniversary",
+            startDate: "2026-05-01",
             time: "1:30 PM",
             location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "Celebrating 9 years of grace, growth, and glory.",
+            description: "Celebrating a decade of God's faithfulness to Royal Crown Ministries.",
         },
         {
             id: 3,
-            name: "Faithfire Conference",
-            date: "2025-09-12",
+            name: "Family Talents",
+            startDate: "2026-10-11",
             time: "1:30 PM",
             location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "3-day revival of faith, fire, and transformation.",
+            description: "Showcase and celebrate the gifts within every family.",
         },
         {
             id: 4,
-            name: "Family Talents Day",
-            date: "2025-10-19",
+            name: "Appreciation Day",
+            startDate: "2026-12-13",
             time: "1:30 PM",
             location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "Celebrate gifts and talents with the whole family.",
-        },
-        {
-            id: 5,
-            name: "Thanksgiving Sunday",
-            date: "2025-12-07",
-            time: "1:30 PM",
-            location: "Eagles Nest Lodge,112 Leslie Avenue, Fourways, Sandton",
-            description: "A special thanksgiving service to close the year.",
+            description: "Honoring partners, volunteers, and friends of the ministry.",
         },
     ];
 
@@ -58,18 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const eventCalendarContainer = document.getElementById("event-calendar");
 
     events.forEach((event) => {
-        const eventDate = new Date(event.date);
+        const startDate = new Date(event.startDate);
+        const endDate = event.endDate ? new Date(event.endDate) : null;
+        const referenceDate = endDate || startDate;
+        const dateLabel = endDate
+            ? `${startDate.toLocaleDateString()} - ${endDate.toLocaleDateString()}`
+            : startDate.toLocaleDateString();
         const eventCard = `
             <div class="event-card">
                 <h3>${event.name}</h3>
-                <p><strong>Date:</strong> ${eventDate.toLocaleDateString()}</p>
+                <p><strong>Date:</strong> ${dateLabel}</p>
                 <p><strong>Time:</strong> ${event.time}</p>
                 <p><strong>Location:</strong> ${event.location}</p>
                 <p>${event.description}</p>
             </div>
         `;
 
-        if (eventDate >= today) {
+        if (referenceDate >= today) {
             upcomingEventsContainer.insertAdjacentHTML("beforeend", eventCard);
         } else {
             pastEventsContainer.insertAdjacentHTML("beforeend", eventCard);
@@ -78,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const calendarItem = `
             <div class="calendar-item">
                 <h4>${event.name}</h4>
-                <p><strong>Date:</strong> ${eventDate.toLocaleDateString()}</p>
+                <p><strong>Date:</strong> ${dateLabel}</p>
                 <p><strong>Location:</strong> ${event.location}</p>
             </div>
         `;
