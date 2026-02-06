@@ -1,4 +1,32 @@
 const fallbackDevotionals = [
+  /*
+
+  */
+/*
+  {
+  id: 47,
+  week: "Monday 9 Feb – Saturday 14 Feb 2026",
+  title: "Enter the Marketplace",
+  scripture: `Mark 16:15 – "Go into all the world and preach the gospel to all creation."`,
+  reflection: `The marketplace is not just a place of business—it is a mission field. God never intended the Gospel to remain confined within church walls. He designed believers to carry His presence into offices, shops, schools, boardrooms, streets, and industries. The marketplace is where faith meets life.
+
+You were not saved only to sit in church—you were saved to enter the marketplace. Your workplace is your pulpit. Your integrity is your sermon. Your character is your testimony.
+
+God sends people to church for equipping, but He sends them to the marketplace for impact. The anointing you receive on Sunday is meant to solve problems on Monday. Your faith must speak louder than your words.
+
+The marketplace reveals what is truly inside you. It exposes your values, discipline, and trust in God.`,
+  contemplation: `- Do I see my work as an assignment from God or just a job?
+- Am I representing Christ through my conduct and decisions?
+- Who is God calling me to influence in my daily environment?
+- How can my faith show through action this week?`,
+  prayer: `Father, I thank You that You have positioned me in the marketplace for a purpose. Help me to represent You with excellence, integrity, and wisdom. Use my work, my skills, and my influence to advance Your kingdom. Let my life be a light wherever You send me. In Jesus’ name, Amen.`,
+  action: `Approach your work this week as ministry. Intentionally reflect Christ through excellence, kindness, and integrity in every interaction.`,
+  closing: `The marketplace is not secular—it becomes sacred when God is present. Carry His Kingdom wherever you go.`,
+  meditationScripture: `Colossians 3:17 – "And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus."`,
+  audio: "assets/audio/EnterTheMarketplace.mp3",
+  isCurrent: true
+},
+*/
   {
   id: 46,
   week: "Monday 2 Feb – Saturday 7 Feb 2026",
@@ -22,7 +50,7 @@ Release the past. Renew your mind. Refuse old patterns. Receive God’s new dire
   closing: `Your past does not define you—your God does. Break the cycle. Start afresh. Walk boldly into your new season.`,
   meditationScripture: `2 Corinthians 5:17 – "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."`,
   audio: "assets/audio/BreakTheCycleAndStartAfresh.mp3",
-  isCurrent: false
+  isCurrent: true
 },
   {
   id: 45,
@@ -44,7 +72,7 @@ It’s not about what others are doing. It’s about what God is doing in you. G
   closing: `The moment you stop looking outward and start looking inward, you discover the true purpose God is shaping within you.`,
   meditationScripture: `Matthew 6:33 – "But seek first the kingdom of God and His righteousness, and all these things will be added to you."`,
   audio: "assets/audio/ItsNotAboutOthersItsAboutYou.mp3",
-  isCurrent: true
+  isCurrent: false
 },
   {
   id: 44,
