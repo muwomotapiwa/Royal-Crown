@@ -1,8 +1,5 @@
 const fallbackDevotionals = [
-  /*
 
-  */
-/*
   {
   id: 47,
   week: "Monday 9 Feb – Saturday 14 Feb 2026",
@@ -26,7 +23,6 @@ The marketplace reveals what is truly inside you. It exposes your values, discip
   audio: "assets/audio/EnterTheMarketplace.mp3",
   isCurrent: true
 },
-*/
   {
   id: 46,
   week: "Monday 2 Feb – Saturday 7 Feb 2026",
@@ -50,7 +46,7 @@ Release the past. Renew your mind. Refuse old patterns. Receive God’s new dire
   closing: `Your past does not define you—your God does. Break the cycle. Start afresh. Walk boldly into your new season.`,
   meditationScripture: `2 Corinthians 5:17 – "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."`,
   audio: "assets/audio/BreakTheCycleAndStartAfresh.mp3",
-  isCurrent: true
+  isCurrent: false
 },
   {
   id: 45,
