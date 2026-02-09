@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staging | Weekly Devotionals</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/devotional.css" />
+  <style>
+    /* Keep footer at the bottom on tall screens */
+    html, body { height: 100%; }
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .page-wrapper { flex: 1; display: flex; flex-direction: column; }
+    .devotional-section { flex: 1; }
+
+    .status { margin: 0.5rem 0 1rem; padding: 0.75rem 1rem; border-radius: 6px; }
+    .status.info { background: #eef2ff; color: #1f3a8a; }
+    .status.success { background: #ecfdf3; color: #166534; }
+    .status.error { background: #fef2f2; color: #991b1b; }
+    .empty { padding: 1rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">Royal Crown Ministries (Staging)</div>
+      <nav>
+        <a href="staging-index.html">Staging Home</a>
+        <a href="staging-devotional.html">Staging Devotionals</a>
+        <a href="index.html">Live Site</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div>
+    </header>
+
+    <section class="devotional-section">
+      <h2>Staging: Weekly Devotionals</h2>
+      <div id="devotional-status" class="status info"></div>
+      <div id="memory-verse"></div>
+      <div class="mobile-only">
+        <input type="text" id="searchBar" placeholder="Search devotionals..." class="search-bar" />
+      </div>
+      <div id="devotional-list"></div>
+    </section>
+
+    <footer>
+      <p>Staging environment. Content pulled from Google Sheets.</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("show");
+    }
+  </script>
+  <script src="js/staging-config.js"></script>
+  <script src="js/staging-devotional.js"></script>
+</body>
+</html>

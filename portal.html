@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staging Portal | Devotionals</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body { background: #fff9e3; }
+    .portal-wrapper { max-width: 1000px; margin: 2.5rem auto; padding: 1.5rem 1.75rem; background: #f9fafb; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+    .form-title { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; }
+    .form-title h1 { margin: 0; font-size: 1.35rem; }
+    .form-sub { margin: 0 0 1.25rem; color: #4b5563; }
+    .section { margin: 1.2rem 0; padding: 1rem 1.1rem; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; }
+    .section-header { font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.75rem; }
+    .section-header::before { content: "▸"; color: #2563eb; }
+    .portal-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    label { font-weight: 600; color: #111827; display: block; margin-bottom: 0.35rem; }
+    .hint { font-size: 0.82rem; color: #6b7280; margin-top: 0.15rem; }
+    input[type="text"],
+    input[type="number"],
+    textarea { width: 95%; padding: 0.65rem 0.75rem; border: 1px solid #d1d5db; border-radius: 8px; background: #f9fafb; }
+    textarea { min-height: 120px; resize: vertical; }
+    .status { margin-top: 1rem; padding: 0.75rem 1rem; border-radius: 8px; }
+    .status.info { background: #eef2ff; color: #1f3a8a; }
+    .status.success { background: #ecfdf3; color: #166534; }
+    .status.error { background: #fef2f2; color: #991b1b; }
+    .actions { margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end; }
+    .btn-primary { background: #1d4ed8; color: white; padding: 0.7rem 1.25rem; border-radius: 8px; border: none; cursor: pointer; }
+    .btn-secondary { background: white; color: #1f2937; padding: 0.7rem 1.25rem; border-radius: 8px; border: 1px solid #d1d5db; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Royal Crown Ministries (Staging Portal)</div>
+    <nav>
+      <a href="staging-index.html">Staging Home</a>
+      <a href="staging-devotional.html">Staging Devotionals</a>
+      <a href="index.html">Live Site</a>
+    </nav>
+  </header>
+
+  <main class="portal-wrapper">
+    <div class="form-title">
+      <span style="font-size:1.4rem;">📘</span>
+      <h1>Devotional Entry Form</h1>
+    </div>
+    <p class="form-sub">Create or edit a weekly devotional with all components. Fields mirror the Google Sheet columns.</p>
+
+    <form id="devotional-form">
+      <div class="section">
+        <div class="section-header">Basic Information</div>
+        <div class="portal-grid">
+          <div>
+            <label for="id">Devotional ID</label>
+            <input type="number" id="id" name="id" required />
+            <div class="hint">Higher ID = newer (used for ordering).</div>
+          </div>
+          <div>
+            <label for="week">Week Range</label>
+            <input type="text" id="week" name="week" placeholder="Monday 11 August – Saturday 16 August 2025" required />
+          </div>
+          <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Scripture Reference</div>
+        <label for="scripture">Scripture Text</label>
+        <input type="text" id="scripture" name="scripture" placeholder='Proverbs 23:23 – "Buy the truth, and sell it not."' required />
+        <div class="hint">Include book, chapter, verse, and quotation.</div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Devotional Content</div>
+        <div class="portal-grid">
+          <div style="grid-column: 1 / -1;">
+            <label for="reflection">Reflection</label>
+            <textarea id="reflection" name="reflection" required></textarea>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="prayer">Prayer</label>
+            <textarea id="prayer" name="prayer"></textarea>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="contemplation">Contemplation</label>
+            <textarea id="contemplation" name="contemplation"></textarea>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="action">Action Item</label>
+            <textarea id="action" name="action"></textarea>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="closing">Closing Thought</label>
+            <textarea id="closing" name="closing"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">Media Links</div>
+        <div class="portal-grid">
+          <div>
+            <label for="audio">Audio File Path / URL</label>
+            <input type="text" id="audio" name="audio" placeholder="assets/audio/TheTreasureOfTruth.mp3" />
+          </div>
+          <div>
+            <label for="image">Highlight Image URL</label>
+            <input type="text" id="image" name="image" placeholder="https://.../image.jpg" />
+          </div>
+        </div>
+        <div style="margin-top:0.6rem;">
+          <label>
+            <input type="checkbox" id="isCurrent" name="isCurrent" />
+            Mark as current devotional (drives highlight)
+          </label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn-primary">Submit to Google Sheets</button>
+        <button type="button" class="btn-secondary" id="clear-form">Clear Form</button>
+      </div>
+      <div id="portal-status" class="status info">Configure the Apps Script URL in <code>js/staging-config.js</code> before submitting.</div>
+    </form>
+  </main>
+
+  <script src="js/staging-config.js"></script>
+  <script src="js/portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staging | Royal Crown Ministries</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Keep footer at the bottom on tall screens */
+    html, body { height: 100%; }
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .page-wrapper { flex: 1; display: flex; flex-direction: column; }
+    .devotional-highlight { flex: 1; }
+
+    .status { margin-top: 0.75rem; padding: 0.65rem 0.85rem; border-radius: 6px; }
+    .status.info { background: #eef2ff; color: #1f3a8a; }
+    .status.success { background: #ecfdf3; color: #166534; }
+    .status.error { background: #fef2f2; color: #991b1b; }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+  <header>
+    <div class="logo">Royal Crown Ministries (Staging)</div>
+    <nav>
+      <a href="staging-index.html">Staging Home</a>
+      <a href="staging-devotional.html">Staging Devotionals</a>
+      <a href="portal.html">Portal</a>
+      <a href="index.html">Live Site</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+  </header>
+
+  <section class="devotional-highlight">
+    <div class="devotional-wrapper">
+      <div class="devotional-image">
+        <img id="highlight-image" src="assets/enterthemarketplace.jpeg" alt="Current devotional" />
+      </div>
+      <div class="devotional-content">
+        <h2>🔥 This Week's Devotional</h2>
+        <h3 id="highlight-title"><strong>Loading...</strong></h3>
+        <p class="scripture" id="highlight-scripture">Fetching from Google Sheets.</p>
+        <p class="highlight" id="highlight-description"></p>
+        <a href="staging-devotional.html" class="btn btn-devotional">Read or Listen Now</a>
+        <div id="highlight-status" class="status info"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Staging environment. Highlight is pulled from Google Sheets.</p>
+  </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("show");
+    }
+  </script>
+  <script src="js/staging-config.js"></script>
+  <script src="js/staging-index.js"></script>
+</body>
+</html>
