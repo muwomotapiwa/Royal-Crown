@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!status) return;
     status.textContent = text;
     status.className = `status ${type}`;
+    status.style.display = type === "success" ? "none" : "block";
   };
 
   const normalizeDevotional = (row) => ({
@@ -91,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const raw = await fetchJson(STAGING_API.devotionalsRead);
       const devotionals = Array.isArray(raw) ? raw.map(normalizeDevotional) : [];
       render(devotionals);
-      renderStatus(`Loaded ${devotionals.length} devotional${devotionals.length === 1 ? "" : "s"} from Google Sheets.`, "success");
+      renderStatus("", "success");
     } catch (err) {
       console.error(err);
       renderStatus("Failed to load from Google Sheets. Check the staging config URL.", "error");
