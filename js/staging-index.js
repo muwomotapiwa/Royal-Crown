@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const titleEl = document.getElementById("highlight-title");
+  const weekEl = document.getElementById("highlight-week");
   const scriptureEl = document.getElementById("highlight-scripture");
   const descEl = document.getElementById("highlight-description");
   const imgEl = document.getElementById("highlight-image");
@@ -9,7 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!statusEl) return;
     statusEl.textContent = text;
     statusEl.className = `status ${type}`;
+    statusEl.style.display = type === "success" ? "none" : "block";
   };
+
+  const normalizeDevotional = (row) => ({
+    id: Number(row.id || 0),
+    week: row.week || "",
+    title: row.title || "Untitled",
+    scripture: row.scripture || "",
+    reflection: row.reflection || "",
+    prayer: row.prayer || "",
+    contemplation: row.contemplation || "",
+    action: row.action || "",
+    closing: row.closing || "",
+    audio: row.audio || "",
+    image: row.image || "",
+    isCurrent: String(row.isCurrent || "").toLowerCase() === "true",
+  });
 
   const pickCurrent = (list) => {
     const current = list.find((d) => String(d.isCurrent || "").toLowerCase() === "true");
@@ -31,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     titleEl.innerHTML = `<strong>${devotional.title || "Untitled"}</strong>`;
+    weekEl.textContent = devotional.week || "";
     scriptureEl.textContent = devotional.scripture || "";
     descEl.textContent = shortText(devotional.reflection || devotional.closing || "");
 
@@ -48,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setStatus("Loading highlight from Google Sheets...");
     try {
       const raw = await fetchJson(STAGING_API.devotionalsRead);
-      const list = Array.isArray(raw) ? raw : [];
+      const list = Array.isArray(raw) ? raw.map(normalizeDevotional) : [];
       render(pickCurrent(list));
     } catch (err) {
       console.error(err);
