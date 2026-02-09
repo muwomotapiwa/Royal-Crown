@@ -40,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const res = await fetch(STAGING_API.portalWrite, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        // No explicit Content-Type header so the request stays a "simple" CORS request (text/plain)
+        // which avoids preflight on Apps Script.
         body: JSON.stringify(payload),
       });
       const body = await res.json().catch(() => ({}));
