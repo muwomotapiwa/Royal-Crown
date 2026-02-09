@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imgEl.src = devotional.image;
       imgEl.alt = devotional.title || "Devotional highlight";
     } else if (imgEl) {
-      imgEl.src = STAGING_API.highlightImageFallback;
+      imgEl.src = "assets/logo.png";
     }
 
     setStatus("", "success");
