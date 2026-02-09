@@ -71,26 +71,23 @@
         </div>
       </section>
 
-<!-- Devotional Highlight Section -->
+<!-- Devotional Highlight Section (live, data-driven) -->
 <section class="devotional-highlight">
   <div class="devotional-wrapper">
     <div class="devotional-image">
-      <img src="assets/enterthemarketplace.jpeg" alt="Enter the Marketplace" />
+      <img id="highlight-image" src="assets/enterthemarketplace.jpeg" alt="Current devotional" />
     </div>
     <div class="devotional-content">
       <h2>🔥 This Week's Devotional</h2>
-      <h3><strong>Enter the Marketplace</strong></h3>
-      <p class="scripture">
-        “Go into all the world and preach the gospel to all creation.”
-        – Mark 16:15
-      </p>
-      <p class="highlight">
-        Your workplace is more than a job — it’s an assignment. Carry God’s presence, live with integrity, and let your daily life reflect His Kingdom wherever you go. 🙏✨
-      </p>
-      <a href="devotional.html" class="btn btn-devotional">Read or Listen Now</a>
+        <h3 id="highlight-title"><strong>Loading...</strong></h3>
+        <p class="week" id="highlight-week"></p>
+        <p class="scripture" id="highlight-scripture">Loading...</p>
+        <p class="highlight" id="highlight-description"></p>
+        <a href="devotional.html" class="btn btn-devotional">Read or Listen Now</a>
+        <div id="highlight-status" class="status info" style="display:none;"></div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- Events Section -->
     <section class="section" id="events">
@@ -172,6 +169,8 @@
             </div>          
     </footer>
     <!-- Link to the JavaScript file in the js folder -->
+    <script src="js/data-config.js"></script>
+    <script src="js/index-highlight.js"></script>
     <script src="js/scripts.js" defer></script>
 
     <!-- ✅ Tawk.to Live Chat Script -->

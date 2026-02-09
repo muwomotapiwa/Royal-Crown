@@ -1,6 +1,5 @@
-// Central staging configuration for Google Sheets-backed data.
-// Replace the placeholder URLs with your deployed Google Apps Script endpoints.
-// Keep this file out of version control if you later store secrets here.
+// Shared configuration for Google Sheets-backed data.
+// Uses the live Apps Script deployment. Update STAGING_API_BASE if you redeploy.
 const STAGING_API_BASE =
   "https://script.google.com/macros/s/AKfycbz3DxjmidD1LYsLf7N71_IEBnvafGPc5FlEaCbsuOUvXUd_5RgHbjIy18hkmEAq1glZ/exec";
 
