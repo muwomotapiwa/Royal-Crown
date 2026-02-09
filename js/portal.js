@@ -61,4 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form?.addEventListener("submit", handleSubmit);
   clearBtn?.addEventListener("click", handleClear);
+
+  // Initial status
+  if (endpointIsConfigured()) {
+    setStatus("Ready to submit to Google Sheets.", "success");
+  } else {
+    setStatus("Portal write URL is not configured. Update js/staging-config.js.", "error");
+  }
 });
