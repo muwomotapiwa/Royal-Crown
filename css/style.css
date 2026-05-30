@@ -89,6 +89,14 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.site-credit a,
+.site-credit a:visited,
+.site-credit a:hover,
+.site-credit a:focus,
+.site-credit a:active {
+    color: #f1bb65 !important;
+}
 @media (max-width: 768px) {
     nav {
         display: none;

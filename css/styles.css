@@ -391,8 +391,12 @@
             font-size: 14px;
           }
           
-          .site-credit a {
-            color: #FFA725;
+          .site-credit a,
+          .site-credit a:visited,
+          .site-credit a:hover,
+          .site-credit a:focus,
+          .site-credit a:active {
+            color: #f1bb65 !important;
             text-decoration: none;
           }
           
