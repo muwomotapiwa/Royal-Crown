@@ -46,6 +46,17 @@ header {
     line-height: 1.6;
 }
 
+.devotional-invite {
+    margin-top: 16px;
+}
+
+.thank-you-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .section .btn {
     background-color: #f1bb65; /* Gold */
     color: #5e0c4a; /* Purple */
@@ -60,8 +71,17 @@ header {
     transition: background-color 0.3s ease;
 }
 
+.section .btn-secondary {
+    background-color: white;
+    border: 1px solid #f1bb65;
+}
+
 .section .btn:hover {
     background-color: #e0a84e; /* Darker gold */
+}
+
+.section .btn-secondary:hover {
+    background-color: #fff3d8;
 }
 
 footer {
@@ -81,4 +101,3 @@ footer {
   .site-credit a:hover {
     text-decoration: underline;
   }
-  

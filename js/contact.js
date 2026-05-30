@@ -28,6 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener("click", () => {
         nav.classList.toggle("show");
     });
+
+    const contactForm = document.querySelector(".contact-form form");
+    const nameInput = document.getElementById("name");
+    const redirectInput = contactForm ? contactForm.querySelector('input[name="redirect"]') : null;
+
+    if (contactForm && nameInput && redirectInput) {
+        contactForm.addEventListener("submit", function () {
+            const visitorName = nameInput.value.trim().replace(/\s+/g, " ").slice(0, 60);
+            const thankYouUrl = new URL("thank-you.html", window.location.origin);
+
+            if (visitorName) {
+                sessionStorage.setItem("royalCrownContactName", visitorName);
+                thankYouUrl.searchParams.set("name", visitorName);
+            }
+
+            redirectInput.value = thankYouUrl.toString();
+        });
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
