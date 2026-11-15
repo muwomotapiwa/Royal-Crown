@@ -141,8 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
       window.open(telegramUrl, "_blank", "noopener,noreferrer");
     });
     addButton("Copy Link", async () => {
-      const copied = await copyLink(url);
-      status.textContent = copied ? "Devotional link copied!" : "Unable to copy automatically. Link: " + url;
+      const specificUrl = devotionalUrl(devotional.id);
+      const copied = await copyLink(specificUrl);
+      status.textContent = copied ? "Devotional link copied!" : "Unable to copy automatically. Link: " + specificUrl;
     });
     const status = document.createElement("p");
     status.className = "devotional-share-status";
