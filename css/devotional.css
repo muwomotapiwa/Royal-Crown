@@ -150,3 +150,12 @@
 .devotional-share-buttons button:hover { background: #f2ebf8; }
 .devotional-share-status { min-height: 1.4em; font-size: .9rem; margin: .5rem 0 0; }
 @media (min-width: 640px) { .devotional-share-buttons { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* Compact, icon-only sharing row */
+.devotional-share { margin-top: .8rem; padding-top: .65rem; }
+.devotional-share > strong { font-size: .9rem; margin-bottom: .35rem; }
+.devotional-share-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.devotional-share-buttons button { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; min-height: 42px; padding: 8px; border-radius: 50%; flex: 0 0 42px; }
+.devotional-share-buttons button svg { width: 23px; height: 23px; display: block; }
+.devotional-share-status:empty { display: none; }
+@media (min-width: 640px) { .devotional-share-buttons { display: flex; } }
