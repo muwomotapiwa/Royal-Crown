@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const icons = {
       WhatsApp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.4 7.5L3 20.7l1.4-4.9A8.5 8.5 0 1 1 20.5 11.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 7.9c-.4-.3-.8-.2-1.1.2-.8 1.1-.2 3.1 1.5 4.9 1.7 1.9 3.9 2.9 5.2 2.6.7-.2 1.6-1 1.5-1.6 0-.2-.2-.3-.5-.5l-1.9-.9-.9 1.1c-1.3-.5-2.3-1.4-2.9-2.7l1-1.1-.9-2Z" fill="currentColor"/></svg>',
       Facebook: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.1 21v-8h2.7l.4-3.2h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.4a22 22 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.4v2.1H8V13h2.7v8h3.4Z" fill="currentColor"/></svg>',
-      TikTok: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 3v11.4a4.1 4.1 0 1 1-3.5-4.1v3.1a1.1 1.1 0 1 0 .5 1V3h3c.2 2.6 1.8 4.2 4.5 4.4v3.2c-1.8 0-3.3-.6-4.5-1.5" fill="currentColor"/></svg>',
+      Telegram: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.5 2.8 10.7c-1.1.4-1 1.1-.2 1.4l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2 1-.6l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.9l3.1-14.6c.4-1.3-.5-1.9-1.8-1.4ZM8.3 13.2l10.3-6.5c.5-.3.9-.1.5.3l-8.5 7.7-.3 3.2-2-4.7Z" fill="currentColor"/></svg>',
       "Copy Link": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5a4.5 4.5 0 0 0 6.4 0l2.3-2.3a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4 0l-2.3 2.3a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
     };
     const addButton = (label, handler) => {
@@ -135,15 +135,10 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = facebookUrl;
       }
     });
-    addButton("TikTok", async () => {
-      // TikTok has no supported generic web URL share endpoint.
-      // Use the device's share sheet when available; otherwise copy the URL.
-      if (navigator.share) {
-        try { await navigator.share({ title: devotional.title, text: shareText(devotional) }); return; }
-        catch (error) { if (error.name === "AbortError") return; }
-      }
-      const copied = await copyLink(shareText(devotional));
-      status.textContent = copied ? "Full devotional copied. Open TikTok and paste it where supported." : "Unable to copy automatically. Copy the devotional text manually from this page.";
+    addButton("Telegram", () => {
+      // Telegram supports prefilled text and URL through its public share endpoint.
+      const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(shareText(devotional).replace(url, "").trim())}`;
+      window.open(telegramUrl, "_blank", "noopener,noreferrer");
     });
     addButton("Copy Link", async () => {
       const copied = await copyLink(url);
