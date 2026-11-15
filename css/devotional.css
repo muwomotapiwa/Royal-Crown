@@ -139,3 +139,14 @@
 }
 
 
+
+
+/* Mobile-first sharing controls; intentionally scoped to devotional cards. */
+.devotional-share { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #d9d9d9; }
+.devotional-share > strong { display: block; margin-bottom: .75rem; }
+.devotional-share-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+.devotional-share-buttons button { min-height: 48px; padding: .75rem .5rem; border: 1px solid #7454a0; border-radius: 10px; background: #fff; color: #372151; font: inherit; font-weight: 600; cursor: pointer; overflow-wrap: anywhere; }
+.devotional-share-buttons button:focus-visible { outline: 3px solid #7454a0; outline-offset: 2px; }
+.devotional-share-buttons button:hover { background: #f2ebf8; }
+.devotional-share-status { min-height: 1.4em; font-size: .9rem; margin: .5rem 0 0; }
+@media (min-width: 640px) { .devotional-share-buttons { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
