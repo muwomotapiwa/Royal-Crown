@@ -72,7 +72,23 @@ document.addEventListener("DOMContentLoaded", () => {
     field.remove();
     return copied;
   };
-  const shareText = (d) => `${d.title}\n${d.scripture}\n${devotionalUrl(d.id)}`;
+  const publicDevotionalUrl = () => new URL("devotional.html", window.location.origin + "/").toString();
+  const shareText = (d) => [
+    "Royal Crown Ministries International",
+    "Weekly Devotional",
+    "",
+    d.title,
+    d.week ? `Week: ${d.week}` : "",
+    "",
+    d.scripture ? `Scripture:\n${d.scripture}` : "",
+    d.reflection ? `Reflection:\n${d.reflection}` : "",
+    d.prayer ? `Prayer:\n${d.prayer}` : "",
+    d.contemplation ? `Contemplation:\n${d.contemplation}` : "",
+    d.action ? `Action Step:\n${d.action}` : "",
+    d.closing ? `Closing:\n${d.closing}` : "",
+    "",
+    publicDevotionalUrl()
+  ].filter((line) => line !== "").join("\n\n");
   const addSharing = (container, devotional) => {
     const bar = document.createElement("div");
     bar.className = "devotional-share";
@@ -97,18 +113,18 @@ document.addEventListener("DOMContentLoaded", () => {
       button.addEventListener("click", handler);
       buttons.appendChild(button);
     };
-    const url = devotionalUrl(devotional.id);
+    const url = publicDevotionalUrl();
     addButton("WhatsApp", () => window.open(`https://wa.me/?text=${encodeURIComponent(shareText(devotional))}`, "_blank", "noopener,noreferrer"));
     addButton("Facebook", () => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, "_blank", "noopener,noreferrer"));
     addButton("TikTok", async () => {
       // TikTok has no supported generic web URL share endpoint.
       // Use the device's share sheet when available; otherwise copy the URL.
       if (navigator.share) {
-        try { await navigator.share({ title: devotional.title, text: devotional.scripture, url }); return; }
+        try { await navigator.share({ title: devotional.title, text: shareText(devotional) }); return; }
         catch (error) { if (error.name === "AbortError") return; }
       }
-      const copied = await copyLink(url);
-      status.textContent = copied ? "Link copied. Open TikTok and paste it where supported." : "Copy this devotional link to share on TikTok: " + url;
+      const copied = await copyLink(shareText(devotional));
+      status.textContent = copied ? "Full devotional copied. Open TikTok and paste it where supported." : "Copy this devotional link to share on TikTok: " + url;
     });
     addButton("Copy Link", async () => {
       const copied = await copyLink(url);
