@@ -116,10 +116,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = publicDevotionalUrl();
     addButton("WhatsApp", () => window.open(`https://wa.me/?text=${encodeURIComponent(shareText(devotional))}`, "_blank", "noopener,noreferrer"));
     addButton("Facebook", async () => {
-      // Facebook accepts a URL in its share dialog, not arbitrary prefilled post text.
-      // Copy the full devotional for the visitor to paste into their Facebook post.
+      const message = "To share the complete devotional on Facebook:\n\n1. Tap OK to copy the full devotional.\n2. In Facebook, tap the post text area and select Paste.\n3. Review your post before publishing.\n\nFacebook does not automatically insert website text.";
+      if (!window.confirm(message)) return;
+      // Open a tab during the user gesture; clipboard permissions may prompt asynchronously.
       const shareWindow = window.open("about:blank", "_blank");
       const copied = await copyLink(shareText(devotional));
+      if (!copied) {
+        if (shareWindow) shareWindow.close();
+        status.textContent = "Unable to copy automatically. Please copy the devotional text from the page before posting to Facebook.";
+        return;
+      }
+      status.textContent = "Full devotional copied. In Facebook, tap the post text area and select Paste.";
       const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
       if (shareWindow) {
         shareWindow.opener = null;
@@ -127,9 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         window.location.href = facebookUrl;
       }
-      status.textContent = copied
-        ? "Full devotional copied. Paste it into your Facebook post."
-        : "Facebook cannot automatically insert the full text. Copy the devotional manually before posting.";
     });
     addButton("TikTok", async () => {
       // TikTok has no supported generic web URL share endpoint.
