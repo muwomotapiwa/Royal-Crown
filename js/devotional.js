@@ -115,7 +115,22 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     const url = publicDevotionalUrl();
     addButton("WhatsApp", () => window.open(`https://wa.me/?text=${encodeURIComponent(shareText(devotional))}`, "_blank", "noopener,noreferrer"));
-    addButton("Facebook", () => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, "_blank", "noopener,noreferrer"));
+    addButton("Facebook", async () => {
+      // Facebook accepts a URL in its share dialog, not arbitrary prefilled post text.
+      // Copy the full devotional for the visitor to paste into their Facebook post.
+      const shareWindow = window.open("about:blank", "_blank");
+      const copied = await copyLink(shareText(devotional));
+      const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+      if (shareWindow) {
+        shareWindow.opener = null;
+        shareWindow.location.href = facebookUrl;
+      } else {
+        window.location.href = facebookUrl;
+      }
+      status.textContent = copied
+        ? "Full devotional copied. Paste it into your Facebook post."
+        : "Facebook cannot automatically insert the full text. Copy the devotional manually before posting.";
+    });
     addButton("TikTok", async () => {
       // TikTok has no supported generic web URL share endpoint.
       // Use the device's share sheet when available; otherwise copy the URL.
@@ -124,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         catch (error) { if (error.name === "AbortError") return; }
       }
       const copied = await copyLink(shareText(devotional));
-      status.textContent = copied ? "Full devotional copied. Open TikTok and paste it where supported." : "Copy this devotional link to share on TikTok: " + url;
+      status.textContent = copied ? "Full devotional copied. Open TikTok and paste it where supported." : "Unable to copy automatically. Copy the devotional text manually from this page.";
     });
     addButton("Copy Link", async () => {
       const copied = await copyLink(url);
